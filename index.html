@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WoW Midnight (12.0.7) Cheat Sheet - Mayteck C.S.</title>
+    <meta name="description" content="Quick reference cheat sheet for World of Warcraft: Midnight Season 1 stat priorities, rotations, and consumables.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface: rgba(30, 41, 59, 0.5);
+            --surface-hover: rgba(99, 102, 241, 0.2);
+            --border: rgba(255, 255, 255, 0.1);
+            --border-hover: #818cf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+            
+            --role-dps: #ef4444;
+            --role-tank: #3b82f6;
+            --role-heal: #10b981;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { width: 100%; max-width: 1200px; }
+        .header { text-align: center; margin-bottom: 40px; margin-top: 20px; }
+        h1 { margin: 0 0 10px 0; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; }
+        p { color: var(--text-muted); margin: 0; font-size: 1.1rem; }
+
+        .filter-nav { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .filter-btn {
+            background: var(--surface); border: 1px solid var(--border); color: var(--text-main);
+            padding: 10px 20px; border-radius: 8px; font-weight: 600; cursor: pointer;
+            transition: all 0.2s; backdrop-filter: blur(10px);
+        }
+        .filter-btn.active, .filter-btn:hover { border-color: var(--accent); background: rgba(99, 102, 241, 0.2); }
+
+        .specs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+        .spec-card {
+            background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+            padding: 20px; backdrop-filter: blur(10px); transition: all 0.2s;
+            display: flex; flex-direction: column; cursor: pointer;
+        }
+        .spec-card:hover { transform: translateY(-3px); border-color: var(--border-hover); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+
+        .class-title { font-size: 1.2rem; font-weight: 800; margin-bottom: 5px; display: flex; justify-content: space-between; align-items: center; }
+        .role-badge { font-size: 0.7rem; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; font-weight: 800; }
+        .role-dps { background: rgba(239, 68, 68, 0.2); color: var(--role-dps); border: 1px solid var(--role-dps); }
+        .role-tank { background: rgba(59, 130, 246, 0.2); color: var(--role-tank); border: 1px solid var(--role-tank); }
+        .role-heal { background: rgba(16, 185, 129, 0.2); color: var(--role-heal); border: 1px solid var(--role-heal); }
+
+        .stat-priority { font-size: 0.95rem; color: var(--text-main); font-weight: 600; margin: 10px 0; }
+        .stat-highlight { color: var(--accent); }
+        .spec-notes { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin: 0; }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(8px);
+            display: flex; justify-content: center; align-items: center;
+            opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 1000;
+        }
+        .modal-overlay.open { opacity: 1; visibility: visible; }
+        
+        .modal-content {
+            background: rgba(15, 23, 42, 0.95); border: 1px solid var(--accent);
+            border-radius: 16px; width: 90%; max-width: 700px; max-height: 90vh;
+            overflow-y: auto; padding: 30px; position: relative;
+            transform: translateY(20px); transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+        .modal-overlay.open .modal-content { transform: translateY(0); }
+
+        .close-btn {
+            position: absolute; top: 20px; right: 20px; background: none;
+            border: none; color: var(--text-muted); font-size: 1.5rem;
+            cursor: pointer; transition: color 0.2s;
+        }
+        .close-btn:hover { color: var(--accent); }
+
+        /* Modal Inner Sections */
+        .modal-section { margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--border); }
+        .modal-section-title { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 800; margin-bottom: 15px; }
+        
+        .rotation-sequence { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.9rem; font-weight: 600; color: var(--text-main); margin-bottom: 10px; }
+        .spell-item { display: flex; align-items: center; gap: 6px; background: rgba(0,0,0,0.4); padding: 6px 10px 6px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); }
+        .spell-icon { width: 24px; height: 24px; border-radius: 4px; border: 1px solid var(--border); }
+        .sequence-arrow { color: var(--text-muted); font-weight: 800; font-size: 1.1rem; }
+
+        .consumes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .consume-item { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border: 1px solid var(--border); }
+        .consume-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 4px; }
+        .consume-val { font-size: 0.95rem; font-weight: 600; color: var(--text-main); }
+        
+        .utility-text { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent); }
+
+        .loading-text { text-align: center; width: 100%; color: var(--text-muted); font-size: 1.2rem; padding: 40px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Midnight Cheat Sheet</h1>
+            <p>Patch 12.0.7 Priorities, Rotations & Consumables</p>
+        </div>
+
+        <div class="filter-nav">
+            <button class="filter-btn active" onclick="filterSpecs('all')">All Roles</button>
+            <button class="filter-btn" onclick="filterSpecs('dps')">DPS</button>
+            <button class="filter-btn" onclick="filterSpecs('tank')">Tanks</button>
+            <button class="filter-btn" onclick="filterSpecs('heal')">Healers</button>
+        </div>
+
+        <div class="specs-grid" id="specsContainer">
+            <div class="loading-text">Loading specs database...</div>
+        </div>
+    </div>
+
+    <!-- The Detail Modal -->
+    <div class="modal-overlay" id="detailModal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="forceCloseModal()">&times;</button>
+            <div id="modalBody">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let wowData = [];
+
+        const container = document.getElementById('specsContainer');
+        const modalOverlay = document.getElementById('detailModal');
+        const modalBody = document.getElementById('modalBody');
+        const buttons = document.querySelectorAll('.filter-btn');
+
+        // Fetch the data from your new JSON file
+        fetch('wow-database.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok");
+                return response.json();
+            })
+            .then(data => {
+                wowData = data;
+                renderCards('all'); // Build the UI once data loads
+            })
+            .catch(error => {
+                console.error('Error loading database:', error);
+                container.innerHTML = '<div class="loading-text" style="color: var(--role-dps);">Error loading database. Make sure wow-database.json is in the same folder.</div>';
+            });
+
+        function handleImageError(img) {
+            img.onerror = null; 
+            img.src = 'https://wow.zamimg.com/images/wow/icons/small/inv_misc_questionmark.jpg';
+        }
+
+        // Render the small cards
+        function renderCards(filter) {
+            container.innerHTML = '';
+            
+            wowData.forEach((item, index) => {
+                if (filter === 'all' || item.role === filter) {
+                    const card = document.createElement('div');
+                    card.className = 'spec-card';
+                    card.onclick = () => openModal(index);
+                    
+                    const roleLabel = item.role.toUpperCase();
+                    
+                    card.innerHTML = `
+                        <div class="class-title">
+                            ${item.class}: ${item.spec}
+                            <span class="role-badge role-${item.role}">${roleLabel}</span>
+                        </div>
+                        <div class="stat-priority">
+                            Priority: <span class="stat-highlight">${item.stats}</span>
+                        </div>
+                        <p class="spec-notes" style="margin-top: 10px;"><em>Click for full rotation & consumes...</em></p>
+                    `;
+                    container.appendChild(card);
+                }
+            });
+        }
+
+        // Build a visual sequence of spells
+        function buildRotationHTML(title, spellArray) {
+            if (!spellArray || spellArray.length === 0) return '';
+            return `
+                <div class="modal-section-title">${title}</div>
+                <div class="rotation-sequence">
+                    ${spellArray.map((spell, idx) => `
+                        <div class="spell-item">
+                            <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" alt="${spell.name}" class="spell-icon" onerror="handleImageError(this)">
+                            ${spell.name}
+                        </div>
+                        ${idx < spellArray.length - 1 ? '<span class="sequence-arrow">></span>' : ''}
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Open the expanded detailed modal
+        function openModal(index) {
+            const item = wowData[index];
+            const roleLabel = item.role.toUpperCase();
+            
+            let html = `
+                <div class="class-title" style="font-size: 1.8rem;">
+                    ${item.class}: ${item.spec}
+                    <span class="role-badge role-${item.role}" style="font-size: 0.9rem;">${roleLabel}</span>
+                </div>
+                <div class="stat-priority" style="font-size: 1.1rem; margin-top: 15px;">
+                    Stat Priority: <span class="stat-highlight">${item.stats}</span>
+                </div>
+                <p class="spec-notes" style="font-size: 1rem;">${item.notes}</p>
+                
+                <div class="modal-section">
+                    ${buildRotationHTML("Single Target Rotation / Opener", item.rotationST)}
+                    <br>
+                    ${buildRotationHTML("AoE / Cleave Rotation", item.rotationAoE)}
+                </div>
+            `;
+
+            // Role specific utilities
+            if (item.role === 'tank' && item.defensives) {
+                html += `
+                    <div class="modal-section">
+                        <div class="modal-section-title">Defensive Priority</div>
+                        <div class="utility-text">${item.defensives}</div>
+                    </div>
+                `;
+            } else if (item.role === 'heal' && item.cooldowns) {
+                html += `
+                    <div class="modal-section">
+                        <div class="modal-section-title">"Oh Shit" Buttons & Cooldowns</div>
+                        <div class="utility-text">${item.cooldowns}</div>
+                    </div>
+                `;
+            }
+
+            // Consumables section
+            if (item.consumes) {
+                html += `
+                    <div class="modal-section">
+                        <div class="modal-section-title">Standard Consumables</div>
+                        <div class="consumes-grid">
+                            <div class="consume-item"><div class="consume-label">Food</div><div class="consume-val">${item.consumes.food || 'N/A'}</div></div>
+                            <div class="consume-item"><div class="consume-label">Flask</div><div class="consume-val">${item.consumes.flask || 'N/A'}</div></div>
+                            <div class="consume-item"><div class="consume-label">Potion</div><div class="consume-val">${item.consumes.potion || 'N/A'}</div></div>
+                            <div class="consume-item"><div class="consume-label">Weapon Buff</div><div class="consume-val">${item.consumes.weapon || 'N/A'}</div></div>
+                            <div class="consume-item"><div class="consume-label">Other Buffs</div><div class="consume-val">${item.consumes.buffs || 'N/A'}</div></div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            modalBody.innerHTML = html;
+            modalOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        // Close logic
+        function forceCloseModal() {
+            modalOverlay.classList.remove('open');
+            document.body.style.overflow = 'auto';
+        }
+        function closeModal(event) {
+            if (event.target === modalOverlay) forceCloseModal();
+        }
+
+        // Filter Logic
+        window.filterSpecs = function(role) {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            renderCards(role);
+        }
+    </script>
+</body>
+</html>
