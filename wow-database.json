@@ -1,0 +1,255 @@
+[
+  {
+    "class": "Death Knight", "spec": "Blood", "role": "tank", "stats": "Haste > Vers > Mastery", "notes": "Haste reduces Death Strike cooldown.",
+    "rotationST": [ {"name": "Blood Boil", "icon": "spell_deathknight_bloodboil"}, {"name": "Marrowrend", "icon": "ability_deathknight_marrowrend"}, {"name": "Death Strike", "icon": "spell_deathknight_butcher2"} ],
+    "rotationAoE": [ {"name": "Death and Decay", "icon": "spell_shadow_deathanddecay"}, {"name": "Blood Boil", "icon": "spell_deathknight_bloodboil"}, {"name": "Death Strike", "icon": "spell_deathknight_butcher2"} ],
+    "defensives": "Vampiric Blood (Major Health/Healing) > Icebound Fortitude (Stun immunity/Reduction) > Anti-Magic Shell (Magic soak).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Death Knight", "spec": "Frost", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Focuses on Killing Machine procs.",
+    "rotationST": [ {"name": "Remorseless", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Obliterate", "icon": "spell_deathknight_classicon"}, {"name": "Frost Strike", "icon": "spell_deathknight_empowerruneblade2"} ],
+    "rotationAoE": [ {"name": "Howling Blast", "icon": "spell_frost_arcticwinds"}, {"name": "Remorseless", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Frostscythe", "icon": "spell_frost_cleave"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Death Knight", "spec": "Unholy", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Mastery boosts pet damage and wound bursts.",
+    "rotationST": [ {"name": "Outbreak", "icon": "spell_deathknight_outbreak"}, {"name": "Apocalypse", "icon": "spell_deathknight_apocalypse"}, {"name": "Death Coil", "icon": "spell_shadow_deathcoil"} ],
+    "rotationAoE": [ {"name": "Death and Decay", "icon": "spell_shadow_deathanddecay"}, {"name": "Epidemic", "icon": "spell_shadow_requiem"}, {"name": "Scourge Strike", "icon": "spell_deathknight_scourgestrike"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Demon Hunter", "spec": "Havoc", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Critical Strike fuels momentum.",
+    "rotationST": [ {"name": "Eye Beam", "icon": "ability_demonhunter_eyebeam"}, {"name": "Blade Dance", "icon": "ability_demonhunter_bladedance"}, {"name": "Chaos Strike", "icon": "ability_demonhunter_chaosstrike"} ],
+    "rotationAoE": [ {"name": "Eye Beam", "icon": "ability_demonhunter_eyebeam"}, {"name": "Blade Dance", "icon": "ability_demonhunter_bladedance"}, {"name": "Immolation Aura", "icon": "spell_fire_felfire"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Demon Hunter", "spec": "Devourer", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Mid-range Intellect DPS. Consume Soul Fragments with Reap.",
+    "rotationST": [ {"name": "Hungering Slash", "icon": "ability_demonhunter_bladedance"}, {"name": "Reap", "icon": "ability_demonhunter_soulcleave"}, {"name": "Collapsing Star", "icon": "spell_priest_voidshift"} ],
+    "rotationAoE": [ {"name": "Void Portal", "icon": "spell_priest_voidshift"}, {"name": "Hungering Slash", "icon": "ability_demonhunter_bladedance"}, {"name": "Reap", "icon": "ability_demonhunter_soulcleave"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Demon Hunter", "spec": "Vengeance", "role": "tank", "stats": "Crit > Haste > Vers", "notes": "Crit fuels Soul Fragments and mitigation.",
+    "rotationST": [ {"name": "Immolation Aura", "icon": "spell_fire_felfire"}, {"name": "Fracture", "icon": "ability_demonhunter_fracture"}, {"name": "Soul Cleave", "icon": "ability_demonhunter_soulcleave"} ],
+    "rotationAoE": [ {"name": "Immolation Aura", "icon": "spell_fire_felfire"}, {"name": "Spirit Bomb", "icon": "spell_shadow_psychicscream"}, {"name": "Soul Cleave", "icon": "ability_demonhunter_soulcleave"} ],
+    "defensives": "Demon Spikes (Physical mitigation) > Fiery Brand (Target damage reduction) > Metamorphosis (Major health boost).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Druid", "spec": "Balance", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Haste reduces cast times and DoT ticks.",
+    "rotationST": [ {"name": "Moonfire", "icon": "spell_nature_starfall"}, {"name": "Starsurge", "icon": "spell_magic_stringofcurses"}, {"name": "Wrath", "icon": "spell_nature_abolishmagic"} ],
+    "rotationAoE": [ {"name": "Sunfire", "icon": "spell_nature_sunstrike"}, {"name": "Starfall", "icon": "spell_magic_starfall"}, {"name": "Lunar Strike", "icon": "spell_nature_starfall"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Druid", "spec": "Feral", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Maintains energy and combo point generation.",
+    "rotationST": [ {"name": "Rake", "icon": "ability_druid_disembowel"}, {"name": "Shred", "icon": "spell_shadow_vampiricaura"}, {"name": "Ferocious Bite", "icon": "ability_druid_ferociousbite"} ],
+    "rotationAoE": [ {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Swipe", "icon": "inv_misc_monsterclaw_03"}, {"name": "Primal Wrath", "icon": "spell_druid_agility"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Druid", "spec": "Guardian", "role": "tank", "stats": "Haste > Vers > Mastery", "notes": "Haste for Thrash uptime; Vers for armor.",
+    "rotationST": [ {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Mangle", "icon": "ability_druid_mangle2"}, {"name": "Ironfur", "icon": "ability_druid_ironfur"} ],
+    "rotationAoE": [ {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Swipe", "icon": "inv_misc_monsterclaw_03"}, {"name": "Ironfur", "icon": "ability_druid_ironfur"} ],
+    "defensives": "Barkskin (Short CD reduction) > Survival Instincts (Major mitigation) > Frenzied Regeneration (Self-heal).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Druid", "spec": "Restoration", "role": "heal", "stats": "Haste > Mastery > Crit", "notes": "Haste for Rejuvenation tick breakpoints.",
+    "rotationST": [ {"name": "Lifebloom", "icon": "inv_misc_herb_felblossom"}, {"name": "Rejuvenation", "icon": "spell_nature_rejuvenation"}, {"name": "Swiftmend", "icon": "inv_relics_idolofrejuvenation"} ],
+    "rotationAoE": [ {"name": "Efflorescence", "icon": "inv_misc_herb_talandrasrose"}, {"name": "Wild Growth", "icon": "ability_druid_flourish"}, {"name": "Tranquility", "icon": "spell_nature_tranquility"} ],
+    "cooldowns": "Tranquility (Massive raid heal) > Ironbark (Tank external) > Convoke the Spirits (Rapid burst healing).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Evoker", "spec": "Augmentation", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Maximizes buff uptime and personal damage.",
+    "rotationST": [ {"name": "Ebon Might", "icon": "ability_evoker_ebonmight"}, {"name": "Upheaval", "icon": "ability_evoker_upheaval"}, {"name": "Eruption", "icon": "ability_evoker_eruption"} ],
+    "rotationAoE": [ {"name": "Ebon Might", "icon": "ability_evoker_ebonmight"}, {"name": "Breath of Eons", "icon": "ability_evoker_breathofeons"}, {"name": "Upheaval", "icon": "ability_evoker_upheaval"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Evoker", "spec": "Devastation", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Reduces cooldown downtime.",
+    "rotationST": [ {"name": "Fire Breath", "icon": "ability_evoker_firebreath"}, {"name": "Eternity Surge", "icon": "ability_evoker_eternitysurge"}, {"name": "Disintegrate", "icon": "ability_evoker_disintegrate"} ],
+    "rotationAoE": [ {"name": "Deep Breath", "icon": "ability_evoker_deepbreath"}, {"name": "Fire Breath", "icon": "ability_evoker_firebreath"}, {"name": "Pyre", "icon": "ability_evoker_pyre"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Evoker", "spec": "Preservation", "role": "heal", "stats": "Haste > Crit > Mastery", "notes": "Reduces cast times for Empower spells.",
+    "rotationST": [ {"name": "Reversion", "icon": "ability_evoker_reversion"}, {"name": "Echo", "icon": "ability_evoker_echo"}, {"name": "Spiritbloom", "icon": "ability_evoker_spiritbloom"} ],
+    "rotationAoE": [ {"name": "Dream Breath", "icon": "ability_evoker_dreambreath"}, {"name": "Emerald Blossom", "icon": "ability_evoker_emeraldblossom"}, {"name": "Rewind", "icon": "ability_evoker_rewind"} ],
+    "cooldowns": "Rewind (Massive damage reversal) > Emerald Communion (Self/Raid heal channel) > Time Dilation (Tank delay).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Hunter", "spec": "Beast Mastery", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Haste is critical for pet attack speed.",
+    "rotationST": [ {"name": "Barbed Shot", "icon": "ability_hunter_barbedshot"}, {"name": "Kill Command", "icon": "ability_hunter_killcommand"}, {"name": "Cobra Shot", "icon": "ability_hunter_cobrashot"} ],
+    "rotationAoE": [ {"name": "Multi-Shot", "icon": "ability_upgrademoonglaive"}, {"name": "Barbed Shot", "icon": "ability_hunter_barbedshot"}, {"name": "Kill Command", "icon": "ability_hunter_killcommand"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Hunter", "spec": "Marksmanship", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Focuses on Aimed Shot windows.",
+    "rotationST": [ {"name": "Rapid Fire", "icon": "ability_hunter_rapidfire"}, {"name": "Aimed Shot", "icon": "inv_spear_07"}, {"name": "Arcane Shot", "icon": "ability_impalingbolt"} ],
+    "rotationAoE": [ {"name": "Trick Shots", "icon": "ability_hunter_mastermarksman"}, {"name": "Aimed Shot", "icon": "inv_spear_07"}, {"name": "Rapid Fire", "icon": "ability_hunter_rapidfire"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Hunter", "spec": "Survival", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Drives Mongoose Bite cooldown reduction.",
+    "rotationST": [ {"name": "Wildfire Bomb", "icon": "inv_eng_bombfire"}, {"name": "Kill Command", "icon": "ability_hunter_killcommand"}, {"name": "Mongoose Bite", "icon": "ability_hunter_swiftstrike"} ],
+    "rotationAoE": [ {"name": "Wildfire Bomb", "icon": "inv_eng_bombfire"}, {"name": "Carve", "icon": "ability_hunter_carve"}, {"name": "Mongoose Bite", "icon": "ability_hunter_swiftstrike"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Mage", "spec": "Arcane", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Mastery increases mana efficiency.",
+    "rotationST": [ {"name": "Arcane Surge", "icon": "spell_arcane_arcanetorrent"}, {"name": "Arcane Blast", "icon": "spell_nature_wispsplode"}, {"name": "Arcane Barrage", "icon": "spell_nature_starfall"} ],
+    "rotationAoE": [ {"name": "Arcane Orb", "icon": "spell_mage_arcaneorb"}, {"name": "Arcane Explosion", "icon": "spell_nature_wispsplode"}, {"name": "Arcane Barrage", "icon": "spell_nature_starfall"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Mage", "spec": "Fire", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Crits trigger Hot Streaks.",
+    "rotationST": [ {"name": "Combustion", "icon": "spell_fire_sealoffire"}, {"name": "Fire Blast", "icon": "spell_fire_fireball"}, {"name": "Pyroblast", "icon": "spell_fire_fireball02"} ],
+    "rotationAoE": [ {"name": "Flamestrike", "icon": "spell_fire_selfdestruct"}, {"name": "Dragon's Breath", "icon": "inv_misc_head_dragon_01"}, {"name": "Phoenix Flames", "icon": "inv_phoenix_mount"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Mage", "spec": "Frost", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Increases proc rates for brain freeze.",
+    "rotationST": [ {"name": "Flurry", "icon": "spell_frost_stun"}, {"name": "Ice Lance", "icon": "spell_frost_frostblast"}, {"name": "Frostbolt", "icon": "spell_frost_frostbolt02"} ],
+    "rotationAoE": [ {"name": "Blizzard", "icon": "spell_frost_icestorm"}, {"name": "Frozen Orb", "icon": "spell_frost_frozenorb"}, {"name": "Ice Lance", "icon": "spell_frost_frostblast"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Monk", "spec": "Brewmaster", "role": "tank", "stats": "Haste > Vers > Crit", "notes": "Haste for Shuffle/Stagger uptime.",
+    "rotationST": [ {"name": "Keg Smash", "icon": "ability_monk_kegsmash"}, {"name": "Blackout Kick", "icon": "ability_monk_roundhousekick"}, {"name": "Breath of Fire", "icon": "ability_monk_breathoffire"} ],
+    "rotationAoE": [ {"name": "Keg Smash", "icon": "ability_monk_kegsmash"}, {"name": "Spinning Crane Kick", "icon": "ability_monk_cranekick_new"}, {"name": "Breath of Fire", "icon": "ability_monk_breathoffire"} ],
+    "defensives": "Purifying Brew (Clears Stagger) > Celestial Brew (Shield) > Fortifying Brew (Major Health/Mitigation).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Monk", "spec": "Mistweaver", "role": "heal", "stats": "Haste > Crit > Mastery", "notes": "Essential for rapid HoT application.",
+    "rotationST": [ {"name": "Renewing Mist", "icon": "ability_monk_renewingmists"}, {"name": "Enveloping Mist", "icon": "spell_monk_envelopingmist"}, {"name": "Vivify", "icon": "ability_monk_vivify"} ],
+    "rotationAoE": [ {"name": "Essence Font", "icon": "ability_monk_essencefont"}, {"name": "Spinning Crane Kick", "icon": "ability_monk_cranekick_new"}, {"name": "Vivify", "icon": "ability_monk_vivify"} ],
+    "cooldowns": "Revival (Massive raid heal/dispel) > Life Cocoon (Massive single target shield) > Invoke Yu'lon (Burst AoE healing).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Monk", "spec": "Windwalker", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Balances burst windows with resources.",
+    "rotationST": [ {"name": "Tiger Palm", "icon": "ability_monk_tigerpalm"}, {"name": "Rising Sun", "icon": "ability_monk_risingsunkick"}, {"name": "Fists of Fury", "icon": "ability_monk_fistsoffury"} ],
+    "rotationAoE": [ {"name": "Spinning Crane Kick", "icon": "ability_monk_cranekick_new"}, {"name": "Fists of Fury", "icon": "ability_monk_fistsoffury"}, {"name": "Strike of the Windlord", "icon": "inv_hand_1h_artifactskywall_d_01"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Paladin", "spec": "Holy", "role": "heal", "stats": "Crit > Haste > Mastery", "notes": "Crit amplifies Glimmer and Holy Shock.",
+    "rotationST": [ {"name": "Holy Shock", "icon": "spell_holy_searinglight"}, {"name": "Word of Glory", "icon": "inv_helmet_96"}, {"name": "Holy Light", "icon": "spell_holy_holybolt"} ],
+    "rotationAoE": [ {"name": "Light of Dawn", "icon": "spell_paladin_lightofdawn"}, {"name": "Holy Shock", "icon": "spell_holy_searinglight"}, {"name": "Consecration", "icon": "spell_holy_innerfire"} ],
+    "cooldowns": "Avenging Wrath (Throughput boost) > Aura Mastery (Raid damage reduction) > Blessing of Sacrifice (External mitigation).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Paladin", "spec": "Protection", "role": "tank", "stats": "Haste > Crit > Vers", "notes": "Haste for Shield of the Righteous uptime.",
+    "rotationST": [ {"name": "Judgment", "icon": "spell_holy_righteousfury"}, {"name": "Avenger's Shield", "icon": "spell_holy_avengersshield"}, {"name": "Shield of Right.", "icon": "ability_paladin_shieldofvengeance"} ],
+    "rotationAoE": [ {"name": "Consecration", "icon": "spell_holy_innerfire"}, {"name": "Avenger's Shield", "icon": "spell_holy_avengersshield"}, {"name": "Shield of Right.", "icon": "ability_paladin_shieldofvengeance"} ],
+    "defensives": "Ardent Defender (Frequent DR) > Guardian of Ancient Kings (Major DR) > Divine Shield (Immunity).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Paladin", "spec": "Retribution", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Haste reduces rotation cooldowns.",
+    "rotationST": [ {"name": "Blade of Justice", "icon": "ability_paladin_bladeofjustice"}, {"name": "Judgment", "icon": "spell_holy_righteousfury"}, {"name": "Templar's", "icon": "spell_holy_templarsverdict"} ],
+    "rotationAoE": [ {"name": "Divine Storm", "icon": "abilities_paladin_divinestorm"}, {"name": "Wake of Ashes", "icon": "inv_sword_2h_artifactashbringer_d_01"}, {"name": "Consecration", "icon": "spell_holy_innerfire"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Priest", "spec": "Discipline", "role": "heal", "stats": "Haste > Crit > Mastery", "notes": "Haste for Atonement application speed.",
+    "rotationST": [ {"name": "Power Word: Shield", "icon": "spell_holy_powerwordshield"}, {"name": "Purge the Wicked", "icon": "ability_mage_firestarter"}, {"name": "Penance", "icon": "spell_holy_penance"} ],
+    "rotationAoE": [ {"name": "Power Word: Radiance", "icon": "spell_priest_powerword"}, {"name": "Mindbender", "icon": "spell_shadow_soulleech_3"}, {"name": "Halo", "icon": "ability_priest_halo"} ],
+    "cooldowns": "Power Word: Barrier (Raid mitigation) > Pain Suppression (Tank external) > Rapture (Shield spam).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Priest", "spec": "Holy", "role": "heal", "stats": "Haste > Crit > Mastery", "notes": "Haste improves prayer-based healing throughput.",
+    "rotationST": [ {"name": "Holy Word: Serenity", "icon": "spell_holy_persuitofjustice"}, {"name": "Flash Heal", "icon": "spell_holy_flashheal"}, {"name": "Heal", "icon": "spell_holy_heal"} ],
+    "rotationAoE": [ {"name": "Holy Word: Sanctify", "icon": "spell_holy_divineprovidence"}, {"name": "Prayer of Mending", "icon": "spell_holy_spellwarding"}, {"name": "Circle of Healing", "icon": "spell_holy_circleofrenewal"} ],
+    "cooldowns": "Divine Hymn (Massive AOE Raid burst) > Guardian Spirit (Single target 'Oh Shit' death prevention) > Apotheosis (Rapid Holy Word resets).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Priest", "spec": "Shadow", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Vital for Insanity generation.",
+    "rotationST": [ {"name": "Vampiric Touch", "icon": "spell_holy_stoicism"}, {"name": "Mind Blast", "icon": "spell_shadow_unholyfrenzy"}, {"name": "Devouring Plague", "icon": "spell_shadow_blackplague"} ],
+    "rotationAoE": [ {"name": "Shadow Crash", "icon": "spell_shadow_shadowcrash"}, {"name": "Mind Sear", "icon": "spell_shadow_mindshear"}, {"name": "Psychic Link", "icon": "spell_shadow_teleport"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Rogue", "spec": "Assassination", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Drives poison application.",
+    "rotationST": [ {"name": "Garrote", "icon": "ability_rogue_garrote"}, {"name": "Rupture", "icon": "ability_rogue_rupture"}, {"name": "Envenom", "icon": "ability_rogue_disembowel"} ],
+    "rotationAoE": [ {"name": "Fan of Knives", "icon": "ability_rogue_fanofknives"}, {"name": "Crimson Tempest", "icon": "ability_rogue_waylay"}, {"name": "Rupture", "icon": "ability_rogue_rupture"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Rogue", "spec": "Outlaw", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Crit triggers reroll mechanics.",
+    "rotationST": [ {"name": "Roll the Bones", "icon": "ability_rogue_rollthebones"}, {"name": "Sinister Strike", "icon": "spell_shadow_ritualofsacrifice"}, {"name": "Dispatch", "icon": "ability_rogue_dispatch"} ],
+    "rotationAoE": [ {"name": "Blade Flurry", "icon": "ability_warrior_punishingblow"}, {"name": "Sinister Strike", "icon": "spell_shadow_ritualofsacrifice"}, {"name": "Dispatch", "icon": "ability_rogue_dispatch"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Rogue", "spec": "Subtlety", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Maximizes burst window damage.",
+    "rotationST": [ {"name": "Shadowstrike", "icon": "ability_rogue_shadowstrike"}, {"name": "Nightblade", "icon": "ability_rogue_nightblade"}, {"name": "Eviscerate", "icon": "ability_rogue_eviscerate"} ],
+    "rotationAoE": [ {"name": "Shuriken Storm", "icon": "ability_rogue_shurikenstorm"}, {"name": "Black Powder", "icon": "ability_harrisonjones_exploring"}, {"name": "Secret Technique", "icon": "ability_rogue_sinistercalling"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Shaman", "spec": "Elemental", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Enhances Lava Burst and Maelstrom.",
+    "rotationST": [ {"name": "Flame Shock", "icon": "spell_fire_flameshock"}, {"name": "Lava Burst", "icon": "spell_shaman_lavaburst"}, {"name": "Earth Shock", "icon": "spell_nature_earthshock"} ],
+    "rotationAoE": [ {"name": "Chain Lightning", "icon": "spell_nature_chainlightning"}, {"name": "Earthquake", "icon": "spell_nature_earthquake"}, {"name": "Liquid Magma", "icon": "spell_shaman_spewlava"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Shaman", "spec": "Enhancement", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Crucial for Maelstrom Weapon stacks.",
+    "rotationST": [ {"name": "Stormstrike", "icon": "ability_shaman_stormstrike"}, {"name": "Lava Lash", "icon": "ability_shaman_lavalash"}, {"name": "Lightning Bolt", "icon": "spell_nature_lightning"} ],
+    "rotationAoE": [ {"name": "Crash Lightning", "icon": "spell_shaman_crashlightning"}, {"name": "Chain Lightning", "icon": "spell_nature_chainlightning"}, {"name": "Sundering", "icon": "spell_fire_volcano"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Buzzing Rune", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Shaman", "spec": "Restoration", "role": "heal", "stats": "Haste > Crit > Mastery", "notes": "Improves Chain Heal frequency.",
+    "rotationST": [ {"name": "Riptide", "icon": "spell_nature_riptide"}, {"name": "Healing Wave", "icon": "spell_nature_magicimmunity"}, {"name": "Healing Surge", "icon": "spell_nature_healingway"} ],
+    "rotationAoE": [ {"name": "Healing Rain", "icon": "spell_nature_giftofthewaters"}, {"name": "Chain Heal", "icon": "spell_nature_healingwavegreater"}, {"name": "Riptide", "icon": "spell_nature_riptide"} ],
+    "cooldowns": "Spirit Link Totem (Raid equalization) > Healing Tide Totem (Raid burst) > Ascendance (Duplicated healing).",
+    "consumes": { "food": "Gral's Delight", "flask": "Flask of Tempered Intellect", "potion": "Aerated Mana Potion", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warlock", "spec": "Affliction", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Increases DoT tick speed.",
+    "rotationST": [ {"name": "Agony", "icon": "spell_shadow_curseofsargeras"}, {"name": "Corruption", "icon": "spell_shadow_abominationexplosion"}, {"name": "Malefic Rapture", "icon": "ability_warlock_soulswap"} ],
+    "rotationAoE": [ {"name": "Seed of Corruption", "icon": "spell_shadow_seedofdestruction"}, {"name": "Agony", "icon": "spell_shadow_curseofsargeras"}, {"name": "Malefic Rapture", "icon": "ability_warlock_soulswap"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warlock", "spec": "Demonology", "role": "dps", "stats": "Haste ≈ Crit > Mastery", "notes": "Haste aids pet summoning frequency.",
+    "rotationST": [ {"name": "Call Dreadstalkers", "icon": "spell_warlock_terrorsguard"}, {"name": "Hand of Gul'dan", "icon": "spell_shadow_summoninfernal"}, {"name": "Demonbolt", "icon": "spell_warlock_demonbolt"} ],
+    "rotationAoE": [ {"name": "Implosion", "icon": "spell_shadow_shadetruesight"}, {"name": "Hand of Gul'dan", "icon": "spell_shadow_summoninfernal"}, {"name": "Bilescourge Bombers", "icon": "ability_warlock_bilescourgebombers"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warlock", "spec": "Destruction", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Crits trigger Chaos Bolt opportunities.",
+    "rotationST": [ {"name": "Immolate", "icon": "spell_fire_immolation"}, {"name": "Conflagrate", "icon": "spell_fire_fireball"}, {"name": "Chaos Bolt", "icon": "ability_warlock_chaosbolt"} ],
+    "rotationAoE": [ {"name": "Rain of Fire", "icon": "spell_shadow_rainoffire"}, {"name": "Havoc", "icon": "ability_warlock_baneofhavoc"}, {"name": "Incinerate", "icon": "spell_fire_flameshock"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Tempered Intellect", "potion": "Potion of Ultimate Power", "weapon": "Algari Mana Oil", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warrior", "spec": "Arms", "role": "dps", "stats": "Haste (20%) > Mastery > Crit", "notes": "Haste soft cap before stacking Mastery.",
+    "rotationST": [ {"name": "Colossus Smash", "icon": "ability_warrior_colossussmash"}, {"name": "Mortal Strike", "icon": "ability_warrior_savageblow"}, {"name": "Execute", "icon": "inv_sword_48"} ],
+    "rotationAoE": [ {"name": "Sweeping Strikes", "icon": "ability_rogue_slicedice"}, {"name": "Cleave", "icon": "ability_warrior_cleave"}, {"name": "Bladestorm", "icon": "ability_warrior_bladestorm"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warrior", "spec": "Fury", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Haste for Enrage and Rampage frequency.",
+    "rotationST": [ {"name": "Bloodthirst", "icon": "spell_nature_bloodlust"}, {"name": "Raging Blow", "icon": "ability_warrior_punishingblow"}, {"name": "Rampage", "icon": "ability_warrior_rampage"} ],
+    "rotationAoE": [ {"name": "Whirlwind", "icon": "ability_whirlwind"}, {"name": "Rampage", "icon": "ability_warrior_rampage"}, {"name": "Bloodthirst", "icon": "spell_nature_bloodlust"} ],
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of Alchemical Chaos", "potion": "Potion of Ultimate Power", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  },
+  {
+    "class": "Warrior", "spec": "Protection", "role": "tank", "stats": "Haste > Vers > Crit", "notes": "Haste for Shield Block frequency.",
+    "rotationST": [ {"name": "Shield Slam", "icon": "inv_shield_05"}, {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"} ],
+    "rotationAoE": [ {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"}, {"name": "Shield Slam", "icon": "inv_shield_05"} ],
+    "defensives": "Shield Wall (Major Mitigation) > Demoralizing Shout (Frequent AOE reduction) > Spell Reflection (Magic block) > Ignore Pain (Rage dump).",
+    "consumes": { "food": "Midnight Feast", "flask": "Flask of the Earth", "potion": "Potion of Bursting Blood", "weapon": "Weighstone", "buffs": "Crystallized Augment Rune" }
+  }
+]
