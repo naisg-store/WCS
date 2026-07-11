@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -100,17 +100,18 @@
         .spell-icon { width: 24px; height: 24px; border-radius: 4px; border: 1px solid var(--border); }
         .sequence-arrow { color: var(--text-muted); font-weight: 800; font-size: 1.1rem; }
 
-        /* Consumables Update */
+        /* Consumables */
         .consumes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
         .consume-item { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border: 1px solid var(--border); }
         .consume-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 4px; }
-        .buff-stat { color: #4ade80; font-size: 0.85rem; font-weight: 800; margin-top: 2px; }
+        .buff-stat { color: #39ff14; font-size: 0.85rem; font-weight: 800; margin-top: 2px; text-shadow: 0 0 5px rgba(57, 255, 20, 0.4); }
         
-        /* Defensives Update */
+        /* Defensives & Cooldowns */
         .utility-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
         .utility-item { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent); display: flex; flex-direction: column; gap: 4px; }
         .utility-name-row { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 0.95rem; color: var(--text-main); }
         .utility-note { font-size: 0.85rem; color: var(--text-muted); }
+        .utility-text { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent); }
 
         .loading-text { text-align: center; width: 100%; color: var(--text-muted); font-size: 1.2rem; padding: 40px; }
     </style>
@@ -147,7 +148,6 @@
 
     <script>
         let wowData = [];
-
         const container = document.getElementById('specsContainer');
         const modalOverlay = document.getElementById('detailModal');
         const modalBody = document.getElementById('modalBody');
@@ -212,31 +212,44 @@
             `;
         }
 
-        // New utility function for cooldowns/defensives
-        function buildUtilityHTML(title, utilArray) {
-            if (!utilArray || !Array.isArray(utilArray) || utilArray.length === 0) return '';
-            return `
-                <div class="modal-section">
-                    <div class="modal-section-title">${title}</div>
-                    <div class="utility-grid">
-                        ${utilArray.map(spell => `
-                            <div class="utility-item">
-                                <div class="utility-name-row">
-                                    <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" class="spell-icon" onerror="handleImageError(this)">
-                                    ${spell.name}
-                                </div>
-                                <div class="utility-note">${spell.note}</div>
-                            </div>
-                        `).join('')}
+        // Bulletproof utility renderer - handles arrays AND plain strings
+        function buildUtilityHTML(title, utilData) {
+            if (!utilData) return '';
+            
+            // Fallback for older string format
+            if (typeof utilData === 'string') {
+                return `
+                    <div class="modal-section">
+                        <div class="modal-section-title">${title}</div>
+                        <div class="utility-text">${utilData}</div>
                     </div>
-                </div>
-            `;
+                `;
+            }
+            
+            // Standard Array rendering
+            if (Array.isArray(utilData) && utilData.length > 0) {
+                return `
+                    <div class="modal-section">
+                        <div class="modal-section-title">${title}</div>
+                        <div class="utility-grid">
+                            ${utilData.map(spell => `
+                                <div class="utility-item">
+                                    <div class="utility-name-row">
+                                        <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" class="spell-icon" onerror="handleImageError(this)">
+                                        ${spell.name}
+                                    </div>
+                                    <div class="utility-note">${spell.note}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            return '';
         }
 
-        // New consumable rendering logic
         function renderConsume(item) {
             if (!item) return '<span style="font-size: 0.95rem; color: var(--text-muted);">N/A</span>';
-            // Fallback just in case someone types a plain string in the JSON later
             if (typeof item === 'string') return `<span style="font-size: 0.95rem; font-weight: 600;">${item}</span>`;
             
             return `
@@ -271,10 +284,12 @@
                 </div>
             `;
 
-            if (item.role === 'tank' && item.defensives) {
-                html += buildUtilityHTML("Defensive Priority", item.defensives);
-            } else if (item.role === 'heal' && item.cooldowns) {
-                html += buildUtilityHTML('"Oh Shit" Buttons & Cooldowns', item.cooldowns);
+            // No role restrictions here anymore! Just check if data exists.
+            if (item.defensives) {
+                html += buildUtilityHTML("Defensives & Mitigation", item.defensives);
+            }
+            if (item.cooldowns) {
+                html += buildUtilityHTML("Major Cooldowns", item.cooldowns);
             }
 
             if (item.consumes) {
