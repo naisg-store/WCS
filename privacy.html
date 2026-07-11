@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy - WoW Midnight Cheat Sheet</title>
+    <meta name="description" content="Privacy Policy for the Midnight Cheat Sheet.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface: rgba(30, 41, 59, 0.5);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container { 
+            width: 100%; 
+            max-width: 800px; 
+            flex-grow: 1; 
+        }
+
+        .header { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            margin-top: 20px; 
+        }
+
+        h1 { 
+            margin: 0 0 10px 0; 
+            font-size: 2.8rem; 
+            font-weight: 800; 
+            letter-spacing: -1px; 
+        }
+
+        .content-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            line-height: 1.7;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 40px;
+        }
+
+        .content-box h2 {
+            color: var(--accent);
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content-box h2:first-of-type { margin-top: 0; }
+        .content-box p { margin-bottom: 20px; color: var(--text-muted); }
+
+        footer {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+        .copyright { color: rgba(148, 163, 184, 0.5); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+        </div>
+
+        <div class="content-box">
+            <h2>Introduction</h2>
+            <p>[PLACEHOLDER: Insert your generated Privacy Policy introduction here. Explain what your website is and that you take user privacy seriously.]</p>
+
+            <h2>Information We Collect</h2>
+            <p>[PLACEHOLDER: Detail the types of data collected (e.g., standard server log files, IP addresses, browser types). State clearly that you do not collect personal identifying information like names or emails unless the user explicitly provides them.]</p>
+
+            <h2>Cookies and Web Beacons</h2>
+            <p>[PLACEHOLDER: Explain that the site uses cookies to store visitor preferences and optimize user experience. Mention third-party advertisers (like Google AdSense) and their use of DART cookies.]</p>
+
+            <h2>Third-Party Privacy Policies</h2>
+            <p>[PLACEHOLDER: Clarify that your Privacy Policy does not apply to other advertisers or websites, and advise users to consult the respective Privacy Policies of these third-party ad servers for more detailed information.]</p>
+
+            <h2>Consent</h2>
+            <p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Home / Cheat Sheet</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="tos.html">Terms of Service</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet. Built for the community.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
