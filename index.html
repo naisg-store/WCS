@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -100,12 +100,17 @@
         .spell-icon { width: 24px; height: 24px; border-radius: 4px; border: 1px solid var(--border); }
         .sequence-arrow { color: var(--text-muted); font-weight: 800; font-size: 1.1rem; }
 
+        /* Consumables Update */
         .consumes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
         .consume-item { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border: 1px solid var(--border); }
         .consume-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 4px; }
-        .consume-val { font-size: 0.95rem; font-weight: 600; color: var(--text-main); }
+        .buff-stat { color: #4ade80; font-size: 0.85rem; font-weight: 800; margin-top: 2px; }
         
-        .utility-text { font-size: 0.95rem; line-height: 1.6; color: var(--text-main); background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; border-left: 3px solid var(--accent); }
+        /* Defensives Update */
+        .utility-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        .utility-item { background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent); display: flex; flex-direction: column; gap: 4px; }
+        .utility-name-row { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 0.95rem; color: var(--text-main); }
+        .utility-note { font-size: 0.85rem; color: var(--text-muted); }
 
         .loading-text { text-align: center; width: 100%; color: var(--text-muted); font-size: 1.2rem; padding: 40px; }
     </style>
@@ -148,7 +153,6 @@
         const modalBody = document.getElementById('modalBody');
         const buttons = document.querySelectorAll('.filter-btn');
 
-        // Fetch the data from your new JSON file
         fetch('wow-database.json')
             .then(response => {
                 if (!response.ok) throw new Error("Network response was not ok");
@@ -156,7 +160,7 @@
             })
             .then(data => {
                 wowData = data;
-                renderCards('all'); // Build the UI once data loads
+                renderCards('all'); 
             })
             .catch(error => {
                 console.error('Error loading database:', error);
@@ -168,16 +172,13 @@
             img.src = 'https://wow.zamimg.com/images/wow/icons/small/inv_misc_questionmark.jpg';
         }
 
-        // Render the small cards
         function renderCards(filter) {
             container.innerHTML = '';
-            
             wowData.forEach((item, index) => {
                 if (filter === 'all' || item.role === filter) {
                     const card = document.createElement('div');
                     card.className = 'spec-card';
                     card.onclick = () => openModal(index);
-                    
                     const roleLabel = item.role.toUpperCase();
                     
                     card.innerHTML = `
@@ -195,7 +196,6 @@
             });
         }
 
-        // Build a visual sequence of spells
         function buildRotationHTML(title, spellArray) {
             if (!spellArray || spellArray.length === 0) return '';
             return `
@@ -212,7 +212,44 @@
             `;
         }
 
-        // Open the expanded detailed modal
+        // New utility function for cooldowns/defensives
+        function buildUtilityHTML(title, utilArray) {
+            if (!utilArray || !Array.isArray(utilArray) || utilArray.length === 0) return '';
+            return `
+                <div class="modal-section">
+                    <div class="modal-section-title">${title}</div>
+                    <div class="utility-grid">
+                        ${utilArray.map(spell => `
+                            <div class="utility-item">
+                                <div class="utility-name-row">
+                                    <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" class="spell-icon" onerror="handleImageError(this)">
+                                    ${spell.name}
+                                </div>
+                                <div class="utility-note">${spell.note}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        // New consumable rendering logic
+        function renderConsume(item) {
+            if (!item) return '<span style="font-size: 0.95rem; color: var(--text-muted);">N/A</span>';
+            // Fallback just in case someone types a plain string in the JSON later
+            if (typeof item === 'string') return `<span style="font-size: 0.95rem; font-weight: 600;">${item}</span>`;
+            
+            return `
+                <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                    <img src="https://wow.zamimg.com/images/wow/icons/small/${item.icon}.jpg" class="spell-icon" style="width: 28px; height: 28px;" onerror="handleImageError(this)">
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">${item.name}</span>
+                        <span class="buff-stat">${item.stat}</span>
+                    </div>
+                </div>
+            `;
+        }
+
         function openModal(index) {
             const item = wowData[index];
             const roleLabel = item.role.toUpperCase();
@@ -234,34 +271,22 @@
                 </div>
             `;
 
-            // Role specific utilities
             if (item.role === 'tank' && item.defensives) {
-                html += `
-                    <div class="modal-section">
-                        <div class="modal-section-title">Defensive Priority</div>
-                        <div class="utility-text">${item.defensives}</div>
-                    </div>
-                `;
+                html += buildUtilityHTML("Defensive Priority", item.defensives);
             } else if (item.role === 'heal' && item.cooldowns) {
-                html += `
-                    <div class="modal-section">
-                        <div class="modal-section-title">"Oh Shit" Buttons & Cooldowns</div>
-                        <div class="utility-text">${item.cooldowns}</div>
-                    </div>
-                `;
+                html += buildUtilityHTML('"Oh Shit" Buttons & Cooldowns', item.cooldowns);
             }
 
-            // Consumables section
             if (item.consumes) {
                 html += `
                     <div class="modal-section">
                         <div class="modal-section-title">Standard Consumables</div>
                         <div class="consumes-grid">
-                            <div class="consume-item"><div class="consume-label">Food</div><div class="consume-val">${item.consumes.food || 'N/A'}</div></div>
-                            <div class="consume-item"><div class="consume-label">Flask</div><div class="consume-val">${item.consumes.flask || 'N/A'}</div></div>
-                            <div class="consume-item"><div class="consume-label">Potion</div><div class="consume-val">${item.consumes.potion || 'N/A'}</div></div>
-                            <div class="consume-item"><div class="consume-label">Weapon Buff</div><div class="consume-val">${item.consumes.weapon || 'N/A'}</div></div>
-                            <div class="consume-item"><div class="consume-label">Other Buffs</div><div class="consume-val">${item.consumes.buffs || 'N/A'}</div></div>
+                            <div class="consume-item"><div class="consume-label">Food</div>${renderConsume(item.consumes.food)}</div>
+                            <div class="consume-item"><div class="consume-label">Flask</div>${renderConsume(item.consumes.flask)}</div>
+                            <div class="consume-item"><div class="consume-label">Potion</div>${renderConsume(item.consumes.potion)}</div>
+                            <div class="consume-item"><div class="consume-label">Weapon Buff</div>${renderConsume(item.consumes.weapon)}</div>
+                            <div class="consume-item"><div class="consume-label">Other Buffs</div>${renderConsume(item.consumes.buffs)}</div>
                         </div>
                     </div>
                 `;
@@ -269,10 +294,9 @@
 
             modalBody.innerHTML = html;
             modalOverlay.classList.add('open');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden'; 
         }
 
-        // Close logic
         function forceCloseModal() {
             modalOverlay.classList.remove('open');
             document.body.style.overflow = 'auto';
@@ -281,7 +305,6 @@
             if (event.target === modalOverlay) forceCloseModal();
         }
 
-        // Filter Logic
         window.filterSpecs = function(role) {
             buttons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
