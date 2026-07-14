@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fury Warrior Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Deep dive into Fury Warrior stat priorities, rotation nuance, and Mythic+ utility for World of Warcraft: Midnight Patch 12.0.7.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface: rgba(30, 41, 59, 0.5);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+            --role-dps: #ef4444;
+        }
+
+        body {
+            margin: 0; padding: 40px 20px;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+            background-attachment: fixed;
+            color: var(--text-main); font-family: 'Inter', sans-serif;
+            display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 800px; flex-grow: 1; }
+        .header { text-align: center; margin-bottom: 40px; margin-top: 20px; }
+        h1 { margin: 0 0 10px 0; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; }
+        .role-badge { display: inline-block; background: rgba(239, 68, 68, 0.2); color: var(--role-dps); border: 1px solid var(--role-dps); font-size: 0.8rem; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; font-weight: 800; margin-bottom: 20px; }
+
+        .content-box {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 16px; padding: 40px; backdrop-filter: blur(10px);
+            line-height: 1.7; font-size: 1.05rem; color: var(--text-main); margin-bottom: 40px;
+        }
+
+        .content-box h2 { color: var(--accent); font-size: 1.4rem; font-weight: 800; margin-top: 30px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .content-box h2:first-of-type { margin-top: 0; }
+        .content-box p { margin-bottom: 20px; color: var(--text-muted); }
+        .content-box strong { color: var(--text-main); }
+
+        .cta-box { background: rgba(99, 102, 241, 0.1); border: 1px solid var(--accent); padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px; }
+        .cta-box a { color: #fff; background: var(--accent); padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; transition: background 0.2s; }
+        .cta-box a:hover { background: #4f46e5; }
+
+        footer { width: 100%; max-width: 800px; text-align: center; padding-top: 20px; border-top: 1px solid var(--border); margin-top: 20px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent); }
+        .copyright { color: rgba(148, 163, 184, 0.5); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="role-badge">Melee DPS</span>
+            <h1>Fury Warrior: Patch 12.0.7 Guide</h1>
+        </div>
+
+        <div class="content-box">
+            <h2>The Meta Context: Why Fury Thrives in Midnight</h2>
+            <p>World of Warcraft: Midnight has fundamentally shifted the way melee DPS operate in high-level Mythic+ and progression raiding. With Patch 12.0.7, the game demands incredibly high Actions Per Minute (APM) and zero-downtime target swapping. Fury Warrior answers this call perfectly. Unlike specs that rely heavily on complex setup windows or punishing dot-management, Fury operates on a system of pure, unadulterated momentum. Once your Enrage is rolling, your sustained Cleave damage profile makes you an invaluable asset on fortified weeks and dense trash pulls. The skill ceiling right now isn't about learning a complex opener; it’s about maintaining perfect global cooldown usage while navigating lethal ground mechanics.</p>
+
+            <h2>Stat Analysis: The Haste Engine</h2>
+            <p>If you look at our quick-reference tool, you'll see the stat priority is firmly cemented as <strong>Haste > Crit > Mastery</strong>. Let's break down exactly why.</p>
+            <p>For a Fury Warrior, Haste is the engine that drives your entire kit. It lowers your Global Cooldown (GCD), reduces the cooldown of Bloodthirst and Raging Blow, and most importantly, increases your auto-attack speed. Because your auto-attacks generate rage, higher Haste means faster Rampage casts, which ultimately means higher Enrage uptime. You want to push Haste until you feel the rotation flow without any dead globals. After Haste, Critical Strike provides the best synergistic scaling by forcing Enrage procs off Bloodthirst and boosting the raw output of your high-frequency strikes.</p>
+
+            <h2>Rotation Nuance: Riding the Rage</h2>
+            <p>A common trap for newer Fury Warriors in 12.0.7 is over-capping rage or clipping their Enrage windows. Your entire single-target and AoE priority revolves around casting <strong>Rampage</strong>. You should never delay Rampage if you have the rage for it unless you are in the middle of a specific execute phase transition. </p>
+            <p>In AoE situations, Whirlwind is your enabler, not your primary damage source. Using Whirlwind causes your next few single-target attacks to strike additional targets. The "pro-tip" for 12.0.7 is to weave Rampage into these cleave windows. Ensure that you aren't wasting a Whirlwind charge on a low-damage filler spell when you could be cleaving a fully buffed Rampage across four enemies.</p>
+
+            <h2>Utility & Survival: More Than Just Damage</h2>
+            <p>Dead DPS do zero damage. In the current patch, unavoidable raid-wide damage events are frequent. A top-tier Fury Warrior uses <strong>Enraged Regeneration</strong> proactively, combining it with Bloodthirst to top their own health bar without relying on the healer. Furthermore, <strong>Spell Reflection</strong> is one of the most powerful and underutilized defensive tools in the game. Knowing which boss abilities can be reflected mitigates massive damage and bounces it right back to the boss. Always coordinate <strong>Rallying Cry</strong> with your raid leader—it is a critical external cooldown that can save a progression pull.</p>
+
+            <div class="cta-box">
+                <p>Need the quick version during a raid? Check the live tool for instant stat weights and consumable lists.</p>
+                <a href="index.html">Open the Cheat Sheet</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="tos.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet. Built for the community.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
