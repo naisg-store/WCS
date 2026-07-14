@@ -26,7 +26,7 @@
             display: flex; flex-direction: column; align-items: center; min-height: 100vh;
         }
 
-        .container { width: 100%; max-width: 800px; flex-grow: 1; }
+        .container { width: 100%; max-width: 800px; flex-grow: 1; margin-top: 30px; /* Gives breathing room under the sticky header */}
         .header { text-align: center; margin-bottom: 40px; margin-top: 20px; }
         h1 { margin: 0 0 10px 0; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; }
         .role-badge { display: inline-block; background: rgba(59, 130, 246, 0.2); color: var(--role-tank); border: 1px solid var(--role-tank); font-size: 0.8rem; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; font-weight: 800; margin-bottom: 20px; }
@@ -51,10 +51,198 @@
         .footer-links a { color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
         .footer-links a:hover { color: var(--accent); }
         .copyright { color: rgba(148, 163, 184, 0.5); font-size: 0.8rem; }
+        /* Navigation Header Styles */
+.site-header {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--text-main);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.arrow {
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+}
+
+/* Dropdown Menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 8px 0;
+    margin: 10px 0 0 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--text-main);
+    background: rgba(99, 102, 241, 0.15);
+}
+
+/* Nested Dropdown for Guides */
+.nested-dropdown {
+    position: relative;
+}
+
+.nested-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0 0 0 5px;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: all 0.25s ease;
+}
+
+.nested-dropdown:hover .nested-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Mobile responsive fixes */
+@media (max-width: 768px) {
+    .nested-menu {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        background: rgba(0,0,0,0.2);
+        margin: 5px 10px;
+    }
+}
     </style>
 </head>
 <body>
 
+    <header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            <ul class="nested-menu">
+                                <li><a href="guide-fury-warrior.html">Fury Warrior</a></li>
+                                <li><a href="guide-prot-warrior.html">Protection Warrior</a></li>
+                                <li><a href="guide-ret-paladin.html">Retribution Paladin</a></li>
+                                <li><a href="guide-devourer-dh.html">Devourer Demon Hunter</a></li>
+                                <li><a href="guide-bm-hunter.html">Beast Mastery Hunter</a></li>
+                                <li><a href="guide-unholy-dk.html">Unholy Death Knight</a></li>
+                                <li><a href="guide-frost-mage.html">Frost Mage</a></li>
+                                <li><a href="guide-destro-warlock.html">Destruction Warlock</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
     <div class="container">
         <div class="header">
             <span class="role-badge">Heavy Tank</span>
