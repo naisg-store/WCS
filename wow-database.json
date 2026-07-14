@@ -11,8 +11,33 @@
     "rotationST": [ {"name": "Remorseless", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Obliterate", "icon": "spell_deathknight_classicon"}, {"name": "Frost Strike", "icon": "spell_deathknight_empowerruneblade2"} ],
     "rotationAoE": [ {"name": "Howling Blast", "icon": "spell_frost_arcticwinds"}, {"name": "Remorseless", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Frostscythe", "icon": "spell_frost_cleave"} ],
     "cooldowns": [ {"name": "Pillar of Frost", "icon": "ability_deathknight_pillaroffrost", "note": "Massive Strength Burst"}, {"name": "Empower Rune Weapon", "icon": "inv_sword_62", "note": "Haste & Rune Regen"} ],
-    "consumes": {"food": {"name": "Light's Potential (Feast)", "stat": "+1,390 Primary Stat", "icon": "inv_misc_food_chefhat" }, "flask": {"name": "Flask of Alchemical Chaos", "icon": "inv_alchemy_70_flask01", "stat": "+210 Random Stat"}, "potion": {"name": "Potion of Ultimate Power", "icon": "inv_alchemy_70_potion01", "stat": "Massive Stat Burst"}, "weapon": {"name": "Buzzing Rune", "icon": "inv_misc_rune_04", "stat": "+45 Critical Strike"}, "buffs": {"name": "Crystallized Augment Rune", "icon": "inv_misc_rune_06", "stat": "+85 Primary Stat"} }
-  },
+    "consumes": {
+        "food": {
+          "name": "Royal Roast",
+          "stat": "+Strength / Haste",
+          "icon": "inv_food_meat_08"
+        },
+        "flask": {
+          "name": "Flask of the Shattered Sun",
+          "stat": "+Critical Strike",
+          "icon": "inv_alchemy_elixir_01"
+        },
+        "potion": {
+          "name": "Light's Potential",
+          "stat": "+Strength / High Burst",
+          "icon": "inv_potion_108"
+        },
+        "weapon": {
+          "name": "Thalassian Phoenix Oil",
+          "stat": "Crit & Haste Procs",
+          "icon": "inv_potion_100"
+        },
+        "buffs": {
+          "name": "Void-Touched Augment Rune",
+          "stat": "+Primary Stat",
+          "icon": "inv_misc_rune_10"
+        }
+      },
   {
     "class": "Death Knight", "spec": "Unholy", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Mastery boosts pet damage and wound bursts.",
     "rotationST": [ {"name": "Outbreak", "icon": "spell_deathknight_outbreak"}, {"name": "Apocalypse", "icon": "spell_deathknight_apocalypse"}, {"name": "Death Coil", "icon": "spell_shadow_deathcoil"} ],
