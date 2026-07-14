@@ -295,13 +295,63 @@
     "rotationST": [ {"name": "Bloodthirst", "icon": "ability_warrior_bloodthirst"}, {"name": "Rampage", "icon": "ability_warrior_rampage"}, {"name": "Raging Blow", "icon": "ability_hunter_swiftstrike"} ],
     "rotationAoE": [ {"name": "Whirlwind", "icon": "ability_whirlwind"}, {"name": "Rampage", "icon": "ability_warrior_rampage"}, {"name": "Bloodthirst", "icon": "ability_warrior_bloodthirst"} ],
     "cooldowns": [ {"name": "Recklessness", "icon": "ability_warrior_urgetochaos", "note": "Major Crit & Rage Boost"}, {"name": "Enraged Regeneration", "icon": "ability_warrior_focusedrage", "note": "Self-heal & Mitigation"} ],
-    "consumes": {"food": {"name": "Light's Potential (Feast)", "stat": "+1,390 Primary Stat", "icon": "inv_misc_food_chefhat" }, "flask": {"name": "Flask of Alchemical Chaos", "icon": "inv_alchemy_70_flask01", "stat": "+210 Random Stat"}, "potion": {"name": "Potion of Ultimate Power", "icon": "inv_alchemy_70_potion01", "stat": "Massive Stat Burst"}, "weapon": {"name": "Weighstone", "icon": "inv_stone_04", "stat": "+45 Attack Power"}, "buffs": {"name": "Crystallized Augment Rune", "icon": "inv_misc_rune_06", "stat": "+85 Primary Stat"} }
-  },
+    "consumes": {
+      "food": {
+        "name": "Blooming Feast",
+        "stat": "Best Primary Stat [Alt: Champion's Bento]",
+        "icon": "inv_food_festive_feast"
+      },
+      "flask": {
+        "name": "Flask of the Magisters",
+        "stat": "+Mastery [Alt: Flask of the Blood Knights]",
+        "icon": "inv_alchemy_elixir_04"
+      },
+      "potion": {
+        "name": "Light's Potential",
+        "stat": "+Strength Burst [Alt: Potion of Recklessness]",
+        "icon": "inv_potion_108"
+      },
+      "weapon": {
+        "name": "Thalassian Phoenix Oil",
+        "stat": "Crit & Haste Procs",
+        "icon": "inv_potion_100"
+      },
+      "buffs": {
+        "name": "Void-Touched Augment Rune",
+        "stat": "+Primary Stat",
+        "icon": "inv_misc_rune_10"
+      }
+    },
   {
     "class": "Warrior", "spec": "Protection", "role": "tank", "stats": "Haste > Vers > Mastery", "notes": "Haste reduces Shield Block recharge time.",
     "rotationST": [ {"name": "Shield Slam", "icon": "inv_shield_05"}, {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"} ],
     "rotationAoE": [ {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"}, {"name": "Shield Slam", "icon": "inv_shield_05"} ],
     "defensives": [ {"name": "Shield Block", "icon": "ability_defend", "note": "Blocks melee attacks"}, {"name": "Ignore Pain", "icon": "ability_warrior_renewedvigor", "note": "Absorbs damage"}, {"name": "Shield Wall", "icon": "ability_warrior_shieldwall", "note": "Major Mitigation"} ],
-    "consumes": {"food": {"name": "Light's Potential (Feast)", "stat": "+1,390 Primary Stat", "icon": "inv_misc_food_chefhat" }, "flask": {"name": "Flask of the Earth", "icon": "inv_alchemy_70_flask02", "stat": "+315 Stamina"}, "potion": {"name": "Potion of Bursting Blood", "icon": "inv_alchemy_70_potion02", "stat": "Burst Heal & Armor"}, "weapon": {"name": "Weighstone", "icon": "inv_stone_04", "stat": "+45 Attack Power"}, "buffs": {"name": "Crystallized Augment Rune", "icon": "inv_misc_rune_06", "stat": "+85 Primary Stat"} }
-  }
+    "consumes": {
+      "food": {
+        "name": "Silvermoon Parade",
+        "stat": "Primary Stat [Alt: Harandar Celebration]",
+        "icon": "inv_food_festive_feast"
+      },
+      "flask": {
+        "name": "Flask of the Blood Knights",
+        "stat": "+Versatility",
+        "icon": "inv_alchemy_elixir_03"
+      },
+      "potion": {
+        "name": "Draught of Rampant Abandon",
+        "stat": "Tank Burst [Alt: Light's Potential]",
+        "icon": "inv_alchemy_80_potionofagility_purple"
+      },
+      "weapon": {
+        "name": "Thalassian Phoenix Oil",
+        "stat": "Crit & Haste Procs",
+        "icon": "inv_potion_100"
+      },
+      "buffs": {
+        "name": "Void-Touched Augment Rune",
+        "stat": "+Primary Stat",
+        "icon": "inv_misc_rune_10"
+      }
+    }
 ]
