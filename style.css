@@ -449,4 +449,26 @@ footer {
         margin: 5px 10px;
         min-width: calc(100% - 20px);
     }
+   
+   /* ==========================================================================
+   9. RESPONSIVE IMAGES
+   ========================================================================== */
+.guide-image-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 12px; /* Softens the corners of the image container */
+}
+
+.guide-feature-image {
+    max-width: 100%; /* Prevents the image from growing larger than its container */
+    height: auto;     /* Maintains the correct, un-stretched aspect ratio */
+    display: block;
+    object-fit: contain; /* Ensures the image scales down cleanly if needed */
+}
+   
 }
