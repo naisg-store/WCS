@@ -462,6 +462,7 @@ footer {
     margin: 20px 0;
     overflow: hidden;
     border-radius: 12px; /* Softens the corners of the image container */
+   object-fit: contain;
 }
 
 .guide-feature-image {
