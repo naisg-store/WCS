@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retribution Paladin Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Bring the light to the void with our Retribution Paladin guide for Patch 12.0.7. Optimal rotations, stat priorities, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #F48CBA; /* Paladin Pink */
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .site-header {
+            background: #020617;
+            padding: 1rem 0;
+            border-bottom: 1px solid #334155;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .role-badge {
+            background: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        h1 { font-size: 2.5rem; margin-top: 10px; }
+        h2 { color: var(--primary-color); border-bottom: 1px solid #334155; padding-bottom: 10px; margin-top: 40px; }
+        .content-box {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        .cta-box {
+            margin-top: 40px;
+            padding: 20px;
+            background: #0f172a;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+        .cta-box a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 800;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+        .footer-links { margin-bottom: 10px; }
+        .footer-links a { color: var(--text-muted); margin: 0 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="guide-ret-paladin.html" class="nav-link">Guides</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Melee DPS</span>
+        <h1>Retribution Paladin: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context: Holy Fire in the Void</h2>
+        <p>In <i>World of Warcraft: Midnight</i>, Retribution Paladins have emerged as one of the most consistent and reliable melee DPS specs. Patch 12.0.7 has further refined the "Templar" and "Herald of the Sun" Hero Talent paths, offering players a choice between heavy single-target burst and sustained radiant cleave. Retribution's strength lies in its incredible utility and ease of execution. While other specs might struggle with complex setups, Retribution delivers high-impact damage with a robust defensive kit that makes them invaluable in both Mythic+ and raid progression.</p>
+
+        <!-- Suggested Image: A Retribution Paladin wielding a glowing Ashbringer, casting Wake of Ashes against a backdrop of void-touched enemies -->
+        <div style="background: #020617; padding: 20px; text-align: center; border-radius: 8px; margin: 20px 0; border: 1px dashed var(--primary-color);">
+            <p style="color: var(--text-muted); font-style: italic;">[Suggested Image: A cinematic shot of a Retribution Paladin unleashing a Hammer of Light, illuminating a dark Midnight dungeon]</p>
+        </div>
+
+        <h2>Stat Analysis: The Balance of Radiance</h2>
+        <p>For Patch 12.0.7, the stat priority for Retribution remains relatively stable, though your choice of Hero Talent can slightly influence the weights. Generally, you should aim for:</p>
+        <p style="text-align: center; font-size: 1.2rem;"><strong>Strength > Haste > Mastery > Critical Strike > Versatility</strong></p>
+        <p><strong>Haste</strong> is your most important secondary stat as it reduces the cooldown of your primary Holy Power generators and your Global Cooldown. You want enough Haste to ensure your rotation feels fluid and your <strong>Radiant Glory</strong> windows are maximized. <strong>Mastery (Hand of Light)</strong> is a close second, as it increases all Holy damage dealt, which is the vast majority of your output. Critical Strike is valuable but often comes naturally from gear, while Versatility remains a solid but unexciting choice for pure throughput.</p>
+
+        <h2>Rotation Nuance: Spending Wisely</h2>
+        <p>The Retribution rotation in 12.0.7 revolves around efficient Holy Power management. Your goal is to never over-cap Holy Power while ensuring you always have enough for your big spenders during <strong>Execution Sentence</strong> or <strong>Final Reckoning</strong> windows. </p>
+        <p>A key nuance in the current patch is the interaction between <strong>Wake of Ashes</strong> and your Hero Talents. If you are playing as a <strong>Templar</strong>, your Wake of Ashes transforms into <strong>Hammer of Light</strong>, which deals massive damage and should be used as soon as possible. The "pro-tip" for 12.0.7 is to track your <strong>Art of War</strong> procs closely—resetting your Blade of Justice is the key to maintaining high Holy Power generation and maximizing your uptime on <strong>Final Verdict</strong>.</p>
+
+        <h2>Utility & Survival: The Ultimate Support</h2>
+        <p>Retribution Paladins are the kings of utility. <strong>Blessing of Protection</strong>, <strong>Blessing of Sacrifice</strong>, and <strong>Blessing of Freedom</strong> can completely negate mechanics that would kill other players. In Patch 12.0.7, proactive use of <strong>Divine Shield</strong> and <strong>Shield of Vengeance</strong> allows you to stay in the fight during high-damage events. Don't forget <strong>Lay on Hands</strong>—it's a literal life-saver that can turn a wipe into a kill. Your <strong>Intercession</strong> (combat res) is also a critical tool that every raid team relies on.</p>
+
+        <div class="cta-box">
+            <p>Need the exact talent codes for the current meta? Our live tool has the top-simming builds for every encounter.</p>
+            <a href="index.html">Open the Midnight Cheat Sheet</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet. Built for the Silver Hand.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
