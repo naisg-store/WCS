@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protection Warrior Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Comprehensive Protection Warrior tanking guide for WoW Midnight 12.0.7. Learn mitigation tactics, stat scaling, and rotation priorities.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface: rgba(30, 41, 59, 0.5);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #6366f1;
+            --role-tank: #3b82f6;
+        }
+
+        body {
+            margin: 0; padding: 40px 20px;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15), transparent 25%),
+                              radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 25%);
+            background-attachment: fixed;
+            color: var(--text-main); font-family: 'Inter', sans-serif;
+            display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+        }
+
+        .container { width: 100%; max-width: 800px; flex-grow: 1; }
+        .header { text-align: center; margin-bottom: 40px; margin-top: 20px; }
+        h1 { margin: 0 0 10px 0; font-size: 2.8rem; font-weight: 800; letter-spacing: -1px; }
+        .role-badge { display: inline-block; background: rgba(59, 130, 246, 0.2); color: var(--role-tank); border: 1px solid var(--role-tank); font-size: 0.8rem; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; font-weight: 800; margin-bottom: 20px; }
+
+        .content-box {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 16px; padding: 40px; backdrop-filter: blur(10px);
+            line-height: 1.7; font-size: 1.05rem; color: var(--text-main); margin-bottom: 40px;
+        }
+
+        .content-box h2 { color: var(--accent); font-size: 1.4rem; font-weight: 800; margin-top: 30px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+        .content-box h2:first-of-type { margin-top: 0; }
+        .content-box p { margin-bottom: 20px; color: var(--text-muted); }
+        .content-box strong { color: var(--text-main); }
+
+        .cta-box { background: rgba(99, 102, 241, 0.1); border: 1px solid var(--accent); padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px; }
+        .cta-box a { color: #fff; background: var(--accent); padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 10px; transition: background 0.2s; }
+        .cta-box a:hover { background: #4f46e5; }
+
+        footer { width: 100%; max-width: 800px; text-align: center; padding-top: 20px; border-top: 1px solid var(--border); margin-top: 20px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent); }
+        .copyright { color: rgba(148, 163, 184, 0.5); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span class="role-badge">Heavy Tank</span>
+            <h1>Protection Warrior: Patch 12.0.7 Guide</h1>
+        </div>
+
+        <div class="content-box">
+            <h2>The Meta Context: The Unbreakable Wall</h2>
+            <p>If you want to be the undisputed master of physical mitigation in Patch 12.0.7, you play a Protection Warrior. The Midnight expansion introduced dungeon mechanics that heavily punish tanks who let their active mitigation fall off even for a second. Protection stands tall in the current meta because its damage profile is highly consistent, and its toolkit is built around preventing damage before it ever hits your health pool, rather than healing it back up afterward. A well-played Protection Warrior gives healers incredible peace of mind, smoothing out the damage spikes that otherwise wipe groups in high Mythic+ keys.</p>
+
+            <h2>Stat Analysis: Scaling the Shield</h2>
+            <p>The golden rule for Protection in the Midnight expansion is <strong>Haste > Versatility > Crit</strong>. As a tank, your survival is intrinsically tied to how often you can press Shield Block.</p>
+            <p>Haste is your absolute best stat because it directly reduces the cooldown and recharge time of Shield Block, while simultaneously speeding up your GCDs to allow for more Shield Slam resets. Once you hit a comfortable Haste breakpoint where your Shield Block uptime approaches 100% during active melee combat, Versatility takes over as the premier passive damage reduction and healing amplifier. Critical Strike holds some value due to Parry scaling, but it is heavily subjected to diminishing returns compared to the flat, reliable mitigation of Versatility.</p>
+
+            <h2>Rotation Nuance: Managing the Rage Economy</h2>
+            <p>Protection Warrior is an exercise in resource management. Your offensive rotation fuels your defensive survival. <strong>Shield Slam</strong> is your highest priority button—always press it when it is available, and watch for procs that reset its cooldown. </p>
+            <p>The true mark of an expert tank in 12.0.7 is how they spend their rage. <strong>Shield Block</strong> must be maintained against any physical attackers. Once Block is active, excess rage is dumped into <strong>Ignore Pain</strong>. Never macro these abilities together; they serve distinct purposes. Ignore Pain is your primary tool for surviving unavoidable magic damage, which bypasses your shield. In massive AoE pulls, use Thunder Clap on cooldown to maintain the Demoralizing Shout debuff (via talents) and dump rage into Revenge to hold threat.</p>
+
+            <h2>Utility & Survival: Leading the Charge</h2>
+            <p>You dictate the pace of the dungeon. <strong>Shield Wall</strong> is your ultimate panic button, providing massive damage reduction for lethal tankbusters. However, the best Prot Warriors rotate smaller cooldowns effectively to ensure they never actually need to panic. Use <strong>Demoralizing Shout</strong> aggressively on large trash packs—it acts as a fast, reliable AoE mitigation tool. Furthermore, your mobility is a defensive asset. Heroic Leap and Intervene allow you to kite deadly enraged mobs or instantly reposition bosses out of hazardous ground effects. Control the battlefield, and your group will succeed.</p>
+
+            <div class="cta-box">
+                <p>For a quick breakdown of your consumables and on-the-fly talent priorities, reference our live database.</p>
+                <a href="index.html">Open the Cheat Sheet</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="tos.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet. Built for the community.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
