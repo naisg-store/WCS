@@ -246,6 +246,20 @@ p {
     transform: translateX(0);
 }
 
+/* Position the 3rd-level class menu to pop out to the right */
+.nested-dropdown-class {
+    position: relative;
+}
+.nested-dropdown-class .class-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.nested-dropdown-class:hover .class-menu {
+    display: block;
+}
+
 /* ==========================================================================
    4. HOME CHEAT SHEET STYLES (SPECS GRID & MODAL)
    ========================================================================== */
