@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survival Hunter Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Survival Hunter guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Melee DPS</span>
+        <h1>Survival Hunter: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of the Midnight expansion, Survival Hunter firmly establishes itself as a highly aggressive, fast-paced melee DPS specialist. Combining structural physical strikes with coordinated explosive trap distributions and deep pet integration, the spec excels at high-sustained cleave and priority target execution. Survival’s mechanical value shifts dynamically through its distinct Hero Talent paths: <strong>Pack Leader</strong> creates immense structural synergy between the Hunter and their primary companion, amplifying direct attack vectors and pet commands, while <strong>Sentinel</strong> introduces nature-touched arcane properties that continuously chip away at group pulls. With exceptional mid-range flexibility and mandatory defensive elements like Aspect of the Turtle and Exhilaration, Survival secure a premier pick for competitive team architectures.</p>
+
+        <div class="guide-image-container">
+            <img src="images/hunter-survival.png" alt="Survival Hunter Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A crisp, 4k game-engine screenshot of a male High Elf Survival Hunter leaping forward in a dark, foggy fantasy forest. The hunter is mid-swing with a dual-bladed physical polearm crackling with wild flame energy, accompanied by a realistic sabercat pet tearing through mechanical sentinels. High asset fidelity, cinematic moonlight cast, zero user interface elements. -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Balancing your secondary stats ensures that your melee resource loops cycle seamlessly without dropping focus velocity or ability pacing.</p>
+        <ul>
+            <li><strong>Agility:</strong> Your primary stat baseline. Linearly increases the raw attack power and baseline damage multipliers of every physical strike and pet utility command in your kit.</li>
+            <li><strong>Haste:</strong> Accelerates your auto-attack velocity, lowers global cooldown constraints, and reduces the recast recovery timers of primary Focus generators, allowing rapid execution loops.</li>
+            <li><strong>Critical Strike:</strong> Grants your physical maneuvers and explosive trap ticks a passive chance to land double damage impacts, scaling heavily with baseline passive reset traits.</li>
+            <li><strong>Mastery (Mastery: Spirit Bond):</strong> Linearly amplifies the damage output of both the Hunter and their active pet companions, while providing a baseline percentage passive health regeneration effect.</li>
+            <li><strong>Versatility:</strong> Yields a flat percentage increase to all outgoing damage vectors while directly mitigating personal incoming damage, building an essential survival floor for high-key mythic environments.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Survival gameplay centers around managing Focus generation through Kill Command, maintaining active bleed and bomb dots, and dumping resources cleanly via Mongoose Bite.</p>
+
+        <h3>Single-Target Combat Priority</h3>
+        <ol>
+            <li>Cast <strong>Coordinated Assault</strong> strictly on cooldown during major group burst windows.</li>
+            <li>Cast <strong>Kill Command</strong> continuously to generate Focus and reset active ability windows. Do not allow your Focus pool to starve.</li>
+            <li>Apply and maintain <strong>Serpent Sting</strong> (or specialized poison indicators) on the target.</li>
+            <li>Cast <strong>Wildfire Bomb</strong> on cooldown to maintain heavy explosive damage-over-time applications.</li>
+            <li>Spend your Focus by casting <strong>Mongoose Bite</strong> (or Raptor Strike). When talented into Mongoose Fury, chain subsequent Mongoose Bites consecutively to stack up the damage amplification modifier.</li>
+            <li>Use <strong>Kill Shot</strong> whenever active execute thresholds drop targets below 20% health or when procs trigger its instant use.</li>
+            <li>Use <strong>Flanking Strike</strong> on cooldown to close gaps and generate high baseline Focus bursts.</li>
+        </ol>
+
+        <h3>AoE & Multi-Target Priority</h3>
+        <ol>
+            <li>Launch <strong>Wildfire Bomb</strong> directly into the center of the enemy cluster to secure initial multi-target pressure.</li>
+            <li>Cast <strong>Carve</strong> (or Butchery) to execute sweeping frontal arcs, sweeping across all tightly grouped threats and reducing the remaining cooldown of Wildfire Bomb per target struck.</li>
+            <li>Maintain <strong>Kill Command</strong> input cycles to guarantee rapid resource velocity across the pull.</li>
+            <li>Spread your active damage-over-time elements by tracking priority sub-targets inside the pack.</li>
+            <li>Weave in instant active traps like <strong>Explosive Trap</strong> to quickly clear remaining health pools.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Maximize your damage output in Patch 12.0.7 by optimizing your kit with these essential consumables and item enhancements.</p>
+        <ul>
+            <li><strong>Flask:</strong> Flask of Alchemical Chaos (or an equivalent pure Agility alternative).</li>
+            <li><strong>Potion:</strong> Tempered Potion for stat spikes, or Algari Burst Potion matched with bloodlust windows.</li>
+            <li><strong>Food Buffet:</strong> Feast of the Divine Day for a heavy Agility boost.</li>
+            <li><strong>Weapon Enchant:</strong> Enchant Weapon - Authority of Radiant Power (or specialized agility weights).</li>
+            <li><strong>Gems & Ring Enchants:</strong> Radiant Haste or Radiant Critical Strike configurations to achieve optimal pacing thresholds.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
