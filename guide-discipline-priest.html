@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discipline Priest Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Discipline Priest guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Healer</span>
+        <h1>Discipline Priest: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of the Midnight expansion, Discipline Priest cements its place as a top-tier burst healer for structured PvE environments. By converting damage into high-throughput group healing through the Atonement mechanic, Discipline offers unmatched value during predictable, high-damage raid encounters and demanding Mythic+ keys. The spec thrives by choosing between its distinctive Hero Talent paths, which further hone its toolkit: <strong>Voidweaver</strong> introduces heavy shadow integration to turn regular damage phases into devastating rifts, while <strong>Oracle</strong> grants predictive utility and flexible pre-planning for complex combat sequences. Its performance remains exceptional when paired with groups that coordinate burst windows around its damage-to-healing ramps.</p>
+
+        <div class="guide-image-container">
+            <img src="images/priest-discipline.png" alt="Discipline Priest Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A crisp, 4k game-engine screenshot of a male human Discipline Priest in ornate white and gold vestments casting Penance inside a dark, gothic cathedral. Bright golden streams of holy light flare from his hands towards an unseen target, casting realistic shadows on the stone floor. Genuine World of Warcraft assets, high fidelity, unedited UI-less capture. -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Balancing your stats correctly is crucial to ensuring your damage translates into adequate healing bursts without draining your mana prematurely.</p>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat. Increases all spell damage and healing output across the board. Always prioritize higher item-level gear for the Intellect increase.</li>
+            <li><strong>Haste:</strong> Accelerates your spell casting time, shortens the global cooldown (GCD), and ticks your damage-over-time effects faster. Crucial for establishing Atonement applications quickly before a major damage phase.</li>
+            <li><strong>Critical Strike:</strong> Grants your damage and healing spells a chance to deal double their value. Because Atonement transfers double the healing on critical damage hits, this provides massive passive throughput increases.</li>
+            <li><strong>Mastery (Mastery: Grace):</strong> Increases the healing and absorption done to targets who already have the Atonement buff active. Highly valuable in raids, though slightly less flexible than Haste in high-movement scenarios.</li>
+            <li><strong>Versatility:</strong> Provides a flat increase to all damage and healing done while decreasing damage taken. A solid secondary stat for high-tier Mythic+ keys where personal survival is constantly tested.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Discipline's gameplay is divided into establishing Atonement windows and executing your damage priority to trigger massive team-wide healing.</p>
+        
+        <h3>Single-Target & Healing Ramp Priority</h3>
+        <ol>
+            <li>Apply and maintain <strong>Purge the Wicked</strong> (or Shadow Word: Pain) on the primary target.</li>
+            <li>Apply <strong>Atonement</strong> to damaged allies or the party using <strong>Power Word: Shield</strong> or <strong>Renew</strong> (or Power Word: Radiance for quick multi-target application).</li>
+            <li>Cast <strong>Power Word: Solace</strong> or <strong>Mind Blast</strong> on cooldown to generate mana and trigger burst Atonement healing.</li>
+            <li>Cast <strong>Penance</strong> on cooldown, preferably defensively if an ally needs emergency single-target health, but primarily offensively to maximize Atonement transfers.</li>
+            <li>Use <strong>Smite</strong> as your filler spell to maintain consistent damage output and steady healing when major cooldowns are unavailable.</li>
+        </ol>
+
+        <h3>AoE & Burst Damage Priority</h3>
+        <ol>
+            <li>Pre-apply Atonement to the entire party using two charges of <strong>Power Word: Radiance</strong> right before predictable group-wide damage hits.</li>
+            <li>Activate <strong>Evangelism</strong> (if talented in raid settings) to extend the duration of all active Atonements.</li>
+            <li>Cast <strong>Power Word: Kill</strong> or launch your Hero Talent capstones (such as Void Rift if playing Voidweaver).</li>
+            <li>Execute an offensive <strong>Penance</strong>, allowing the bolts to damage clustered enemies.</li>
+            <li>Spread <strong>Purge the Wicked</strong> across multiple targets using Penance bolts or manual applications to ensure multi-target Atonement ticking.</li>
+            <li>Fill remaining windows with <strong>Halo</strong> or <strong>Divine Star</strong> to burst heal nearby allies instantly.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Optimize your performance in Midnight's endgame content by ensuring your gear and character are fully augmented with top-tier consumables.</p>
+        <ul>
+            <li><strong>Flask:</strong> Flask of Alchemical Chaos (or spec-specific Intellect flasks).</li>
+            <li><strong>Potion:</strong> Tempered Potion for stat spikes, or Algari Mana Potion for long raid encounters.</li>
+            <li><strong>Food Buffet:</strong> Feast of the Divine Day for a heavy Intellect boost.</li>
+            <li><strong>Weapon Enchant:</strong> Enchant Weapon - Authority of Radiant Power.</li>
+            <li><strong>Gems & Ring Enchants:</strong> Radiant Haste or Radiant Critical Strike configurations to achieve target breakpoints.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
