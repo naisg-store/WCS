@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guardian Druid Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Guardian Druid guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arc-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="hero-parallax-banner" style="background-image: url('images/druid-guardian.png');"></div>
+<!-- AI Art Prompt Suggestion: A highly detailed, realistic game-engine screenshot (no UI) of a Guardian Druid in Bear Form in World of Warcraft, unleashing a mighty roar while surrounded by a thick, glowing terrestrial shield. The scene is set in a dark, Void-corrupted elven forest, showing massive physical bulk clashing with ethereal void tendrils. Authentic lighting, sharp textures, 4k resolution, dark fantasy aesthetic. -->
+	
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Tank</span>
+        <h1>Guardian Druid: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In World of Warcraft: Midnight (Patch 12.0.7), Guardian Druids stand as unyielding bastions of physical mitigation and massive health pools. Enhanced by the <strong>Druid of the Claw</strong> Hero Talent tree, their ability to sustain tremendous amounts of AoE threat while seamlessly weaving robust physical defensives makes them highly sought after for pushing high-level Mythic+ keys. While their magic mitigation still requires proactive planning compared to some other tanks, their raw self-healing through Frenzied Regeneration and relentless damage output via thrash and raze solidify their place as a premier meta tank in the Void-corrupted endgame.</p>
+
+        <div class="hero-parallax-banner" style="background-image: url('images/druid-guardian.png');"></div>
+        <!-- AI Art Prompt Suggestion: A high-fidelity, dramatic game-engine screenshot of a massive Guardian Druid Bear Form deflecting a heavy magical attack with glowing ethereal barkskin active. Cinematic lighting, intense action sequence, 4k resolution, dark fantasy aesthetic. -->
+
+        <h2>Stat Priority</h2>
+        <p>To maximize both your survivability and threat generation as a Guardian Druid, your secondary stats should follow this priority:</p>
+        <ul>
+            <li><strong>Agility / Armor:</strong> Your foundational stats. Higher item level gear brings more Agility for Attack Power and base Armor, increasing your baseline damage and physical mitigation.</li>
+            <li><strong>Versatility:</strong> The strongest defensive secondary stat for Guardian. It provides a flat reduction to all damage taken (crucial for surviving heavy Void-magic tank busters) and increases your damage and self-healing.</li>
+            <li><strong>Haste:</strong> Essential for reducing the global cooldown and lowering the cooldowns of key abilities like <em>Mangle</em>, <em>Thrash</em>, and <em>Frenzied Regeneration</em>. Haste directly translates to more Rage generation, leading to higher <em>Ironfur</em> uptime.</li>
+            <li><strong>Mastery (Nature's Guardian):</strong> Increases your maximum health and healing received, while also boosting your Attack Power. A solid all-around stat, but slightly less impactful than Versatility for pure mitigation.</li>
+            <li><strong>Critical Strike:</strong> Provides extra Rage through critical auto-attacks and increases your dodge chance. However, it remains the least reliable stat for steady damage intake reduction.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <h3>Single-Target Priority</h3>
+        <ol>
+            <li><strong>Active Mitigation:</strong> Ensure <em>Ironfur</em> is active before taking physical damage. Stack it multiple times if you are taking heavy melee swings.</li>
+            <li><strong>Keep Thrash Active:</strong> Maintain 3 stacks of <em>Thrash</em> on the target at all times for consistent bleed damage and threat.</li>
+            <li><strong>Generate Rage:</strong> Use <em>Mangle</em> on cooldown. This is your primary Rage generator and single-target damage ability.</li>
+            <li><strong>Moonfire:</strong> Maintain <em>Moonfire</em> on the primary target (usually applied automatically if talented into Galactic Guardian, but cast manually if it falls off).</li>
+            <li><strong>Spend Rage (Offensive):</strong> If you do not need Rage for <em>Ironfur</em> or <em>Frenzied Regeneration</em>, spend your excess Rage on <em>Maul</em> to deal heavy single-target damage.</li>
+            <li><strong>Filler:</strong> Use <em>Swipe</em> when all other abilities are on cooldown.</li>
+        </ol>
+
+        <h3>AoE (3+ Targets) Priority</h3>
+        <ol>
+            <li><strong>Establish Threat:</strong> Open with <em>Thrash</em> to apply a bleeding DoT to all enemies and establish immediate AoE threat.</li>
+            <li><strong>Active Mitigation:</strong> Spend Rage on <em>Ironfur</em> immediately, as tanking multiple mobs drastically increases incoming physical damage.</li>
+            <li><strong>Generate Rage:</strong> Use <em>Mangle</em> on the highest-priority target in the pack (or use it when Galactic Guardian procs).</li>
+            <li><strong>Spend Rage (Offensive):</strong> Replace Maul with <em>Raze</em> (if talented) to dump excess Rage into massive AoE damage.</li>
+            <li><strong>Filler:</strong> Spam <em>Swipe</em> and continuously cast <em>Thrash</em> on cooldown to maintain threat on the entire pack.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Prepare for progression raiding and high keys with the optimal Patch 12.0.7 consumables:</p>
+        <ul>
+            <li><strong>Flask:</strong> <em>Flask of the Unyielding Bastion</em> (Provides a significant boost to Maximum Health and Versatility).</li>
+            <li><strong>Potion:</strong> <em>Potion of Withering Vitality</em> for emergency healing, or <em>Potion of Void-Touched Prowess</em> for opening threat burst.</li>
+            <li><strong>Food:</strong> <em>Grand Void-Seared Feast</em> for the Agility buff.</li>
+            <li><strong>Weapon Enchant:</strong> <em>Enchant Weapon - Earthen Devotion</em> (Procs extra armor and damage reduction when taking damage).</li>
+            <li><strong>Gems:</strong> Socket your gear with <em>Resolute Void-Diamond</em> to optimize Versatility and Haste.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
