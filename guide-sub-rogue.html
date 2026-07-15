@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subtlety Rogue Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Subtlety Rogue guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Melee DPS</span>
+        <h1>Subtlety Rogue: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of Midnight, Subtlety Rogues shine as undisputed masters of on-demand burst damage and target prioritization. Functioning as a high-octane Melee DPS, the spec excels in both raiding and high Mythic+ keystones. The meta heavily favors the Trickster Hero Talent tree for dense AoE scenarios and Mythic+ dungeons, enabling Unseen Blade strikes to cleave and apply massive vulnerability windows. For strict single-target boss encounters, the Deathstalker tree provides a lethal edge, turning Shadowstrike into a devastating execution tool. Mastery of Subtlety relies entirely on pooling resources correctly to unleash terrifying damage during perfectly aligned Shadow Dance windows.</p>
+
+        <div class="guide-image-container">
+            <img src="images/rogue-sub.png" alt="Subtlety Rogue Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A highly detailed, realistic 4k game-engine screenshot of a Subtlety Rogue wreathed in dark, shadowy magic, striking from stealth with glowing purple daggers in a grim dark fantasy raid setting, authentic World of Warcraft graphics, avoiding highly edited, fake, or overly stylized AI aesthetics -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Your stat distribution as a Subtlety Rogue should focus on maximizing the impact of your finishing moves and capitalizing on huge critical strikes:</p>
+        <ul>
+            <li><strong>Agility:</strong> Your primary stat, which increases your overall Attack Power and directly scales the damage of all your abilities and finishers.</li>
+            <li><strong>Mastery (Executioner):</strong> Increases the damage of all your finishing moves (Eviscerate, Black Powder, Secret Technique). Because Subtlety cycles through combo points incredibly fast, Mastery scales exponentially well.</li>
+            <li><strong>Critical Strike:</strong> Highly valuable for increasing your burst potential during Shadow Dance. It ensures your heavily-buffed finishers hit for their maximum possible damage.</li>
+            <li><strong>Versatility:</strong> Offers a flat damage boost and damage reduction. While great for survivability in high keys, it falls slightly behind Mastery and Crit for pure DPS throughput.</li>
+            <li><strong>Haste:</strong> The least valuable stat for Subtlety. While it increases energy regeneration, the spec relies more on precise energy pooling and passive generation mechanics rather than rapid, sustained attacking.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Subtlety gameplay revolves around managing two distinct phases: pooling energy/combo points outside of cooldowns, and unleashing massive damage during Shadow Dance.</p>
+        
+        <h3>Single-Target Priority</h3>
+        <ul>
+            <li>Maintain <strong>Slice and Dice</strong> for attack speed and passive combo point generation from Shadow Techniques.</li>
+            <li>Apply and maintain <strong>Rupture</strong>. Refresh it when it has less than 30% duration remaining.</li>
+            <li>Activate <strong>Shadow Blades</strong> on cooldown (usually saved for Bloodlust or major burn phases) to maximize combo point generation and convert your attacks to Shadow damage.</li>
+            <li>Sync <strong>Shadow Dance</strong> and <strong>Symbols of Death</strong>. Use them together to enter your burst window, gaining access to stealth abilities and a massive damage modifier.</li>
+            <li>Cast <strong>Secret Technique</strong> as your highest priority finisher when at 5+ combo points during a Shadow Dance window.</li>
+            <li>Spam <strong>Shadowstrike</strong> to generate combo points while in Shadow Dance, or use <strong>Backstab</strong> (or Gloomblade) when Shadow Dance is on cooldown.</li>
+            <li>Consume max combo points with <strong>Eviscerate</strong> to deal massive single-target burst.</li>
+        </ul>
+
+        <h3>AoE Priority</h3>
+        <ul>
+            <li>Maintain your core buffs: <strong>Slice and Dice</strong> and <strong>Symbols of Death</strong>.</li>
+            <li>Activate <strong>Shadow Dance</strong> frequently. Due to talents, your AoE rotation will reduce the cooldown of Shadow Dance rapidly.</li>
+            <li>Use <strong>Shuriken Storm</strong> as your exclusive combo point generator when facing 3 or more targets.</li>
+            <li>Unleash <strong>Secret Technique</strong> on cooldown at maximum combo points; it acts as a devastating frontal cleave.</li>
+            <li>Spend remaining combo points on <strong>Black Powder</strong> to deal massive area-of-effect shadow damage to all targets hit by your Shuriken Storm.</li>
+        </ul>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Prepare for Patch 12.0.7 endgame progression with the following optimizations:</p>
+        <ul>
+            <li><strong>Gems:</strong> Socket an Agile Eversong Diamond as your meta gem for the raw Agility and secondary proc. Fill all other sockets with Flawless Deadly Onyx (Mastery/Critical Strike) to heavily empower your finishers.</li>
+            <li><strong>Flasks & Potions:</strong> Drink the Flask of Alchemical Chaos to cycle through potent secondary stat buffs. Carry maximum-quality Potions of Unhindered Strikes to chug directly alongside your major Shadow Blades / Shadow Dance combos.</li>
+            <li><strong>Food & Enchants:</strong> Eat the primary Agility feast (Feast of the Midnight Court). Ensure your main-hand and off-hand daggers are both enchanted with the Midnight-tier Mastery enchant to guarantee high uptime on Executioner scaling.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
