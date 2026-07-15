@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mistweaver Monk Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Mistweaver Monk guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="hero-parallax-banner" style="background-image: url('images/monk-mistweaver.png');"></div>
+<!-- AI Art Prompt Suggestion: A dramatic, high-fidelity game-engine style screenshot of a Mistweaver Monk in World of Warcraft, casting iconic abilities, cinematic lighting, dark fantasy aesthetic, 4k resolution -->
+	
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Healer</span>
+        <h1>Mistweaver Monk: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7, the Mistweaver Monk continues to excel as a highly mobile, proactive healer. Leveraging the powerful interaction between the Jadefire Adept and Master of Harmony Hero Talent trees, Mistweavers offer exceptional raid utility and robust single-target triage healing. Their ability to weave melee damage into their healing rotation remains a cornerstone of the spec's identity in high-level Mythic+ dungeons and raids.</p>
+
+        <h2>Stat Priority</h2>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat; always prioritize items with higher Item Levels to maximize Spell Power.</li>
+            <li><strong>Critical Strike:</strong> Extremely valuable, as it synergizes with Enveloping Mist and increases the frequency of your mastery procs.</li>
+            <li><strong>Haste:</strong> Reduces global cooldowns and speeds up channel times for Soothing Mist and Ancient Teachings, ensuring smoother reactive gameplay.</li>
+            <li><strong>Versatility:</strong> Provides consistent damage reduction and healing output; vital for surviving high-damage mechanics in Mythic+ keys.</li>
+            <li><strong>Mastery:</strong> Increases the raw throughput of your Gust of Mists procs, providing consistent passive healing.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <h3>Single-Target Priority</h3>
+        <ol>
+            <li>Maintain <strong>Renewing Mist</strong> on cooldown to spread healing throughout the group.</li>
+            <li>Use <strong>Enveloping Mist</strong> on the tank or target taking consistent damage.</li>
+            <li>Cast <strong>Soothing Mist</strong> to channel healing, followed by <strong>Vivify</strong> for instant, high-impact triage.</li>
+            <li>Utilize <strong>Life Cocoon</strong> as a primary external defensive cooldown for major spikes.</li>
+        </ol>
+
+        <h3>AoE/Raid Healing Priority</h3>
+        <ol>
+            <li>Ensure <strong>Renewing Mist</strong> is active on as many targets as possible.</li>
+            <li>Trigger <strong>Essence Font</strong> or <strong>Sheilun's Gift</strong> for massive burst throughput when the raid is low.</li>
+            <li>Engage in melee combat using <strong>Tiger Palm</strong>, <strong>Blackout Kick</strong>, and <strong>Rising Sun Kick</strong> to trigger <strong>Ancient Teachings</strong>, converting your damage into smart healing.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <ul>
+            <li><strong>Flasks:</strong> Flask of Alchemical Chaos (or appropriate primary stat flask).</li>
+            <li><strong>Potions:</strong> Potion of Withering Vitality for burst healing; Refreshing Healing Potion for personal survival.</li>
+            <li><strong>Food:</strong> Well-fed buff providing Intellect/Versatility (e.g., Feasts of the Midnight Isles).</li>
+            <li><strong>Weapon Enchants:</strong> Sophic Devotion for a significant Intellect proc.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
