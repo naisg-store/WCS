@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fire Mage Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Fire Mage guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Ranged DPS</span>
+        <h1>Fire Mage: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of Midnight, Fire Mages stand out as a premier Ranged DPS[cite: 2] choice for both progression raiding and high-level Mythic+. Leveraging the Sunfury and Frostfire Hero Talent trees, the spec offers unmatched burst mobility and execute damage. The Sunfury build currently dominates the meta, focusing on generating and consuming Spellfire Spheres to empower your Combustion windows and unleash massive, consecutive Pyroblasts.</p>
+
+        <div class="guide-image-container">
+            <img src="images/guide-Fire-Mage.jpg" alt="Fire Mage Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A highly detailed, realistic 4k game-engine screenshot of a Fire Mage engulfed in flames casting Combustion and Pyroblast in a dark fantasy raid setting, authentic World of Warcraft graphics, avoiding highly edited, fake, or overly stylized AI aesthetics -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Optimizing stats is crucial for maximizing your Ignite damage and smoothing out the Hot Streak generation loop:</p>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat, increasing the baseline damage of all spells and scaling your Ignite.</li>
+            <li><strong>Haste:</strong> Reduces the global cooldown and the cast time of Fireball, while also reducing the cooldown of Fire Blast, allowing for more frequent Hot Streak generation.</li>
+            <li><strong>Versatility:</strong> Provides a flat damage increase and valuable damage reduction for high Mythic+ keys.</li>
+            <li><strong>Mastery (Ignite):</strong> Causes your direct damage spells to leave a burning DoT. Highly valuable in AoE situations where Ignite spreads to nearby targets.</li>
+            <li><strong>Critical Strike:</strong> Due to Combustion guaranteeing critical strikes, flat Crit rating holds less value for Fire than other specs, though it still helps generate Heating Up procs outside of cooldown windows.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>The Fire Mage rotation is built around converting Heating Up procs into Hot Streaks to cast instant, massive Pyroblasts or Flamestrikes.</p>
+        
+        <h3>Single-Target Priority</h3>
+        <ul>
+            <li>Cast <strong>Combustion</strong> on cooldown, ideally paired with Bloodlust and your on-use trinkets for maximum burst.</li>
+            <li>Cast <strong>Fire Blast</strong> while casting Fireball to convert a Heating Up proc into a Hot Streak.</li>
+            <li>Cast <strong>Phoenix Flames</strong> to guarantee a critical strike and generate a Heating Up or Hot Streak proc.</li>
+            <li>Unload instant <strong>Pyroblast</strong> whenever you have a Hot Streak active.</li>
+            <li>Cast <strong>Shifting Power</strong> to reduce the cooldown of Combustion and Fire Blast when you are out of charges.</li>
+            <li>Spam <strong>Fireball</strong> as your filler spell to fish for initial Heating Up procs.</li>
+        </ul>
+
+        <h3>AoE Priority</h3>
+        <ul>
+            <li>Cast <strong>Flamestrike</strong> when you have a Hot Streak proc against 3 or more targets.</li>
+            <li>Use <strong>Dragon's Breath</strong> and <strong>Meteor</strong> during your Combustion window to maximize high-burst AoE damage.</li>
+            <li>Ensure <strong>Ignite</strong> is spreading optimally by targeting the highest-health mob in the pack.</li>
+            <li>Weave <strong>Fire Blast</strong> and <strong>Phoenix Flames</strong> to rapidly generate Hot Streaks for back-to-back Flamestrikes.</li>
+        </ul>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Ensure you are fully prepared for Midnight endgame content with these consumables:</p>
+        <ul>
+            <li><strong>Gems:</strong> Equip one Insightful Eversong Diamond as your meta gem. Fill remaining slots with Flawless Quick Amethyst (Haste/Versatility) to optimize your cooldown reduction.</li>
+            <li><strong>Flasks & Potions:</strong> Drink the Flask of Alchemical Chaos for sustained stat boosts. Carry maximum-quality Potions of Fiery Focus for your major Combustion burst phases.</li>
+            <li><strong>Food & Enchants:</strong> Use the Feast of the Midnight Court or personal Haste food. Enchant your weapon with Midnight's Devotion for a consistent Intellect and Haste proc.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
