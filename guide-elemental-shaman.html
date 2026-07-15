@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elemental Shaman Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Elemental Shaman guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Ranged DPS</span>
+        <h1>Elemental Shaman: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of the Midnight expansion, Elemental Shaman stands tall as an incredibly versatile ranged specialization capable of dealing immense burst single-target damage and catastrophic sustained AoE pressure. By balancing Maelstrom generation and exploiting elemental mastery over lightning and fire, it remains highly competitive in mythic raids and top-tier Mythic+ dungeons. The implementation of specific Hero Talent trees completely changes its gameplay identity: <strong>Farseer</strong> focuses heavily on summoning ancestral spirits that echo your spells and offer predictable mastery surges, while <strong>Stormbringer</strong> amplifies devastating lightning interactions, transforming standard filler cycles into massive storm calls. Elemental brings mandatory utility to any composition with Bloodlust/Heroism, Wind Rush Totem, and unparalleled short-cooldown interrupts.</p>
+
+        <div class="guide-image-container">
+            <img src="images/shaman-elemental.png" alt="Elemental Shaman Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A crisp, 4k game-engine screenshot of a male Tauren Elemental Shaman casting Chain Lightning in a dark, stormy open-world fantasy landscape. Blinding blue and white electric arcs fork outward from his glowing elemental fists, striking several stone golems and lighting up the surrounding grassy hills with realistic shadow casting. High asset fidelity, zero user interface elements. -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Perfecting your secondary stat distribution guarantees that your elemental combinations hit for maximum thresholds while ensuring smooth resource replenishment loops.</p>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat baseline. Scales up the spell power and baseline output value of every spell in your toolkit. Always chase item level first.</li>
+            <li><strong>Haste:</strong> Speeds up heavy baseline filler casting animations, lowers the Universal Global Cooldown, and increases the tick speed of Flame Shock to accelerate Maelstrom generation.</li>
+            <li><strong>Critical Strike:</strong> Provides your elemental damage vectors a passive chance to hit for double damage. Vital for configurations utilizing specific baseline passive traits that trigger off elemental critical hits.</li>
+            <li><strong>Mastery (Mastery: Elemental Overload):</strong> Grants a high probability for your primary damage dealers (Lightning Bolt, Chain Lightning, Lava Burst) to cast a duplicated copy of the spell at a percentage of normal damage, multiplying both resource generation and overall burst output.</li>
+            <li><strong>Versatility:</strong> Offers a flat baseline increase to all outgoing damage while providing direct reduction to all incoming damage, creating a mandatory survival floor in demanding Mythic+ environments.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Elemental gameplay revolves around maintaining active Flame Shocks, capitalizing on Lava Surge procs, building Maelstrom resources, and spending them on catastrophic spenders.</p>
+
+        <h3>Single-Target Combat Priority</h3>
+        <ol>
+            <li>Apply and maintain <strong>Flame Shock</strong> on your target at all times to trigger Lava Surge procs.</li>
+            <li>Cast <strong>Fire Elemental</strong> (or Storm Elemental) strictly on cooldown during primary damage windows.</li>
+            <li>Cast <strong>Earth Shield</strong> on yourself and keep it active to improve baseline defense.</li>
+            <li>Spend your Maelstrom on <strong>Earth Shock</strong> (or Elemental Blast) when resource counts approach maximum capacity to prevent resource waste.</li>
+            <li>Cast <strong>Lava Burst</strong> when off cooldown or whenever a Lava Surge proc triggers an instant-cast action.</li>
+            <li>Cast <strong>Icefury</strong> on cooldown to empower your subsequent Frost Shock inputs.</li>
+            <li>Use empowered <strong>Frost Shock</strong> charges while moving or executing targeted priority actions.</li>
+            <li>Channel <strong>Lightning Bolt</strong> as your baseline active resource filler when spenders and procs are cleared.</li>
+        </ol>
+
+        <h3>AoE & Multi-Target Priority</h3>
+        <ol>
+            <li>Apply <strong>Flame Shock</strong> across multiple targets manually or through sweeping active cooldown windows.</li>
+            <li>Cast <strong>Liquid Magma Totem</strong> to instantly spread Flame Shocks over clustered enemy pools.</li>
+            <li>Spend Maelstrom on <strong>Earthquake</strong>, placing it directly underneath the tightly grouped packs to capitalize on downpours and knockdown chances.</li>
+            <li>Cast <strong>Chain Lightning</strong> as your primary multi-target active filler spell to generate massive Maelstrom amounts per cast.</li>
+            <li>Weave instant <strong>Lava Burst</strong> procs into priority sub-targets to maintain high background damage pressure.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Ensure your character reaches elite performance brackets in Patch 12.0.7 by matching your gear to these recommended modifications.</p>
+        <ul>
+            <li><strong>Flask:</strong> Flask of Alchemical Chaos (or an equivalent pure Intellect option).</li>
+            <li><strong>Potion:</strong> Tempered Potion for massive primary stat surges, or Algari Burst Potion matched with bloodlust windows.</li>
+            <li><strong>Food Buffet:</strong> Feast of the Divine Day to secure the highest available Intellect baseline.</li>
+            <li><strong>Weapon Enchant:</strong> Enchant Weapon - Authority of Radiant Power.</li>
+            <li><strong>Gems & Ring Enchants:</strong> Radiant Haste or Radiant Mastery configurations balanced to meet your chosen pacing targets.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
