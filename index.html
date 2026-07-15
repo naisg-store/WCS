@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>WoW Midnight (12.0.7) Cheat Sheet - Mayteck C.S.</title>
+    <title>WoW Midnight (12.0.7) Cheat Sheet - Midnight  CS</title>
     <meta name="description" content="Quick reference cheat sheet for World of Warcraft: Midnight Season 1 stat priorities, rotations, and consumables.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -41,6 +41,7 @@
                                     <ul class="class-menu">
                                         <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
                                         <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Melee DPS)</a></li>
                                     </ul>
                                 </li>
                                 <!-- Druid -->
@@ -177,7 +178,28 @@
         </div>
 
         <div class="specs-grid" id="specsContainer">
-            <div class="loading-text">Loading specs database...</div>
+           <!-- Pre-rendered SEO Anchors (Google sees these instantly) -->
+    <div class="spec-card seo-static" data-class="Paladin" data-spec="Retribution">
+        <div class="class-title">
+            Paladin: Retribution
+            <span class="role-badge role-dps">DPS</span>
+        </div>
+        <div class="stat-priority">
+            Priority: <span class="stat-highlight">Strength > Haste > Critical Strike</span>
+        </div>
+        <p class="spec-notes">Easy Ret Pally rotation and stat priority for returning players. Safe, high-utility melee DPS with a dead-simple opener.</p>
+    </div>
+
+    <div class="spec-card seo-static" data-class="Hunter" data-spec="Beast Mastery">
+        <div class="class-title">
+            Hunter: Beast Mastery
+            <span class="role-badge role-dps">DPS</span>
+        </div>
+        <div class="stat-priority">
+            Priority: <span class="stat-highlight">Agility > Haste > Mastery</span>
+        </div>
+        <p class="spec-notes">The ultimate lazy DPS spec. Clean BM Hunter priority queue, easy movement rotation, and beginner-friendly solo build guide.</p>
+    </div>
         </div>
     </div>
 
@@ -385,6 +407,32 @@
             event.target.classList.add('active');
             renderCards(role);
         }
+        // Keep all your existing variables at the top
+let wowData = [];
+const container = document.getElementById('specsContainer');
+const modalOverlay = document.getElementById('detailModal');
+const modalBody = document.getElementById('modalBody');
+const buttons = document.querySelectorAll('.filter-btn');
+
+fetch('wow-database.json')
+    .then(response => {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+    })
+    .then(data => {
+        wowData = data;
+        // Wipes the pre-rendered SEO cards only AFTER we have data ready to swap in
+        container.innerHTML = ''; 
+        renderCards('all'); 
+    })
+    .catch(error => {
+        console.error('Error loading database:', error);
+        // Fallback: If fetch fails, keep the pre-rendered SEO cards visible so the page isn't broken
+        const staticCards = container.querySelectorAll('.seo-static');
+        if (staticCards.length === 0) {
+            container.innerHTML = '<div class="loading-text" style="color: var(--role-dps);">Error loading database.</div>';
+        }
+    });
     </script>
 </body>
 </html>
