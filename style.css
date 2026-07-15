@@ -472,7 +472,7 @@ footer {
     object-fit: contain; /* Ensures the image scales down cleanly if needed */
 }
 
-        .img {
+img {
   max-width: 100%;
   height: auto;
   display: block; /* Prevents weird baseline spacing issues */
