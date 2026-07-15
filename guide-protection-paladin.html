@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Protection Paladin Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Protection Paladin guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Tank</span>
+        <h1>Protection Paladin: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of the Midnight expansion, Protection Paladin serves as an incredibly sturdy anchoring frontliner, renowned for its excellent defensive uptime and immense active utility block. By standing inside Consecration grids and spending Holy Power on active physical and magic shield mitigations, the spec holds an elite position across mythic raiding tiers and high-key dungeons alike. The mechanical layout features direct specialization choices through its distinct Hero Talent options: <strong>Lightsmith</strong> grants exceptional supportive flexibility by shaping physical holy armaments that buff both the Paladin and active party members, while <strong>Templar</strong> unleashes heavy skyward hammer calls that aggressively crash into target packs during combat loops. With unparalleled utility tools like Blessing of Spellwarding, Intercepting Taunts, and multi-target shield silences, Protection remains a premiere option for structured endgame metas.</p>
+
+        <div class="guide-image-container">
+            <img src="images/paladin-protection.png" alt="Protection Paladin Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A crisp, 4k game-engine screenshot of a male Draenei Protection Paladin standing inside a dark fantasy, torch-lit cavern environment. The paladin is casting Avenger's Shield, throwing a glowing golden disc that leaves a bright trail of light, illuminating his heavy plate armor textures and stone surfaces with realistic shadow casting. High fidelity, zero user interface elements. -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Structuring your stat distribution properly maximizes your active mitigation scaling and ensures high Holy Power velocity without passive resource gaps.</p>
+        <ul>
+            <li><strong>Strength:</strong> Your primary stat baseline. Linearly increases your attack power, baseline armor mitigation scaling, and the total value absorbed by your defensive traits.</li>
+            <li><strong>Haste:</strong> Reduces the Global Cooldown (GCD), shortens the recast cooldowns of your core Holy Power generators, and directly speeds up your primary resource production loops for active mitigation.</li>
+            <li><strong>Mastery (Mastery: Divine Bulwark):</strong> Increases the baseline damage reduction provided while standing inside your Consecration, while boosting your passive block probability and attack power multipliers.</li>
+            <li><strong>Versatility:</strong> Provides a flat percentage increase to all outgoing damage and healing vectors while directly mitigating all incoming personal damage taken.</li>
+            <li><strong>Critical Strike:</strong> Grants your abilities a passive chance to strike for double values, while converting into passive parry rating to blunt heavy incoming melee swings.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Protection gameplay relies on maintaining complete Consecration uptime, building Holy Power cleanly, and spending it on active mitigation shields to blunt threat cascades.</p>
+
+        <h3>Single-Target Combat & Active Mitigation Priority</h3>
+        <ol>
+            <li>Drop and maintain <strong>Consecration</strong>, ensuring you are always standing inside its boundaries to secure your Mastery defense bonuses.</li>
+            <li>Spend Holy Power on <strong>Shield of the Righteous</strong> to maintain your active armor buff. Do not let this mitigation window drop during active threat phases.</li>
+            <li>Cast <strong>Avenger's Shield</strong> strictly on cooldown to generate high threat, build resources, and secure active shielding procs.</li>
+            <li>Cast <strong>Judgment</strong> on cooldown to generate Holy Power and trigger passive defensive resets.</li>
+            <li>Use <strong>Hammer of Wrath</strong> whenever procs activate its window or during target execute thresholds (below 20% health).</li>
+            <li>Spend Holy Power on <strong>Word of Glory</strong> if your health pool drops critically low and your armor buff is already securely active.</li>
+            <li>Cast <strong>Blessed Hammer</strong> (or Hammer of the Righteous) as your core active filler spell to generate remaining Holy Power points.</li>
+        </ol>
+
+        <h3>AoE & Group Control Priority</h3>
+        <ol>
+            <li>Launch <strong>Avenger's Shield</strong> early into the center of the approaching group to silence casters and lock initial multi-target threat.</li>
+            <li>Drop <strong>Consecration</strong> immediately beneath the clustered pool of enemies to maintain broad AoE damage pressure.</li>
+            <li>Spend Holy Power continuously on <strong>Shield of the Righteous</strong>, hitting all targets inside its front-facing conical sweep.</li>
+            <li>Use <strong>Judgment</strong> jumps to cycle active resource production across the pull.</li>
+            <li>Weave in utility cooldowns like <strong>Divine Toll</strong> to instantly fire multiple Avenger's Shields, locking down heavily distributed caster pulls simultaneously.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Ensure your Paladin reaches elite tanking brackets in Patch 12.0.7 by matching your equipment configuration to these recommended updates.</p>
+        <ul>
+            <li><strong>Flask:</strong> Flask of Alchemical Chaos (or a comparable pure Strength variant).</li>
+            <li><strong>Potion:</strong> Tempered Potion for stat spikes, or Algari Armor Potion during intense progression phases.</li>
+            <li><strong>Food Buffet:</strong> Feast of the Divine Day to guarantee the highest available Strength baseline.</li>
+            <li><strong>Weapon Enchant:</strong> Enchant Weapon - Authority of Radiant Power (or defensive avoidance alternatives).</li>
+            <li><strong>Gems & Ring Enchants:</strong> Radiant Haste or Radiant Mastery configurations balanced to meet your preferred pacing thresholds.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
