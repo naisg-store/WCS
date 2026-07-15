@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Affliction Warlock Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Affliction Warlock guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Ranged DPS</span>
+        <h1>Affliction Warlock: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of the Midnight expansion, Affliction Warlock stands out as a premiere choice for sustained multi-target spread and council-style fights, while holding formidable ground in high-tier Mythic+ settings. Its identity revolves around meticulous damage-over-time management and rapid Soul Shard expenditure. The specification achieves peak efficiency by leaning into its Hero Talent options: <strong>Soul Harvester</strong> accelerates passive execute profiles and dark damage amplification, whereas <strong>Hellcaller</strong> leans aggressively into burning targets down with fast-ticking global curses. Affliction remains highly sought after in raiding setups thanks to fundamental group utility like Demonic Gateway, Healthstones, and Soulstones.</p>
+
+        <div class="guide-image-container">
+            <img src="images/warlock-affliction.png" alt="Affliction Warlock Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A realistic, 4k in-game engine screenshot of an Undead Affliction Warlock hovering slightly within a decaying, shadow-drenched swamp environment. The warlock is casting Malefic Rapture, sending chaotic pulses of dark purple and shadow-flame energy out to nearby targets. Sharp equipment textures, authentic light casting, zero user interface elements. -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Correct secondary stat distribution ensures that your multi-DoT layouts tick rapidly while scaling up the strength of your primary Soul Shard spenders.</p>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat. Directly increases the base spell power and overall damage value of all offensive spells in your repertoire. Prioritize this by seeking higher item-level gear updates.</li>
+            <li><strong>Haste:</strong> Reduces global cooldowns, accelerates long casting animations, and increases the tick frequency of your core damage-over-time spells. High Haste values are crucial for smooth Soul Shard generation.</li>
+            <li><strong>Mastery (Mastery: Potent Afflictions):</strong> Directly boosts the overall damage dealt by your primary damage-over-time spells, including Agony, Corruption, Unstable Affliction, and Wither.</li>
+            <li><strong>Critical Strike:</strong> Provides your damage spells and tick events a standard chance to hit for double damage, while interacting with passive procs that reward periodic critical strikes.</li>
+            <li><strong>Versatility:</strong> Offers a flat percentage damage increase and reduces incoming damage taken. Highly useful for defensive scaling in higher Mythic+ keystones where survival is crucial.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>Affliction gameplay centers around ensuring maximum up-time on your primary dots, generating Soul Shards through Agony ticks, and bursting targets down with Malefic Rapture loops.</p>
+
+        <h3>Single-Target Combat Priority</h3>
+        <ol>
+            <li>Apply and strictly maintain <strong>Unstable Affliction</strong> on the primary target.</li>
+            <li>Apply and maintain <strong>Agony</strong> to ensure consistent Soul Shard generation.</li>
+            <li>Maintain <strong>Corruption</strong> (or Wither, depending on your talent setup) on your target at all times.</li>
+            <li>Cast <strong>Summon Darkglare</strong> during major burst windows to extend the duration of active damage-over-time effects.</li>
+            <li>Cast <strong>Phantom Singularity</strong> (or Vile Taint) on cooldown to apply massive background damage pressure.</li>
+            <li>Spend your Soul Shards on <strong>Malefic Rapture</strong> to deal explosive damage based on the total number of dots active on the target. Do not allow your Soul Shards to cap at maximum.</li>
+            <li>Channel <strong>Shadow Bolt</strong> (or Drain Soul) as your primary resource filler spell when all dots are refreshed and shards are spent.</li>
+        </ol>
+
+        <h3>AoE & Multi-Target Priority</h3>
+        <ol>
+            <li>Cast <strong>Vile Taint</strong> to instantly apply Agony and Curse of Agony across tightly packed groups of enemies.</li>
+            <li>Manually apply <strong>Unstable Affliction</strong> to the high-priority target within the enemy cluster.</li>
+            <li>Ensure <strong>Corruption</strong> / Wither is active across all secondary threats.</li>
+            <li>Activate your major cooldown via <strong>Summon Darkglare</strong> when groups are fully dotted up.</li>
+            <li>Chain cast <strong>Malefic Rapture</strong> consecutively to chunk down the entire pull simultaneously through dot detonation.</li>
+            <li>Fill open casting gaps with <strong>Seed of Corruption</strong> or broad channeling blocks to maintain baseline multi-target cleave.</li>
+        </ol>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Secure top-tier performance benchmarks in Patch 12.0.7 by configuring your Affliction Warlock with the correct endgame enhancements.</p>
+        <ul>
+            <li><strong>Flask:</strong> Flask of Alchemical Chaos (or an equivalent pure Intellect option).</li>
+            <li><strong>Potion:</strong> Tempered Potion for massive primary stat spikes, or Algari Burst Potion during coordinated raid bloodlust phases.</li>
+            <li><strong>Food Buffet:</strong> Feast of the Divine Day for the maximum baseline Intellect increase.</li>
+            <li><strong>Weapon Enchant:</strong> Enchant Weapon - Authority of Radiant Power.</li>
+            <li><strong>Gems & Ring Enchants:</strong> Radiant Haste or Radiant Mastery combinations tailored to your preferred stat goals.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
