@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frost Mage Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
+    <meta name="description" content="Dominate the endgame with our comprehensive Frost Mage guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <a href="index.html" class="logo">Midnight CS</a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                
+                <!-- Tools Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Tools <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">WoW Cheat Sheet</a></li>
+                        <li class="nested-dropdown">
+                            <a href="#" class="dropdown-item-toggle">Guides <span class="arrow">&#9656;</span></a>
+                            
+                            <!-- Submenu: Grouped by Class -->
+                            <ul class="nested-menu">
+                                <!-- Death Knight -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Death Knight <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-blood-dk.html">Blood (Tank)</a></li>
+                                        <li><a href="guide-frost-dk.html">Frost (Melee DPS)</a></li>
+                                        <li><a href="guide-unholy-dk.html">Unholy (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Demon Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Demon Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
+                                        <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Druid -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Druid <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-balance-druid.html">Balance (Ranged DPS)</a></li>
+                                        <li><a href="guide-feral-druid.html">Feral (Melee DPS)</a></li>
+                                        <li><a href="guide-guardian-druid.html">Guardian (Tank)</a></li>
+                                        <li><a href="guide-restoration-druid.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Hunter -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Hunter <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-bm-hunter.html">Beast Mastery (Ranged DPS)</a></li>
+                                        <li><a href="guide-marksmanship-hunter.html">Marksmanship (Ranged DPS)</a></li>
+                                        <li><a href="guide-survival-hunter.html">Survival (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Mage -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Mage <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arcane-mage.html">Arcane (Ranged DPS)</a></li>
+                                        <li><a href="guide-fire-mage.html">Fire (Ranged DPS)</a></li>
+                                        <li><a href="guide-frost-mage.html">Frost (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Monk -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Monk <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-brewmaster-monk.html">Brewmaster (Tank)</a></li>
+                                        <li><a href="guide-mistweaver-monk.html">Mistweaver (Healer)</a></li>
+                                        <li><a href="guide-windwalker-monk.html">Windwalker (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Paladin -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Paladin <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-holy-paladin.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-protection-paladin.html">Protection (Tank)</a></li>
+                                        <li><a href="guide-retribution-paladin.html">Retribution (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Priest -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Priest <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-discipline-priest.html">Discipline (Healer)</a></li>
+                                        <li><a href="guide-holy-priest.html">Holy (Healer)</a></li>
+                                        <li><a href="guide-shadow-priest.html">Shadow (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Rogue -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Rogue <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-assassination-rogue.html">Assassination (Melee DPS)</a></li>
+                                        <li><a href="guide-outlaw-rogue.html">Outlaw (Melee DPS)</a></li>
+                                        <li><a href="guide-subtlety-rogue.html">Subtlety (Melee DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Shaman -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Shaman <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-elemental-shaman.html">Elemental (Ranged DPS)</a></li>
+                                        <li><a href="guide-enhancement-shaman.html">Enhancement (Melee DPS)</a></li>
+                                        <li><a href="guide-restoration-shaman.html">Restoration (Healer)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warlock -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warlock <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-affliction-warlock.html">Affliction (Ranged DPS)</a></li>
+                                        <li><a href="guide-demonology-warlock.html">Demonology (Ranged DPS)</a></li>
+                                        <li><a href="guide-destruction-warlock.html">Destruction (Ranged DPS)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Warrior -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Warrior <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-arms-warrior.html">Arms (Melee DPS)</a></li>
+                                        <li><a href="guide-fury-warrior.html">Fury (Melee DPS)</a></li>
+                                        <li><a href="guide-protection-warrior.html">Protection (Tank)</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Evoker -->
+                                <li class="nested-dropdown-class">
+                                    <a href="#" class="class-toggle">Evoker <span class="arrow">&#9656;</span></a>
+                                    <ul class="class-menu">
+                                        <li><a href="guide-augmentation-evoker.html">Augmentation (Support DPS)</a></li>
+                                        <li><a href="guide-devastation-evoker.html">Devastation (Ranged DPS)</a></li>
+                                        <li><a href="guide-preservation-evoker.html">Preservation (Healer)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Info / Legal Dropdown -->
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">More <span class="arrow">&#9662;</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="tos.html">Terms of Service</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<div class="container">
+    <div class="header">
+        <span class="role-badge">Ranged DPS</span>
+        <h1>Frost Mage: Patch 12.0.7 Guide</h1>
+    </div>
+
+    <div class="content-box">
+        <h2>The Meta Context</h2>
+        <p>In Patch 12.0.7 of Midnight, Frost Mages maintain their reputation as a highly durable and consistently powerful Ranged DPS option in both Mythic+ dungeons and raid progression. The endgame meta currently highlights two distinct Hero Talent pathways: Spellslinger and Frostfire. Spellslingers lean heavily into enhanced control and massive sustained cleave damage through Splintering Winter and hyper-optimized Flurry interactions, making them the dominant choice for high-level Mythic+ keys. Conversely, the Frostfire build blends traditional Frost mechanics with fiery burst windows, empowering Frostfire Bolt and delivering exceptional single-target output for tight raid encounters.</p>
+
+        <div class="guide-image-container">
+            <img src="images/frost-mage.png" alt="Frost Mage Action Shot" onerror="this.style.display='none';" class="guide-feature-image">
+            <!-- AI Art Prompt Suggestion: A highly detailed, realistic 4k game-engine screenshot of a Frost Mage casting Glacial Spike in a snowy, dark fantasy raid setting, authentic World of Warcraft graphics, avoiding highly edited, fake, or overly stylized AI aesthetics -->
+        </div>
+
+        <h2>Stat Priority</h2>
+        <p>Optimizing secondary stats is critical for Frost Mages to maximize their Shatter passive and scale Icicle damage:</p>
+        <ul>
+            <li><strong>Intellect:</strong> Your primary stat, which dictates the baseline power of all your spells and abilities.</li>
+            <li><strong>Critical Strike (up to 33.34%):</strong> Vital to reach the Shatter "hard cap." At this percentage, any spell cast against a frozen target (or a target with Winter's Chill) has a 100% chance to critically strike. Any critical strike beyond this cap drastically loses value.</li>
+            <li><strong>Mastery (Icicles):</strong> Increases the damage of stored Icicles, Glacial Spike, and Frozen Orb. Scales exceptionally well in heavy cleave and single-target Glacial Spike builds.</li>
+            <li><strong>Haste:</strong> Lowers your global cooldown and speeds up the cast times of Frostbolt and Glacial Spike, smoothing out the rotation during mechanics.</li>
+            <li><strong>Versatility:</strong> Provides a flat damage boost and damage reduction, acting as a minor defensive stat for high-tier progression.</li>
+        </ul>
+
+        <h2>Core Rotation</h2>
+        <p>The Frost Mage rotation revolves around reacting to procs, generating Icicles, and heavily utilizing the Winter's Chill debuff applied by Flurry.</p>
+        
+        <h3>Single-Target Priority</h3>
+        <ul>
+            <li>Cast <strong>Icy Veins</strong> on cooldown, ideally synced with Bloodlust or major encounter burn phases.</li>
+            <li>Cast <strong>Flurry</strong> whenever you have a Brain Freeze proc to apply Winter's Chill to the target.</li>
+            <li>Cast <strong>Glacial Spike</strong> as soon as you have 5 Icicles, immediately followed by a <strong>Flurry</strong> (if available) to ensure the Glacial Spike shatters.</li>
+            <li>Cast <strong>Ice Lance</strong> to consume remaining stacks of Winter's Chill or whenever you have a Fingers of Frost proc.</li>
+            <li>Cast <strong>Shifting Power</strong> when major abilities like Frozen Orb and Icy Veins are on cooldown.</li>
+            <li>Spam <strong>Frostbolt</strong> as your filler to generate Icicles and fish for Brain Freeze procs.</li>
+        </ul>
+
+        <h3>AoE Priority</h3>
+        <ul>
+            <li>Cast <strong>Frozen Orb</strong> on cooldown, ensuring it hits as many targets as possible to rapidly generate Fingers of Frost procs.</li>
+            <li>Maintain <strong>Blizzard</strong> at all times; each tick reduces the cooldown of your Frozen Orb.</li>
+            <li>Cast <strong>Cone of Cold</strong> (with the Freezing Winds talent) to instantly reset the cooldown of Frozen Orb and generate additional procs.</li>
+            <li>Spam <strong>Ice Lance</strong> into the primary target as long as Fingers of Frost procs are active.</li>
+            <li>Use <strong>Glacial Spike</strong> at 5 Icicles (cleaving via Splitting Ice) and shatter it with <strong>Flurry</strong> on the priority target.</li>
+        </ul>
+
+        <h2>Consumables & Enhancements</h2>
+        <p>Prepare for Patch 12.0.7 endgame content with the following optimizations:</p>
+        <ul>
+            <li><strong>Gems:</strong> Socket one Insightful Eversong Diamond as your meta gem for the high Intellect and periodic spellpower buff. Fill the remaining sockets with Flawless Quick Amethyst (Haste/Mastery) to balance out your stats without exceeding the Critical Strike cap.</li>
+            <li><strong>Flasks & Potions:</strong> Use the Flask of Alchemical Frost for continuous Intellect and secondary stat scaling. Carry maximum-quality Potions of Frozen Focus for burst phases during Icy Veins.</li>
+            <li><strong>Food & Enchants:</strong> Eat the Feast of the Midnight Court for your raid buff. Ensure your weapon is enchanted with Midnight's Chill for a high uptime proc of Intellect and Mastery.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="copyright">
+            &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet.
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('dynamicYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
