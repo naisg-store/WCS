@@ -478,7 +478,7 @@ img {
   display: block; /* Prevents weird baseline spacing issues */
 }
 
-
+}
 /* ==========================================================================
    PARALLAX HERO BANNER
    ========================================================================== */
@@ -498,5 +498,4 @@ img {
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
    
-}
 
