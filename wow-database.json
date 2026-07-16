@@ -1,2162 +1,522 @@
 [
   {
-    "class": "Death Knight",
-    "spec": "Blood",
-    "role": "Tank",
-    "filename": "guide-blood-dk.html",
-    "stats": "Haste > Versatility",
-    "notes": "High-level priority overview for Blood Death Knight.",
-    "rotationST": [
-      {
-        "name": "Marrowrend",
-        "icon": "spell_shadow_tacticalstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Blood Boil",
-        "icon": "spell_deathknight_bloodboil"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Vampiric Blood",
-        "icon": "spell_shadow_lifedrain02",
-        "note": "Major defensive."
-      }
-    ],
+    "class": "Death Knight", "spec": "Frost", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Focuses on Killing Machine procs and Breath of Sindragosa management.",
+    "rotationST": [ {"name": "Remorseless Winter", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Obliterate", "icon": "spell_deathknight_classicon"}, {"name": "Frost Strike", "icon": "spell_deathknight_empowerruneblade2"} ],
+    "rotationAoE": [ {"name": "Howling Blast", "icon": "spell_frost_arcticwinds"}, {"name": "Remorseless Winter", "icon": "ability_deathknight_remorselesswinter"}, {"name": "Frostscythe", "icon": "spell_frost_cleave"} ],
+    "cooldowns": [ {"name": "Pillar of Frost", "icon": "ability_deathknight_pillaroffrost", "note": "Massive Strength Burst"}, {"name": "Empower Rune Weapon", "icon": "inv_sword_62", "note": "Haste & Rune Regen"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Light's Potential", "stat": "+Strength / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Death Knight",
-    "spec": "Frost",
-    "role": "Melee DPS",
-    "filename": "guide-frost-dk.html",
-    "stats": "Mastery > Crit",
-    "notes": "High-level priority overview for Frost Death Knight.",
-    "rotationST": [
-      {
-        "name": "Obliterate",
-        "icon": "spell_deathknight_classicon"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Remorseless Winter",
-        "icon": "spell_frost_arcticwinds"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Pillar of Frost",
-        "icon": "ability_deathknight_pillaroffrost",
-        "note": "Burst window."
-      }
-    ],
+    "class": "Death Knight", "spec": "Blood", "role": "tank", "stats": "Haste > Versatility > Mastery", "notes": "Active mitigation through Death Strike and Bone Shield.",
+    "rotationST": [ {"name": "Marrowrend", "icon": "ability_deathknight_marrowrend"}, {"name": "Heart Strike", "icon": "inv_knife_1h_deathknight_ebonblade_c_01"}, {"name": "Death Strike", "icon": "spell_deathknight_butcher2"} ],
+    "rotationAoE": [ {"name": "Death and Decay", "icon": "spell_shadow_deathanddecay"}, {"name": "Blood Boil", "icon": "spell_deathknight_bloodboil"}, {"name": "Heart Strike", "icon": "inv_knife_1h_deathknight_ebonblade_c_01"} ],
+    "cooldowns": [ {"name": "Vampiric Blood", "icon": "spell_shadow_lifedrain"}, {"name": "Dancing Rune Weapon", "icon": "inv_sword_07"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Death Knight",
-    "spec": "Unholy",
-    "role": "Melee DPS",
-    "filename": "guide-unholy-dk.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Unholy Death Knight.",
-    "rotationST": [
-      {
-        "name": "Festering Strike",
-        "icon": "spell_deathknight_decayingstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Epidemic",
-        "icon": "spell_shadow_shadowworddevour"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Apocalypse",
-        "icon": "spell_deathknight_apocalypse",
-        "note": "Summons ghouls."
-      }
-    ],
+    "class": "Death Knight", "spec": "Unholy", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Focuses on Festering Wounds and pet management.",
+    "rotationST": [ {"name": "Festering Strike", "icon": "spell_deathknight_festeringstrike"}, {"name": "Scourge Strike", "icon": "spell_deathknight_scourgestrike"}, {"name": "Death Coil", "icon": "spell_shadow_deathcoil"} ],
+    "rotationAoE": [ {"name": "Epidemic", "icon": "spell_shadow_epidemic"}, {"name": "Defile", "icon": "spell_deathknight_defile"}, {"name": "Vile Contagion", "icon": "ability_deathknight_vilecontagion"} ],
+    "cooldowns": [ {"name": "Summon Gargoyle", "icon": "ability_deathknight_summongargoyle"}, {"name": "Army of the Dead", "icon": "spell_deathknight_armyofthedead"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Light's Potential", "stat": "+Strength / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Demon Hunter",
-    "spec": "Devourer",
-    "role": "Ranged DPS",
-    "filename": "guide-devourer-dh.html",
-    "stats": "Mastery > Crit",
-    "notes": "High-level priority overview for Devourer Demon Hunter.",
-    "rotationST": [
-      {
-        "name": "Void Slash",
-        "icon": "spell_shadow_shadowfury"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Void Eruption",
-        "icon": "spell_shadow_shadowpower"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Void Form",
-        "icon": "spell_shadow_shadowpower",
-        "note": "Massive damage window."
-      }
-    ],
+    "class": "Demon Hunter", "spec": "Havoc", "role": "dps", "stats": "Crit > Mastery > Versatility", "notes": "High mobility melee dps focusing on Eye Beam and Metamorphosis.",
+    "rotationST": [ {"name": "Immolation Aura", "icon": "spell_fire_selfdestruct"}, {"name": "Chaos Strike", "icon": "ability_demonhunter_chaosstrike"}, {"name": "Blade Dance", "icon": "ability_demonhunter_bladedance"} ],
+    "rotationAoE": [ {"name": "Eye Beam", "icon": "ability_demonhunter_eyebeam"}, {"name": "Glaive Tempest", "icon": "ability_demonhunter_glaivetempest"}, {"name": "Chaos Nova", "icon": "spell_fire_soulshards"} ],
+    "cooldowns": [ {"name": "Metamorphosis", "icon": "ability_demonhunter_metamorphosis"}, {"name": "The Hunt", "icon": "ability_demonhunter_thehunt"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Demon Hunter",
-    "spec": "Havoc",
-    "role": "Melee DPS",
-    "filename": "guide-havoc-dh.html",
-    "stats": "Crit > Mastery",
-    "notes": "High-level priority overview for Havoc Demon Hunter.",
-    "rotationST": [
-      {
-        "name": "Chaos Strike",
-        "icon": "ability_demonhunter_chaosstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Blade Dance",
-        "icon": "ability_demonhunter_bladedance"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Metamorphosis",
-        "icon": "ability_demonhunter_metamorphosisdps",
-        "note": "Major burst."
-      }
-    ],
+    "class": "Demon Hunter", "spec": "Devourer", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "New Midnight spec focusing on Void-empowered attacks.",
+    "rotationST": [ {"name": "Void Slash", "icon": "inv_ability_demonhunter_voidslash"}, {"name": "Soul Cleave", "icon": "ability_demonhunter_soulcleave2"}, {"name": "Chaos Bolt", "icon": "ability_warlock_chaosbolt"} ],
+    "rotationAoE": [ {"name": "Void Eruption", "icon": "ability_demonhunter_voideruption"}, {"name": "Sigil of Flame", "icon": "ability_demonhunter_sigilofflame"}, {"name": "Chaos Nova", "icon": "spell_fire_soulshards"} ],
+    "cooldowns": [ {"name": "Void Form", "icon": "ability_demonhunter_voidform"}, {"name": "Darkness", "icon": "ability_demonhunter_darkness"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Demon Hunter",
-    "spec": "Vengeance",
-    "role": "Tank",
-    "filename": "guide-vengeance-dh.html",
-    "stats": "Haste > Versatility",
-    "notes": "High-level priority overview for Vengeance Demon Hunter.",
-    "rotationST": [
-      {
-        "name": "Soul Cleave",
-        "icon": "ability_demonhunter_soulcleave"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Spirit Bomb",
-        "icon": "spell_shadow_shadowworddominate"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Fiery Brand",
-        "icon": "ability_demonhunter_fierybrand",
-        "note": "Defensive cooldown."
-      }
-    ],
+    "class": "Demon Hunter", "spec": "Vengeance", "role": "tank", "stats": "Haste > Versatility > Mastery", "notes": "Tanking spec utilizing Soul Fragments for healing and mitigation.",
+    "rotationST": [ {"name": "Frailty", "icon": "ability_demonhunter_frailty"}, {"name": "Soul Carver", "icon": "ability_demonhunter_soulcarver"}, {"name": "Spirit Bomb", "icon": "ability_demonhunter_spiritbomb"} ],
+    "rotationAoE": [ {"name": "Sigil of Flame", "icon": "ability_demonhunter_sigilofflame"}, {"name": "Immolation Aura", "icon": "spell_fire_selfdestruct"}, {"name": "Fel Devastation", "icon": "ability_demonhunter_feldevastation"} ],
+    "cooldowns": [ {"name": "Metamorphosis", "icon": "ability_demonhunter_metamorphosistank"}, {"name": "Fiery Brand", "icon": "ability_demonhunter_fierybrand"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Druid",
-    "spec": "Balance",
-    "role": "Ranged DPS",
-    "filename": "guide-balance-druid.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Balance Druid.",
-    "rotationST": [
-      {
-        "name": "Starsurge",
-        "icon": "spell_arcane_starfire"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Starfall",
-        "icon": "spell_magic_lesserinvisibilty"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Celestial Alignment",
-        "icon": "spell_nature_naturetouchgrow",
-        "note": "Burst."
-      }
-    ],
+    "class": "Druid", "spec": "Balance", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Ranged dps focusing on Eclipse cycles and Starfall/Starsurge.",
+    "rotationST": [ {"name": "Sunfire", "icon": "spell_arcane_starfire"}, {"name": "Moonfire", "icon": "spell_nature_starfall"}, {"name": "Starsurge", "icon": "spell_arcane_arcane03"} ],
+    "rotationAoE": [ {"name": "Starfall", "icon": "spell_nature_starfall"}, {"name": "Wild Mushroom", "icon": "spell_druid_wildmushroom"}, {"name": "Sunfire", "icon": "spell_arcane_starfire"} ],
+    "cooldowns": [ {"name": "Celestial Alignment", "icon": "spell_nature_natureblessingforce"}, {"name": "Incarnation: Chosen of Elune", "icon": "spell_druid_incarnation"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Druid",
-    "spec": "Feral",
-    "role": "Melee DPS",
-    "filename": "guide-feral-druid.html",
-    "stats": "Crit > Mastery",
-    "notes": "High-level priority overview for Feral Druid.",
-    "rotationST": [
-      {
-        "name": "Ferocious Bite",
-        "icon": "ability_druid_ferociousbite"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Primal Wrath",
-        "icon": "spell_druid_primalwrath"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Berserk",
-        "icon": "ability_druid_berserk",
-        "note": "Major CD."
-      }
-    ],
+    "class": "Druid", "spec": "Feral", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "Melee dps focusing on bleeds and combo point spenders.",
+    "rotationST": [ {"name": "Rake", "icon": "ability_druid_disembowel"}, {"name": "Rip", "icon": "ability_druid_rip"}, {"name": "Ferocious Bite", "icon": "ability_druid_ferociousbite"} ],
+    "rotationAoE": [ {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Primal Wrath", "icon": "ability_druid_primalwrath"}, {"name": "Brutal Slash", "icon": "ability_druid_brutalslash"} ],
+    "cooldowns": [ {"name": "Berserk", "icon": "ability_druid_berserk"}, {"name": "Tiger's Fury", "icon": "ability_mount_jungletiger"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Druid",
-    "spec": "Guardian",
-    "role": "Tank",
-    "filename": "guide-guardian-druid.html",
-    "stats": "Versatility > Mastery",
-    "notes": "High-level priority overview for Guardian Druid.",
-    "rotationST": [
-      {
-        "name": "Mangle",
-        "icon": "ability_druid_mangle2"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Thrash",
-        "icon": "spell_druid_thrash"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Survival Instincts",
-        "icon": "ability_druid_tigersroar",
-        "note": "Defensive."
-      }
-    ],
+    "class": "Druid", "spec": "Guardian", "role": "tank", "stats": "Haste > Versatility > Mastery", "notes": "Tanking spec with high health and physical mitigation through Ironfur.",
+    "rotationST": [ {"name": "Mangle", "icon": "ability_druid_mangle2"}, {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Maul", "icon": "ability_druid_maul"} ],
+    "rotationAoE": [ {"name": "Thrash", "icon": "spell_druid_thrash"}, {"name": "Swipe", "icon": "inv_misc_monsterclaw_03"}, {"name": "Moonfire", "icon": "spell_nature_starfall"} ],
+    "cooldowns": [ {"name": "Incarnation: Guardian of Ursoc", "icon": "spell_druid_incarnation"}, {"name": "Survival Instincts", "icon": "ability_druid_tigersroar"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Druid",
-    "spec": "Restoration",
-    "role": "Healer",
-    "filename": "guide-restoration-druid.html",
-    "stats": "Haste > Mastery",
-    "notes": "High-level priority overview for Restoration Druid.",
-    "rotationST": [
-      {
-        "name": "Lifebloom",
-        "icon": "inv_misc_herb_felblossom"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Wild Growth",
-        "icon": "ability_druid_flourish"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Tranquility",
-        "icon": "spell_nature_tranquility",
-        "note": "Raid heal."
-      }
-    ],
+    "class": "Druid", "spec": "Restoration", "role": "healer", "stats": "Haste > Mastery > Crit", "notes": "Healer focusing on Heal-over-Time (HoT) spells.",
+    "rotationST": [ {"name": "Rejuvenation", "icon": "spell_nature_rejuvenation"}, {"name": "Regrowth", "icon": "spell_nature_resistnature"}, {"name": "Lifebloom", "icon": "inv_misc_herb_felblossom"} ],
+    "rotationAoE": [ {"name": "Wild Growth", "icon": "ability_druid_flourish"}, {"name": "Efflorescence", "icon": "inv_misc_herb_telfir_leaf"}, {"name": "Convoke the Spirits", "icon": "ability_druid_convokethespirits"} ],
+    "cooldowns": [ {"name": "Tranquility", "icon": "spell_nature_tranquility"}, {"name": "Flourish", "icon": "spell_druid_wildmushroom"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Evoker",
-    "spec": "Augmentation",
-    "role": "Support DPS",
-    "filename": "guide-augmentation-evoker.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Augmentation Evoker.",
-    "rotationST": [
-      {
-        "name": "Eruption",
-        "icon": "inv_misc_volatileearth"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Upheaval",
-        "icon": "ability_evoker_upheaval"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Breath of Eons",
-        "icon": "ability_evoker_breathofeons",
-        "note": "Group buff."
-      }
-    ],
+    "class": "Evoker", "spec": "Augmentation", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Support DPS that buffs allies while dealing damage.",
+    "rotationST": [ {"name": "Eruption", "icon": "inv_ability_evoker_eruption"}, {"name": "Living Flame", "icon": "inv_ability_evoker_livingflame"}, {"name": "Azure Strike", "icon": "inv_ability_evoker_azurestrike"} ],
+    "rotationAoE": [ {"name": "Upheaval", "icon": "inv_ability_evoker_upheaval"}, {"name": "Breath of Eons", "icon": "inv_ability_evoker_breathofeons"}, {"name": "Fire Breath", "icon": "inv_ability_evoker_firebreath"} ],
+    "cooldowns": [ {"name": "Ebon Might", "icon": "inv_ability_evoker_ebonmight"}, {"name": "Prescience", "icon": "inv_ability_evoker_prescience"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Evoker",
-    "spec": "Devastation",
-    "role": "Ranged DPS",
-    "filename": "guide-devastation-evoker.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Devastation Evoker.",
-    "rotationST": [
-      {
-        "name": "Disintegrate",
-        "icon": "ability_evoker_disintegrate"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Pyre",
-        "icon": "ability_evoker_pyre"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Dragonrage",
-        "icon": "ability_evoker_dragonrage",
-        "note": "Burst window."
-      }
-    ],
+    "class": "Evoker", "spec": "Devastation", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "Ranged DPS focusing on empowered spells and Essence spenders.",
+    "rotationST": [ {"name": "Disintegrate", "icon": "inv_ability_evoker_disintegrate"}, {"name": "Living Flame", "icon": "inv_ability_evoker_livingflame"}, {"name": "Azure Strike", "icon": "inv_ability_evoker_azurestrike"} ],
+    "rotationAoE": [ {"name": "Pyre", "icon": "inv_ability_evoker_pyre"}, {"name": "Fire Breath", "icon": "inv_ability_evoker_firebreath"}, {"name": "Eternity Surge", "icon": "inv_ability_evoker_eternitysurge"} ],
+    "cooldowns": [ {"name": "Dragonrage", "icon": "inv_ability_evoker_dragonrage"}, {"name": "Deep Breath", "icon": "inv_ability_evoker_deepbreath"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Evoker",
-    "spec": "Preservation",
-    "role": "Healer",
-    "filename": "guide-preservation-evoker.html",
-    "stats": "Crit > Mastery",
-    "notes": "High-level priority overview for Preservation Evoker.",
-    "rotationST": [
-      {
-        "name": "Living Flame",
-        "icon": "ability_evoker_livingflame"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Dream Breath",
-        "icon": "ability_evoker_dreambreath"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Rewind",
-        "icon": "ability_evoker_rewind",
-        "note": "Raid heal."
-      }
-    ],
+    "class": "Evoker", "spec": "Preservation", "role": "healer", "stats": "Mastery > Crit > Haste", "notes": "Healer focusing on empowered heals and position-based spells.",
+    "rotationST": [ {"name": "Living Flame", "icon": "inv_ability_evoker_livingflame"}, {"name": "Echo", "icon": "inv_ability_evoker_echo"}, {"name": "Reversion", "icon": "inv_ability_evoker_reversion"} ],
+    "rotationAoE": [ {"name": "Dream Breath", "icon": "inv_ability_evoker_dreambreath"}, {"name": "Spirit Bloom", "icon": "inv_ability_evoker_spiritbloom"}, {"name": "Stasis", "icon": "inv_ability_evoker_stasis"} ],
+    "cooldowns": [ {"name": "Rewind", "icon": "inv_ability_evoker_rewind"}, {"name": "Dream Flight", "icon": "inv_ability_evoker_dreamflight"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Hunter",
-    "spec": "Beast Mastery",
-    "role": "Ranged DPS",
-    "filename": "guide-bm-hunter.html",
-    "stats": "Haste > Crit",
-    "notes": "High-level priority overview for Beast Mastery Hunter.",
-    "rotationST": [
-      {
-        "name": "Kill Command",
-        "icon": "ability_hunter_killcommand"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Multi-Shot",
-        "icon": "ability_upgrademoonglaive"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Bestial Wrath",
-        "icon": "ability_hunter_bestialwrath",
-        "note": "Pet burst."
-      }
-    ],
+    "class": "Hunter", "spec": "Beast Mastery", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Pet-focused ranged DPS with high mobility.",
+    "rotationST": [ {"name": "Kill Command", "icon": "ability_hunter_killcommand"}, {"name": "Barbed Shot", "icon": "ability_hunter_barbedshot"}, {"name": "Cobra Shot", "icon": "ability_hunter_cobrashot"} ],
+    "rotationAoE": [ {"name": "Multi-Shot", "icon": "ability_hunter_multishot"}, {"name": "Kill Cleave", "icon": "ability_hunter_killcleave"}, {"name": "Bestial Wrath", "icon": "ability_hunter_bestialwrath"} ],
+    "cooldowns": [ {"name": "Bestial Wrath", "icon": "ability_hunter_bestialwrath"}, {"name": "Call of the Wild", "icon": "ability_hunter_callofthewild"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Hunter",
-    "spec": "Marksmanship",
-    "role": "Ranged DPS",
-    "filename": "guide-mm-hunter.html",
-    "stats": "Crit > Mastery",
-    "notes": "High-level priority overview for Marksmanship Hunter.",
-    "rotationST": [
-      {
-        "name": "Aimed Shot",
-        "icon": "inv_spear_07"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Trick Shots",
-        "icon": "ability_hunter_markedfordeath"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Trueshot",
-        "icon": "ability_hunter_trueshot",
-        "note": "Haste & CD reduction."
-      }
-    ],
+    "class": "Hunter", "spec": "Marksmanship", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "Ranged DPS focusing on powerful aimed shots.",
+    "rotationST": [ {"name": "Aimed Shot", "icon": "inv_spear_07"}, {"name": "Rapid Fire", "icon": "ability_hunter_rapidfire"}, {"name": "Arcane Shot", "icon": "ability_impalingbolt"} ],
+    "rotationAoE": [ {"name": "Multi-Shot", "icon": "ability_hunter_multishot"}, {"name": "Trick Shots", "icon": "ability_hunter_trickshots"}, {"name": "Explosive Shot", "icon": "spell_fire_fireball"} ],
+    "cooldowns": [ {"name": "Trueshot", "icon": "ability_hunter_trueshot"}, {"name": "Double Tap", "icon": "ability_hunter_doubletap"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Hunter",
-    "spec": "Survival",
-    "role": "Melee DPS",
-    "filename": "guide-survival-hunter.html",
-    "stats": "Haste > Versatility",
-    "notes": "High-level priority overview for Survival Hunter.",
-    "rotationST": [
-      {
-        "name": "Mongoose Bite",
-        "icon": "ability_hunter_swiftstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Wildfire Bomb",
-        "icon": "inv_engineering_90_blackrockgrenade"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Coordinated Assault",
-        "icon": "spell_nature_spiritwolf",
-        "note": "Pet & Player sync."
-      }
-    ],
+    "class": "Hunter", "spec": "Survival", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Melee Hunter spec using a spear and explosives.",
+    "rotationST": [ {"name": "Kill Command", "icon": "ability_hunter_killcommand"}, {"name": "Wildfire Bomb", "icon": "ability_hunter_wildfirebomb"}, {"name": "Mongoose Bite", "icon": "ability_hunter_mongoosebite"} ],
+    "rotationAoE": [ {"name": "Wildfire Bomb", "icon": "ability_hunter_wildfirebomb"}, {"name": "Carve", "icon": "ability_hunter_carve"}, {"name": "Butchery", "icon": "inv_axe_2h_hunter_butchery"} ],
+    "cooldowns": [ {"name": "Coordinated Assault", "icon": "ability_hunter_coordinatedassault"}, {"name": "Spearhead", "icon": "ability_hunter_spearhead"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Mage",
-    "spec": "Arcane",
-    "role": "Ranged DPS",
-    "filename": "guide-arcane-mage.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Arcane Mage.",
-    "rotationST": [
-      {
-        "name": "Arcane Blast",
-        "icon": "spell_arcane_blast"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Arcane Explosion",
-        "icon": "spell_nature_wispsplode"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Arcane Surge",
-        "icon": "spell_arcane_arcanetorrent",
-        "note": "Mana regen & burst."
-      }
-    ],
+    "class": "Mage", "spec": "Arcane", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Focuses on mana management and Arcane Charge building.",
+    "rotationST": [ {"name": "Arcane Blast", "icon": "spell_arcane_arcane02"}, {"name": "Arcane Missiles", "icon": "spell_nature_starfall"}, {"name": "Arcane Barrage", "icon": "ability_mage_arcanebarrage"} ],
+    "rotationAoE": [ {"name": "Arcane Explosion", "icon": "spell_nature_starfall"}, {"name": "Arcane Orb", "icon": "inv_misc_orb_03"}, {"name": "Arcane Barrage", "icon": "ability_mage_arcanebarrage"} ],
+    "cooldowns": [ {"name": "Arcane Surge", "icon": "ability_mage_arcanesurge"}, {"name": "Evocation", "icon": "spell_nature_purify"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Mage",
-    "spec": "Fire",
-    "role": "Ranged DPS",
-    "filename": "guide-fire-mage.html",
-    "stats": "Haste > Versatility",
-    "notes": "High-level priority overview for Fire Mage.",
-    "rotationST": [
-      {
-        "name": "Pyroblast",
-        "icon": "spell_fire_fireball02"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Flamestrike",
-        "icon": "spell_fire_selfdestruct"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Combustion",
-        "icon": "spell_fire_volcano",
-        "note": "100% Crit window."
-      }
-    ],
+    "class": "Mage", "spec": "Fire", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Focuses on Heating Up and Hot Streak procs.",
+    "rotationST": [ {"name": "Fireball", "icon": "spell_fire_fireball"}, {"name": "Pyroblast", "icon": "spell_fire_fireball02"}, {"name": "Fire Blast", "icon": "spell_fire_fireblast"} ],
+    "rotationAoE": [ {"name": "Flamestrike", "icon": "spell_fire_selfdestruct"}, {"name": "Phoenix Flames", "icon": "inv_artifact_firemage_offhand"}, {"name": "Living Bomb", "icon": "spell_burningshadow_scorch"} ],
+    "cooldowns": [ {"name": "Combustion", "icon": "spell_fire_soulshards"}, {"name": "Sun King's Blessing", "icon": "inv_misc_herb_sunwell_flower"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Light's Potential", "stat": "+Intellect / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Mage",
-    "spec": "Frost",
-    "role": "Ranged DPS",
-    "filename": "guide-frost-mage.html",
-    "stats": "Mastery > Crit",
-    "notes": "High-level priority overview for Frost Mage.",
-    "rotationST": [
-      {
-        "name": "Frostbolt",
-        "icon": "spell_frost_frostbolt02"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Blizzard",
-        "icon": "spell_frost_icestorm"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Icy Veins",
-        "icon": "spell_frost_coldhearted",
-        "note": "Haste buff."
-      }
-    ],
+    "class": "Mage", "spec": "Frost", "role": "dps", "stats": "Crit (to 33.3%) > Haste > Mastery", "notes": "Focuses on Fingers of Frost and Brain Freeze procs.",
+    "rotationST": [ {"name": "Frostbolt", "icon": "spell_frost_frostbolt02"}, {"name": "Ice Lance", "icon": "spell_frost_frostblast"}, {"name": "Flurry", "icon": "ability_mage_flurry"} ],
+    "rotationAoE": [ {"name": "Frozen Orb", "icon": "spell_frost_frozencore"}, {"name": "Blizzard", "icon": "spell_frost_icestorm"}, {"name": "Comet Storm", "icon": "ability_mage_cometstorm"} ],
+    "cooldowns": [ {"name": "Icy Veins", "icon": "spell_frost_coldexhaustion"}, {"name": "Shifting Power", "icon": "ability_mage_shiftingpower"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Monk",
-    "spec": "Brewmaster",
-    "role": "Tank",
-    "filename": "guide-brewmaster-monk.html",
-    "stats": "Versatility > Crit",
-    "notes": "High-level priority overview for Brewmaster Monk.",
-    "rotationST": [
-      {
-        "name": "Keg Smash",
-        "icon": "ability_monk_kegsmash"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Breath of Fire",
-        "icon": "ability_monk_breathoffire"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Fortifying Brew",
-        "icon": "ability_monk_fortifyingale",
-        "note": "Major defensive."
-      }
-    ],
+    "class": "Monk", "spec": "Brewmaster", "role": "tank", "stats": "Haste > Versatility > Mastery", "notes": "Stagger mechanic for damage smoothing.",
+    "rotationST": [ {"name": "Keg Smash", "icon": "achievement_dungeon_manastorms"}, {"name": "Tiger Palm", "icon": "ability_monk_tigerpalm"}, {"name": "Blackout Kick", "icon": "ability_monk_blackoutkick"} ],
+    "rotationAoE": [ {"name": "Keg Smash", "icon": "achievement_dungeon_manastorms"}, {"name": "Breath of Fire", "icon": "ability_monk_breathoffire"}, {"name": "Spinning Crane Kick", "icon": "ability_monk_spinningcranekick"} ],
+    "cooldowns": [ {"name": "Celestial Brew", "icon": "inv_misc_beer_01"}, {"name": "Fortifying Brew", "icon": "ability_monk_fortifyingbrew"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Monk",
-    "spec": "Mistweaver",
-    "role": "Healer",
-    "filename": "guide-mistweaver-monk.html",
-    "stats": "Haste > Crit",
-    "notes": "High-level priority overview for Mistweaver Monk.",
-    "rotationST": [
-      {
-        "name": "Vivify",
-        "icon": "ability_monk_vivify"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Essence Font",
-        "icon": "ability_monk_essencefont"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Revival",
-        "icon": "spell_monk_revival",
-        "note": "Raid dispel & heal."
-      }
-    ],
+    "class": "Monk", "spec": "Mistweaver", "role": "healer", "stats": "Haste > Mastery > Crit", "notes": "Melee-based healing through Ancient Teachings.",
+    "rotationST": [ {"name": "Soothing Mist", "icon": "ability_monk_soothingmist"}, {"name": "Enveloping Mist", "icon": "ability_monk_envelopingmist"}, {"name": "Vivify", "icon": "ability_monk_vivify"} ],
+    "rotationAoE": [ {"name": "Essence Font", "icon": "ability_monk_essencefont"}, {"name": "Renewing Mist", "icon": "ability_monk_renewingmist"}, {"name": "Revival", "icon": "spell_monk_revival"} ],
+    "cooldowns": [ {"name": "Life-Cocoon", "icon": "ability_monk_lifecocoon"}, {"name": "Sheilun's Gift", "icon": "inv_staff_2h_artifactmonk_mist_d_01"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Monk",
-    "spec": "Windwalker",
-    "role": "Melee DPS",
-    "filename": "guide-windwalker-monk.html",
-    "stats": "Versatility > Mastery",
-    "notes": "High-level priority overview for Windwalker Monk.",
-    "rotationST": [
-      {
-        "name": "Rising Sun Kick",
-        "icon": "ability_monk_risingsunkick"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Spinning Crane Kick",
-        "icon": "ability_monk_cranekick"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Storm, Earth, and Fire",
-        "icon": "spell_nature_giftofthewild",
-        "note": "Split damage burst."
-      }
-    ],
+    "class": "Monk", "spec": "Windwalker", "role": "dps", "stats": "Versatility > Crit > Mastery", "notes": "Combo Strikes mastery reward for alternating abilities.",
+    "rotationST": [ {"name": "Tiger Palm", "icon": "ability_monk_tigerpalm"}, {"name": "Blackout Kick", "icon": "ability_monk_blackoutkick"}, {"name": "Rising Sun Kick", "icon": "ability_monk_risingsunkick"} ],
+    "rotationAoE": [ {"name": "Fists of Fury", "icon": "ability_monk_fistsoffury"}, {"name": "Spinning Crane Kick", "icon": "ability_monk_spinningcranekick"}, {"name": "Strike of the Windlord", "icon": "inv_hand_1h_artifactmonk_wind_d_01"} ],
+    "cooldowns": [ {"name": "Storm, Earth, and Fire", "icon": "spell_nature_elementalearth"}, {"name": "Invoke Xuen, the White Tiger", "icon": "ability_monk_invokexuen"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Paladin",
-    "spec": "Holy",
-    "role": "Healer",
-    "filename": "guide-holy-paladin.html",
-    "stats": "Crit > Haste",
-    "notes": "High-level priority overview for Holy Paladin.",
-    "rotationST": [
-      {
-        "name": "Holy Shock",
-        "icon": "spell_holy_searinglight"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Light of Dawn",
-        "icon": "spell_paladin_lightofdawn"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Avenging Wrath",
-        "icon": "spell_holy_avenginewrath",
-        "note": "Healing boost."
-      }
-    ],
+    "class": "Paladin", "spec": "Holy", "role": "healer", "stats": "Haste > Crit > Mastery", "notes": "Melee healer focusing on Holy Power generation.",
+    "rotationST": [ {"name": "Holy Shock", "icon": "spell_holy_searinglight"}, {"name": "Flash of Light", "icon": "spell_holy_flashlight"}, {"name": "Word of Glory", "icon": "inv_helmet_96"} ],
+    "rotationAoE": [ {"name": "Light of Dawn", "icon": "spell_holy_lightofdawn"}, {"name": "Holy Prism", "icon": "spell_paladin_holyprism"}, {"name": "Beacon of Virtue", "icon": "ability_paladin_beaconofvirtue"} ],
+    "cooldowns": [ {"name": "Avenging Wrath", "icon": "spell_holy_avengingwrath"}, {"name": "Divine Toll", "icon": "ability_paladin_divinetoll"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Paladin",
-    "spec": "Protection",
-    "role": "Tank",
-    "filename": "guide-protection-paladin.html",
-    "stats": "Haste > Mastery",
-    "notes": "High-level priority overview for Protection Paladin.",
-    "rotationST": [
-      {
-        "name": "Avenger's Shield",
-        "icon": "spell_holy_avengersshield"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Consecration",
-        "icon": "spell_holy_innerfire"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Guardian of Ancient Kings",
-        "icon": "spell_holy_heroism",
-        "note": "Major mitigation."
-      }
-    ],
+    "class": "Paladin", "spec": "Protection", "role": "tank", "stats": "Haste > Mastery > Versatility", "notes": "High physical mitigation through Shield of the Righteous.",
+    "rotationST": [ {"name": "Judgment", "icon": "spell_holy_righteousfury"}, {"name": "Shield of the Righteous", "icon": "ability_paladin_shieldoftherighteous"}, {"name": "Hammer of the Righteous", "icon": "ability_paladin_hammeroftherighteous"} ],
+    "rotationAoE": [ {"name": "Consecration", "icon": "spell_holy_innerfire"}, {"name": "Avenger's Shield", "icon": "ability_paladin_avengersshield"}, {"name": "Divine Toll", "icon": "ability_paladin_divinetoll"} ],
+    "cooldowns": [ {"name": "Guardian of Ancient Kings", "icon": "spell_holy_heroism"}, {"name": "Ardent Defender", "icon": "spell_holy_ardentdefender"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Paladin",
-    "spec": "Retribution",
-    "role": "Melee DPS",
-    "filename": "guide-ret-paladin.html",
-    "stats": "Strength > Mastery",
-    "notes": "High-level priority overview for Retribution Paladin.",
-    "rotationST": [
-      {
-        "name": "Templar's Verdict",
-        "icon": "spell_paladin_templarsverdict"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Divine Storm",
-        "icon": "ability_paladin_divinestorm"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Avenging Wrath",
-        "icon": "spell_holy_avenginewrath",
-        "note": "Damage boost."
-      }
-    ],
+    "class": "Paladin", "spec": "Retribution", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Melee dps focusing on Holy Power spenders.",
+    "rotationST": [ {"name": "Judgment", "icon": "spell_holy_righteousfury"}, {"name": "Blade of Justice", "icon": "ability_paladin_bladeofjustice"}, {"name": "Final Verdict", "icon": "inv_sword_2h_artifactashbringer_d_01"} ],
+    "rotationAoE": [ {"name": "Divine Storm", "icon": "ability_paladin_divinestorm"}, {"name": "Wake of Ashes", "icon": "ability_paladin_wakeofashes"}, {"name": "Consecration", "icon": "spell_holy_innerfire"} ],
+    "cooldowns": [ {"name": "Avenging Wrath", "icon": "spell_holy_avengingwrath"}, {"name": "Execution Sentence", "icon": "spell_paladin_executionsentence"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Light's Potential", "stat": "+Strength / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Priest",
-    "spec": "Discipline",
-    "role": "Healer",
-    "filename": "guide-discipline-priest.html",
-    "stats": "Haste > Crit",
-    "notes": "High-level priority overview for Discipline Priest.",
-    "rotationST": [
-      {
-        "name": "Penance",
-        "icon": "spell_holy_penance"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Power Word: Radiance",
-        "icon": "spell_priest_powerword"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Pain Suppression",
-        "icon": "spell_holy_painsupression",
-        "note": "Target defensive."
-      }
-    ],
+    "class": "Priest", "spec": "Discipline", "role": "healer", "stats": "Haste > Mastery > Crit", "notes": "Healing through dealing damage via Atonement.",
+    "rotationST": [ {"name": "Power Word: Shield", "icon": "spell_holy_powerwordshield"}, {"name": "Purge the Wicked", "icon": "ability_mage_firestarter"}, {"name": "Penance", "icon": "spell_holy_penance"} ],
+    "rotationAoE": [ {"name": "Mind Blast", "icon": "spell_shadow_mindblast"}, {"name": "Power Word: Radiance", "icon": "spell_holy_powerwordradiance"}, {"name": "Halo", "icon": "ability_priest_halo"} ],
+    "cooldowns": [ {"name": "Power Infusion", "icon": "spell_holy_powerinfusion"}, {"name": "Rapture", "icon": "spell_holy_rapture"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Priest",
-    "spec": "Holy",
-    "role": "Healer",
-    "filename": "guide-holy-priest.html",
-    "stats": "Mastery > Crit",
-    "notes": "High-level priority overview for Holy Priest.",
-    "rotationST": [
-      {
-        "name": "Holy Word: Serenity",
-        "icon": "spell_holy_persuitofjustice"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Holy Word: Sanctify",
-        "icon": "spell_holy_divineprovidence"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Divine Hymn",
-        "icon": "spell_holy_divinehymn",
-        "note": "Raid heal."
-      }
-    ],
+    "class": "Priest", "spec": "Holy", "role": "healer", "stats": "Mastery > Crit > Haste", "notes": "Traditional healer with powerful direct and group heals.",
+    "rotationST": [ {"name": "Flash Heal", "icon": "spell_holy_flashheal"}, {"name": "Holy Word: Serenity", "icon": "spell_holy_serenity"}, {"name": "Renew", "icon": "spell_holy_renew"} ],
+    "rotationAoE": [ {"name": "Prayer of Mending", "icon": "spell_holy_prayerofmendingtga"}, {"name": "Holy Word: Sanctify", "icon": "spell_holy_sanctuary"}, {"name": "Circle of Healing", "icon": "spell_holy_circleofhealing"} ],
+    "cooldowns": [ {"name": "Divine Hymn", "icon": "spell_holy_divinehymn"}, {"name": "Holy Word: Chastise", "icon": "spell_holy_chastise"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Priest",
-    "spec": "Shadow",
-    "role": "Ranged DPS",
-    "filename": "guide-shadow-priest.html",
-    "stats": "Haste > Mastery",
-    "notes": "High-level priority overview for Shadow Priest.",
-    "rotationST": [
-      {
-        "name": "Mind Blast",
-        "icon": "spell_shadow_unholyfrenzy"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Mind Sear",
-        "icon": "spell_shadow_mindshear"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Void Eruption",
-        "icon": "spell_shadow_shadowpower",
-        "note": "Enter Voidform."
-      }
-    ],
+    "class": "Priest", "spec": "Shadow", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Ranged dps focusing on Insanity generation and Voidform.",
+    "rotationST": [ {"name": "Vampiric Touch", "icon": "spell_shadow_foraging"}, {"name": "Shadow Word: Pain", "icon": "spell_shadow_shadowwordpain"}, {"name": "Mind Blast", "icon": "spell_shadow_mindblast"} ],
+    "rotationAoE": [ {"name": "Shadow Crash", "icon": "ability_priest_shadowcrash"}, {"name": "Mind Sear", "icon": "spell_shadow_mindsear"}, {"name": "Devouring Plague", "icon": "spell_shadow_devouringplague"} ],
+    "cooldowns": [ {"name": "Dark Ascension", "icon": "ability_priest_darkascension"}, {"name": "Void Eruption", "icon": "spell_shadow_voidform"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Rogue",
-    "spec": "Assassination",
-    "role": "Melee DPS",
-    "filename": "guide-assassination-rogue.html",
-    "stats": "Mastery > Crit",
-    "notes": "High-level priority overview for Assassination Rogue.",
-    "rotationST": [
-      {
-        "name": "Mutilate",
-        "icon": "ability_rogue_shadowstrikes"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Fan of Knives",
-        "icon": "ability_rogue_fanofknives"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Vendetta",
-        "icon": "ability_rogue_deadliness",
-        "note": "Damage amp."
-      }
-    ],
+    "class": "Rogue", "spec": "Assassination", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "Focuses on poisons and bleed effects.",
+    "rotationST": [ {"name": "Garrote", "icon": "ability_rogue_garrote"}, {"name": "Rupture", "icon": "ability_rogue_rupture"}, {"name": "Envenom", "icon": "ability_rogue_disembowel"} ],
+    "rotationAoE": [ {"name": "Crimson Tempest", "icon": "inv_knife_1h_cataclysm_c_05"}, {"name": "Fan of Knives", "icon": "ability_rogue_fanofknives"}, {"name": "Indiscriminate Carnage", "icon": "ability_rogue_indiscriminatecarnage"} ],
+    "cooldowns": [ {"name": "Deathmark", "icon": "ability_rogue_deathmark"}, {"name": "Kingsbane", "icon": "inv_knife_1h_artifactgarona_d_01"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Rogue",
-    "spec": "Outlaw",
-    "role": "Melee DPS",
-    "filename": "guide-outlaw-rogue.html",
-    "stats": "Versatility > Haste",
-    "notes": "High-level priority overview for Outlaw Rogue.",
-    "rotationST": [
-      {
-        "name": "Dispatch",
-        "icon": "ability_rogue_dispatch"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Blade Flurry",
-        "icon": "ability_warrior_punishingblow"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Adrenaline Rush",
-        "icon": "spell_shadow_shadowworddominate",
-        "note": "Energy regen."
-      }
-    ],
+    "class": "Rogue", "spec": "Outlaw", "role": "dps", "stats": "Haste > Crit > Mastery", "notes": "Combat rogue focusing on Roll the Bones buffs.",
+    "rotationST": [ {"name": "Sinister Strike", "icon": "spell_shadow_shadowwordpain"}, {"name": "Between the Eyes", "icon": "inv_weapon_rifle_01"}, {"name": "Dispatch", "icon": "inv_sword_48"} ],
+    "rotationAoE": [ {"name": "Blade Flurry", "icon": "ability_rogue_slicedice"}, {"name": "Keep It Rolling", "icon": "ability_rogue_keepitrolling"}, {"name": "Crackshot", "icon": "ability_hisek_aim"} ],
+    "cooldowns": [ {"name": "Adrenaline Rush", "icon": "spell_shadow_shadowwordpain"}, {"name": "Roll the Bones", "icon": "ability_rogue_rollthebones"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Rogue",
-    "spec": "Subtlety",
-    "role": "Melee DPS",
-    "filename": "guide-subtlety-rogue.html",
-    "stats": "Mastery > Versatility",
-    "notes": "High-level priority overview for Subtlety Rogue.",
-    "rotationST": [
-      {
-        "name": "Shadowstrike",
-        "icon": "ability_rogue_shadowstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Shuriken Storm",
-        "icon": "inv_throwingknife_07"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Shadow Dance",
-        "icon": "ability_rogue_shadowdance",
-        "note": "Stealth abilities in combat."
-      }
-    ],
+    "class": "Rogue", "spec": "Subtlety", "role": "dps", "stats": "Mastery > Crit > Haste", "notes": "Focuses on Shadow Dance and powerful finishers.",
+    "rotationST": [ {"name": "Shadowstrike", "icon": "spell_shadow_shadowwordpain"}, {"name": "Rupture", "icon": "ability_rogue_rupture"}, {"name": "Eviscerate", "icon": "ability_rogue_eviscerate"} ],
+    "rotationAoE": [ {"name": "Shuriken Storm", "icon": "ability_rogue_shurikenstorm"}, {"name": "Black Powder", "icon": "spell_priest_divinestar_shadow"}, {"name": "Secret Technique", "icon": "ability_rogue_sinistercalling"} ],
+    "cooldowns": [ {"name": "Shadow Dance", "icon": "ability_rogue_shadowdance"}, {"name": "Shadow Blades", "icon": "inv_knife_1h_grimbatolraid_d_03"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Shaman",
-    "spec": "Elemental",
-    "role": "Ranged DPS",
-    "filename": "guide-elemental-shaman.html",
-    "stats": "Haste > Crit",
-    "notes": "High-level priority overview for Elemental Shaman.",
-    "rotationST": [
-      {
-        "name": "Lava Burst",
-        "icon": "spell_shaman_lavaburst"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Earthquake",
-        "icon": "spell_nature_earthquake"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Ascendance",
-        "icon": "spell_fire_volcano",
-        "note": "Spam Lava Burst."
-      }
-    ],
+    "class": "Shaman", "spec": "Elemental", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Ranged dps focusing on Lava Burst and Lightning spells.",
+    "rotationST": [ {"name": "Flame Shock", "icon": "spell_fire_flameshock"}, {"name": "Lava Burst", "icon": "spell_shaman_lavaburst"}, {"name": "Earth Shock", "icon": "spell_nature_earthshock"} ],
+    "rotationAoE": [ {"name": "Chain Lightning", "icon": "spell_nature_chainlightning"}, {"name": "Earthquake", "icon": "spell_nature_earthquake"}, {"name": "Liquid Magma Totem", "icon": "spell_shaman_spewlava"} ],
+    "cooldowns": [ {"name": "Fire Elemental", "icon": "spell_fire_elemental_totem"}, {"name": "Stormkeeper", "icon": "ability_thunderking_lightningwhip"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Shaman",
-    "spec": "Enhancement",
-    "role": "Melee DPS",
-    "filename": "guide-enhancement-shaman.html",
-    "stats": "Haste > Mastery",
-    "notes": "High-level priority overview for Enhancement Shaman.",
-    "rotationST": [
-      {
-        "name": "Stormstrike",
-        "icon": "ability_shaman_stormstrike"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Crash Lightning",
-        "icon": "spell_shaman_crashlightning"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Feral Spirit",
-        "icon": "spell_shaman_feralspirit",
-        "note": "Summon wolves."
-      }
-    ],
+    "class": "Shaman", "spec": "Enhancement", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Melee dps using elements to empower weapon attacks.",
+    "rotationST": [ {"name": "Flame Shock", "icon": "spell_fire_flameshock"}, {"name": "Stormstrike", "icon": "ability_shaman_stormstrike"}, {"name": "Lava Lash", "icon": "ability_shaman_lavalash"} ],
+    "rotationAoE": [ {"name": "Crash Lightning", "icon": "spell_shaman_crashlightning"}, {"name": "Chain Lightning", "icon": "spell_nature_chainlightning"}, {"name": "Primordial Wave", "icon": "inv_ability_shaman_primordialwave"} ],
+    "cooldowns": [ {"name": "Feral Spirit", "icon": "spell_shaman_feralspirit"}, {"name": "Ascendance", "icon": "spell_fire_elementaldevastation"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Agility / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Light's Potential", "stat": "+Agility / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Shaman",
-    "spec": "Restoration",
-    "role": "Healer",
-    "filename": "guide-restoration-shaman.html",
-    "stats": "Crit > Versatility",
-    "notes": "High-level priority overview for Restoration Shaman.",
-    "rotationST": [
-      {
-        "name": "Healing Surge",
-        "icon": "spell_nature_healingway"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Healing Rain",
-        "icon": "spell_nature_healingrain"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Spirit Link Totem",
-        "icon": "spell_shaman_spiritlink",
-        "note": "Health equalize."
-      }
-    ],
+    "class": "Shaman", "spec": "Restoration", "role": "healer", "stats": "Versatility > Crit > Mastery", "notes": "Healer using water and totems for group sustain.",
+    "rotationST": [ {"name": "Riptide", "icon": "spell_nature_riptide"}, {"name": "Healing Surge", "icon": "spell_nature_healingwavelesser"}, {"name": "Healing Wave", "icon": "spell_nature_healingwavelesser"} ],
+    "rotationAoE": [ {"name": "Chain Heal", "icon": "spell_nature_chainheal"}, {"name": "Healing Rain", "icon": "spell_nature_giftofthewaterspirit"}, {"name": "Cloudburst Totem", "icon": "ability_shaman_cloudbursttotem"} ],
+    "cooldowns": [ {"name": "Healing Tide Totem", "icon": "spell_nature_groundingtotem"}, {"name": "Spirit Link Totem", "icon": "spell_shaman_spiritlink"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Versatility", "icon": "inv_alchemy_elixir_04" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warlock",
-    "spec": "Affliction",
-    "role": "Ranged DPS",
-    "filename": "guide-affliction-warlock.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Affliction Warlock.",
-    "rotationST": [
-      {
-        "name": "Malefic Rapture",
-        "icon": "ability_warlock_eradication"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Seed of Corruption",
-        "icon": "spell_shadow_seedofdestruction"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Summon Darkglare",
-        "icon": "inv_pet_darkglare",
-        "note": "Extends DoTs."
-      }
-    ],
+    "class": "Warlock", "spec": "Affliction", "role": "dps", "stats": "Mastery > Haste > Crit", "notes": "Focuses on damage-over-time spells and soul shards.",
+    "rotationST": [ {"name": "Agony", "icon": "spell_shadow_curseofsargeras"}, {"name": "Unstable Affliction", "icon": "spell_shadow_unstableaffliction_3"}, {"name": "Malefic Rapture", "icon": "ability_warlock_everlastingaffliction"} ],
+    "rotationAoE": [ {"name": "Seed of Corruption", "icon": "spell_shadow_seedofdestruction"}, {"name": "Vile Taint", "icon": "sha_spell_shadow_shadesofdarkness_nightborne"}, {"name": "Phantom Singularity", "icon": "inv_enchant_voidsphere"} ],
+    "cooldowns": [ {"name": "Summon Darkglare", "icon": "inv_beholderwarlock"}, {"name": "Soul Rot", "icon": "ability_ardenweald_warlock"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Mastery", "icon": "inv_alchemy_elixir_03" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warlock",
-    "spec": "Demonology",
-    "role": "Ranged DPS",
-    "filename": "guide-demonology-warlock.html",
-    "stats": "Haste > Mastery",
-    "notes": "High-level priority overview for Demonology Warlock.",
-    "rotationST": [
-      {
-        "name": "Hand of Gul'dan",
-        "icon": "spell_warlock_handofguldan"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Implosion",
-        "icon": "spell_shadow_fireandbrimstone"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Summon Demonic Tyrant",
-        "icon": "inv_pet_demonic_tyrant",
-        "note": "Boosts demons."
-      }
-    ],
+    "class": "Warlock", "spec": "Demonology", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Focuses on summoning demons to fight for you.",
+    "rotationST": [ {"name": "Call Dreadstalkers", "icon": "spell_warlock_calldreadstalkers"}, {"name": "Hand of Gul'dan", "icon": "ability_warlock_handofguldan"}, {"name": "Demonbolt", "icon": "inv__demonbolt"} ],
+    "rotationAoE": [ {"name": "Implosion", "icon": "inv_implosion"}, {"name": "Bilescourge Bombers", "icon": "ability_hunter_pet_bat"}, {"name": "Hand of Gul'dan", "icon": "ability_warlock_handofguldan"} ],
+    "cooldowns": [ {"name": "Summon Demonic Tyrant", "icon": "inv_summondemonictyrant"}, {"name": "Grimoire: Felguard", "icon": "spell_shadow_summonfelguard"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Light's Potential", "stat": "+Intellect / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warlock",
-    "spec": "Destruction",
-    "role": "Ranged DPS",
-    "filename": "guide-destruction-warlock.html",
-    "stats": "Haste > Crit",
-    "notes": "High-level priority overview for Destruction Warlock.",
-    "rotationST": [
-      {
-        "name": "Chaos Bolt",
-        "icon": "ability_warlock_chaosbolt"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Rain of Fire",
-        "icon": "spell_shadow_rainoffire"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Summon Infernal",
-        "icon": "spell_warlock_summoninfernal",
-        "note": "AoE and shard gen."
-      }
-    ],
+    "class": "Warlock", "spec": "Destruction", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Focuses on high burst damage and Chaos Bolts.",
+    "rotationST": [ {"name": "Immolate", "icon": "spell_fire_immolation"}, {"name": "Conflagrate", "icon": "spell_fire_fireball"}, {"name": "Chaos Bolt", "icon": "ability_warlock_chaosbolt"} ],
+    "rotationAoE": [ {"name": "Rain of Fire", "icon": "spell_shadow_rainoffire"}, {"name": "Havoc", "icon": "ability_warlock_baneofhavoc"}, {"name": "Cataclysm", "icon": "achievement_zone_cataclysm"} ],
+    "cooldowns": [ {"name": "Summon Infernal", "icon": "spell_shadow_summoninfernal"}, {"name": "Dimensional Rift", "icon": "spell_warlock_demonicportal_purple"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Intellect / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warrior",
-    "spec": "Arms",
-    "role": "Melee DPS",
-    "filename": "guide-arms-warrior.html",
-    "stats": "Crit > Haste",
-    "notes": "High-level priority overview for Arms Warrior.",
-    "rotationST": [
-      {
-        "name": "Mortal Strike",
-        "icon": "ability_warrior_punishingblow"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Bladestorm",
-        "icon": "ability_warrior_bladestorm"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Colossus Smash",
-        "icon": "ability_warrior_colossussmash",
-        "note": "Damage amp."
-      }
-    ],
+    "class": "Warrior", "spec": "Arms", "role": "dps", "stats": "Crit > Haste > Mastery", "notes": "Melee dps focusing on high-impact strikes and bleeds.",
+    "rotationST": [ {"name": "Mortal Strike", "icon": "ability_warrior_savageblow"}, {"name": "Overpower", "icon": "ability_meleedamage"}, {"name": "Execute", "icon": "inv_sword_48"} ],
+    "rotationAoE": [ {"name": "Sweeping Strikes", "icon": "ability_rogue_slicedice"}, {"name": "Bladestorm", "icon": "ability_warrior_bladestorm"}, {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"} ],
+    "cooldowns": [ {"name": "Avatar", "icon": "warrior_talent_icon_avatar"}, {"name": "Colossus Smash", "icon": "ability_warrior_colossussmash"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of the Shattered Sun", "stat": "+Critical Strike", "icon": "inv_alchemy_elixir_01" },
+      "potion": { "name": "Light's Potential", "stat": "+Strength / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warrior",
-    "spec": "Fury",
-    "role": "Melee DPS",
-    "filename": "guide-fury-warrior.html",
-    "stats": "Mastery > Haste",
-    "notes": "High-level priority overview for Fury Warrior.",
-    "rotationST": [
-      {
-        "name": "Rampage",
-        "icon": "ability_warrior_rampage"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Whirlwind",
-        "icon": "ability_whirlwind"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Recklessness",
-        "icon": "ability_warrior_innerrage",
-        "note": "Enrage and Crit boost."
-      }
-    ],
+    "class": "Warrior", "spec": "Fury", "role": "dps", "stats": "Haste > Mastery > Crit", "notes": "Fast-paced melee dps focusing on Enrage and high attack speed.",
+    "rotationST": [ {"name": "Rampage", "icon": "ability_warrior_rampage"}, {"name": "Bloodthirst", "icon": "spell_nature_bloodlust"}, {"name": "Raging Blow", "icon": "warrior_wild_strike"} ],
+    "rotationAoE": [ {"name": "Whirlwind", "icon": "ability_whirlwind"}, {"name": "Rampage", "icon": "ability_warrior_rampage"}, {"name": "Odyn's Fury", "icon": "inv_sword_1h_artifactvigfus_d_02"} ],
+    "cooldowns": [ {"name": "Recklessness", "icon": "spell_nature_bloodlust"}, {"name": "Avatar", "icon": "warrior_talent_icon_avatar"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Light's Potential", "stat": "+Strength / High Burst", "icon": "inv_potion_108" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   },
   {
-    "class": "Warrior",
-    "spec": "Protection",
-    "role": "Tank",
-    "filename": "guide-protection-warrior.html",
-    "stats": "Haste > Versatility",
-    "notes": "High-level priority overview for Protection Warrior.",
-    "rotationST": [
-      {
-        "name": "Shield Slam",
-        "icon": "inv_shield_05"
-      }
-    ],
-    "rotationAoE": [
-      {
-        "name": "Thunder Clap",
-        "icon": "spell_nature_thunderclap"
-      }
-    ],
-    "cooldowns": [
-      {
-        "name": "Shield Wall",
-        "icon": "ability_warrior_shieldwall",
-        "note": "Major damage reduction."
-      }
-    ],
+    "class": "Warrior", "spec": "Protection", "role": "tank", "stats": "Haste > Versatility > Mastery", "notes": "Tanking spec with high physical mitigation and mobility.",
+    "rotationST": [ {"name": "Shield Slam", "icon": "inv_shield_05"}, {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"} ],
+    "rotationAoE": [ {"name": "Thunder Clap", "icon": "spell_nature_thunderclap"}, {"name": "Revenge", "icon": "ability_warrior_revenge"}, {"name": "Shield Charge", "icon": "ability_warrior_shieldcharge"} ],
+    "cooldowns": [ {"name": "Shield Wall", "icon": "ability_warrior_shieldwall"}, {"name": "Last Stand", "icon": "spell_holy_ashestoashes"} ],
     "consumes": {
-      "food": {
-        "name": "Royal Roast",
-        "icon": "inv_misc_food_legion_feast",
-        "stat": "+Primary / Haste"
-      },
-      "flask": {
-        "name": "Flask of Eternal Light",
-        "icon": "inv_alchemy_80_flask01",
-        "stat": "+Mastery"
-      },
-      "potion": {
-        "name": "Tempered Potion",
-        "icon": "inv_alchemy_80_potion01",
-        "stat": "+Secondary Stats"
-      },
-      "weapon": {
-        "name": "Thalassian Phoenix Oil",
-        "icon": "inv_alchemy_70_potion01",
-        "stat": "Proc"
-      },
-      "buffs": {
-        "name": "Void-Touched Augment Rune",
-        "icon": "inv_misc_rune_01",
-        "stat": "+Primary Stat"
-      }
+      "food": { "name": "Royal Roast", "stat": "+Strength / Haste", "icon": "inv_food_meat_08" },
+      "flask": { "name": "Flask of Eternal Light", "stat": "+Haste", "icon": "inv_alchemy_elixir_02" },
+      "potion": { "name": "Tempered Potion", "stat": "+Secondary Stats", "icon": "trade_alchemy_potiona4" },
+      "weapon": { "name": "Thalassian Phoenix Oil", "stat": "Crit & Haste Procs", "icon": "inv_potion_100" },
+      "buffs": { "name": "Void-Touched Augment Rune", "stat": "+Primary Stat", "icon": "inv_misc_rune_10" }
     }
   }
 ]
