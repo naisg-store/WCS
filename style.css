@@ -227,7 +227,7 @@ p {
     top: 0;
     right: 100%; /* Push to left side of menu */
     left: auto;
-    background: rgba(15, 23, 42, 0.95);
+    background: #0f172a;
     border: 1px solid var(--border);
     border-radius: 8px;
     list-style: none;
@@ -238,6 +238,11 @@ p {
     visibility: hidden;
     transform: translateX(-10px);
     transition: all 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.nested-menu li a {
+    color: var(--text-main) !important;
 }
 
 .nested-dropdown:hover .nested-menu {
@@ -408,11 +413,6 @@ footer {
     color: var(--accent);
 }
 
-.copyright {
-    color: rgba(148, 163, 184, 0.5);
-    font-size: 0.8rem;
-}
-
 /* ==========================================================================
    8. MOBILE RESPONSIVENESS
    ========================================================================== */
@@ -424,61 +424,81 @@ footer {
     
     .nav-list {
         width: 100%;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: center;
     }
 
     .dropdown-menu {
-        position: static;
+        position: relative !important;
+        top: 0;
+        right: 0;
         transform: none;
         opacity: 1;
         visibility: visible;
         box-shadow: none;
         border: none;
-        background: rgba(0, 0, 0, 0.15);
+        background: rgba(0, 0, 0, 0.2);
         margin-top: 5px;
-        min-width: 100%;
+        width: 100%;
     }
 
     .nested-menu {
-        position: static;
+        position: relative !important;
+        top: 0;
+        right: 0;
         transform: none;
         opacity: 1;
         visibility: visible;
         border: none;
-        background: rgba(0,0,0,0.25);
-        margin: 5px 10px;
-        min-width: calc(100% - 20px);
+        background: rgba(0, 0, 0, 0.3);
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .dropdown-menu li a {
+        padding-left: 30px;
+    }
+    
+    .nested-menu li a {
+        padding-left: 45px;
     }
    
    /* ==========================================================================
    9. RESPONSIVE IMAGES
    ========================================================================== */
-.guide-image-container {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    overflow: hidden;
-    border-radius: 12px; /* Softens the corners of the image container */
-   object-fit: contain;
-}
+    .guide-image-container {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        overflow: hidden;
+        border-radius: 12px;
+        object-fit: contain;
+    }
 
-.guide-feature-image {
-    max-width: 100%; /* Prevents the image from growing larger than its container */
-    height: auto;     /* Maintains the correct, un-stretched aspect ratio */
-    display: block;
-    object-fit: contain; /* Ensures the image scales down cleanly if needed */
-}
+    .guide-feature-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Prevents weird baseline spacing issues */
-}
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-}
+} /* <-- This bracket now correctly closes the media query! */
+
 /* ==========================================================================
    PARALLAX HERO BANNER
    ========================================================================== */
@@ -497,15 +517,3 @@ img {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
-
-.video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    z-index: -100; /* Pushes the video behind all your cheat sheet containers */
-    object-fit: cover; /* Ensures the video scales proportionally without distorting */
-    pointer-events: none; /* Prevents users from accidentally right-clicking or interacting with the video */
-}
-
