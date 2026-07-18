@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Blood Death Knight Patch 12.0.7 Guide - Midnight Cheat Sheet</title>
-    <meta name="description" content="Bring the light to the void with our Blood Death Knight guide for Patch 12.0.7. Optimal rotations, stat priorities, and Midnight meta analysis.">
+    <meta name="description" content="Dominate the endgame with our comprehensive Blood Death Knight guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    <style>    
-    img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Prevents weird baseline spacing issues */
-    }
-</style>  
+    <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
 </head>
 <body>
 
@@ -48,7 +48,7 @@
                                     <ul class="class-menu">
                                         <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
                                         <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
-                                        <li><a href="guide-devourer-dh.html">Devourer (Melee DPS)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Ranged DPS)</a></li>
                                     </ul>
                                 </li>
                                 <!-- Druid -->
@@ -171,63 +171,61 @@
     </div>
 </header>
     
+<!-- Class Guide Feature Image as parallax background-->
+<div class="hero-parallax-banner" style="background-image: url('images/death-knight-blood.png');"></div>
+<!-- AI Art Prompt Suggestion: A dramatic, high-fidelity game-engine style screenshot of a Blood Death Knight in World of Warcraft, casting iconic abilities, cinematic lighting, dark fantasy aesthetic, 4k resolution -->
+	
 <div class="container">
     <div class="header">
-        <span class="role-badge">Blood</span>
+        <span class="role-badge">Tank</span>
         <h1>Blood Death Knight: Patch 12.0.7 Guide</h1>
     </div>
 
     <div class="content-box">
-        <h2>Blood Death Knight Spec Overview</h2>
-        <p>Blood Death Knights are a premier tanking specialization in Patch 12.0.7, renowned for their incredible self-healing, unmatched control over enemy positioning through Death Grip, and robust active mitigation. Unlike traditional mitigation tanks, Blood relies on a reactive playstyle, actively absorbing hits and instantly clawing back their health pool using Death Strike. Standing as a bulwark of undeath, they utilize the power of blood and bone to survive the deadliest encounters in the Midnight expansion.</p>
+        <div class="guide-content">
+            <h2>The Meta Context</h2>
+            <p>Blood Death Knight in Patch 12.0.7 (Midnight) solidifies its position as the premier self-sustaining Tank in World of Warcraft. Excelling in both high-end Mythic+ pushing and Raid progression, Blood relies heavily on the <strong>San'layn</strong> Hero Talent tree in the current meta. The San'layn tree supercharges your self-healing by turning Death Strike into a massive engine for Vampiric Strike, generating unprecedented levels of Leech and physical damage mitigation. Paired with Midnight's new Apex Talents, Blood DKs have evolved from spiky health-yo-yos to stabilized juggernauts capable of surviving lethal damage spikes entirely independent of their healers.</p>
+            
+            <h2>Stat Priority</h2>
+            <p>The optimal stat breakdown for a Blood Death Knight is: <strong>Item Level (Strength/Stamina) > Haste > Versatility > Mastery > Critical Strike</strong></p>
+            <ul>
+                <li><strong>Strength & Stamina:</strong> Your primary stats. Strength grants Parry and Attack Power, while Stamina increases your total health pool, which directly buffs the minimum healing threshold of your Death Strike.</li>
+                <li><strong>Haste:</strong> The absolute most crucial secondary stat. It increases your Rune regeneration rate, reduces the Global Cooldown (GCD), and allows for more frequent Heart Strikes and Death Strikes, drastically smoothing out your survivability.</li>
+                <li><strong>Versatility:</strong> Offers a flat percentage of damage reduction while simultaneously increasing your self-healing and damage output. This is exceptionally valuable for high Mythic+ keys to prevent unexpected one-shots.</li>
+                <li><strong>Mastery:</strong> Increases the size of your Blood Shield (a physical absorb shield) generated every time you Death Strike. It shines against heavy physical damage bosses but is less universally applicable than Versatility against magic damage.</li>
+                <li><strong>Critical Strike:</strong> Provides a chance to parry attacks and increases damage output, but it offers the least reliable defensive value overall.</li>
+            </ul>
 
-        <h2>Stat Priority</h2>
-        <p>For Blood Death Knights in Patch 12.0.7, prioritizing the correct stats is essential to ensure a steady flow of runes, maximum health pool scaling, and robust defensive layers. Follow this priority for general tanking and Mythic+ content:</p>
-        <ul>
-            <li>Item Level provides the highest increase to Strength and Stamina, boosting both your armor, damage, and base health pool.</li>
-            <li>Haste is your most vital secondary stat, accelerating Rune regeneration rates and reducing the global cooldown to ensure you always have resources for Death Strike.</li>
-            <li>Versatility increases all damage and healing done while reducing all damage taken, smoothing out incoming spikes.</li>
-            <li>Mastery increases the size of your Shield of Blood absorbed from Death Strike and increases your Attack Power.</li>
-            <li>Critical Strike increases your chance to parry incoming physical attacks and boosts your offensive output, though it offers less defensive reliability than other stats.</li>
-        </ul>
+            <h2>Core Rotation</h2>
+            <h3>Single-Target Priority</h3>
+            <ol>
+                <li>Cast <strong>Marrowrend</strong> to generate and maintain at least 5-7 stacks of <strong>Bone Shield</strong> at all times. Never let Bone Shield drop completely.</li>
+                <li>Use <strong>Blood Boil</strong> to apply and maintain <strong>Blood Plague</strong> on your target.</li>
+                <li>Cast <strong>Death Strike</strong> to spend Runic Power immediately after you have taken a heavy damage spike, or to avoid overcapping Runic Power if you are healthy.</li>
+                <li>Use <strong>Heart Strike</strong> to spend Runes, generate Runic Power, and deal damage (ideally while standing in your Death and Decay).</li>
+                <li>Cast <strong>Vampiric Blood</strong> and <strong>Dancing Rune Weapon</strong> proactively before large, predictable incoming damage spikes.</li>
+            </ol>
+            
+            <h3>AoE Priority</h3>
+            <ol>
+                <li>Open with <strong>Blood Boil</strong> to apply Blood Plague to all enemies and snap initial group aggro.</li>
+                <li>Cast <strong>Death and Decay</strong>. While standing in it, your Heart Strike will cleave up to 5 targets, significantly boosting your Runic Power generation.</li>
+                <li>Use <strong>Marrowrend</strong> if your Bone Shield stacks dip below 5, as AoE melee swings will strip your charges quickly.</li>
+                <li>Spam <strong>Heart Strike</strong> to generate massive amounts of Runic Power while cleaving the pack.</li>
+                <li>Liberally use <strong>Death Strike</strong> to mitigate the heavy incoming group damage, capitalizing on your San'layn Leech windows.</li>
+                <li>Use <strong>Abomination Limb</strong> to tightly group scattered casters and lock down large pulls.</li>
+            </ol>
 
-        <h2>Midnight Talent Build & Hero Talents</h2>
-        <p>The standard build for Patch 12.0.7 optimizes survival and resource generation, integrating seamlessly with the expansion's Hero Talent trees. Depending on your encounter, you will choose between two distinct playstyles:</p>
-        <ul>
-            <li>Deathbringer focuses on applying Reaper's Mark to targets, amplifying physical damage, and bursting down priority enemies while gaining armor.</li>
-            <li>San'layn enhances your Vampiric Blood capability, turning you into a blood-frenzied beast with high haste and massive self-healing.</li>
-        </ul>
-
-        <h2>Rotational Priority</h2>
-        <p>Managing resources is the key to mastering Blood. Your rotation is divided into generating Bone Shield charges, accumulating Runic Power, and reacting with well-timed Death Strikes.</p>
-        <ul>
-            <li>Maintain Bone Shield at 5 or more stacks at all times to benefit from the armor increase and Haste buff.</li>
-            <li>Cast Marrowrend to generate Bone Shield charges when you fall below 6 stacks.</li>
-            <li>Apply and maintain Blood Plague on all enemies using Blood Boil.</li>
-            <li>Cast Death Strike to spend Runic Power and heal yourself, especially immediately after taking a large chunk of damage.</li>
-            <li>Stand inside Death and Decay to allow your Heart Strike to cleave up to 5 targets.</li>
-            <li>Cast Heart Strike to generate Runic Power and build threat when your Bone Shield is secure.</li>
-        </ul>
-
-        <h2>Active Mitigation & Defensive Cooldowns</h2>
-        <p>Using your cooldowns proactively is what separates average Blood tanks from the elite. Rotate these abilities to mitigate massive damage windows:</p>
-        <ul>
-            <li>Dancing Rune Weapon should be used at the start of pulls for an instant 40% Parry boost and extra resource generation.</li>
-            <li>Vampiric Blood is your primary survival tool, boosting maximum health and increasing all healing received by 30%.</li>
-            <li>Rune Tap should be cast right before predictable, unmitigatable active damage spikes.</li>
-            <li>Icebound Fortitude provides a flat 30% damage reduction and immunity to stun effects for emergencies.</li>
-            <li>Anti-Magic Shell absorbs magical damage and prevents the application of harmful debuffs.</li>
-        </ul>
-
-        <h2>Gems, Enchants & Consumables</h2>
-        <p>Maximize your performance in raids and Mythic+ dungeons by optimizing your gear with the following enhancements:</p>
-        <ul>
-            <li>Gems should focus on Haste and Versatility, utilizing Quick Sapphire or Versatile Emerald in all open sockets.</li>
-            <li>Weapon Enchant should be Rune of the Fallen Crusader for a massive Strength boost and occasional self-healing.</li>
-            <li>Chest Enchant should be Sustained Strength to increase primary stats and overall tankiness.</li>
-            <li>Cloak Enchant should be Graceful Avoidance to reduce damage from area-of-effect mechanics.</li>
-            <li>Consumables should include the Flask of Alchemical Chaos and Algari Healing Potions for clutch recovery.</li>
-        </ul>
+            <h2>Consumables & Enhancements</h2>
+            <ul>
+                <li><strong>Flask:</strong> Flask of the Shattered Sun (for hybrid damage/defense) or Flask of Fortification (for pure survivability).</li>
+                <li><strong>Potions:</strong> Potion of Phantom Fire (Combat/Damage) and Silvermoon Health Potion (Emergency Healing).</li>
+                <li><strong>Food:</strong> Harandar Celebration Feast (Primary stat boost).</li>
+                <li><strong>Weapon Enchant:</strong> Rune of the Fallen Crusader (Default choice) or Rune of the Stoneskin Gargoyle (For heavy physical damage mitigation).</li>
+                <li><strong>Armor Kits:</strong> Midnight Defender's Armor Kit (applied to Chest and Legs).</li>
+                <li><strong>Gems:</strong> Versatile Amethyst (Prioritizing Versatility and Haste).</li>
+            </ul>
+        </div>
     </div>
 
     <footer>
