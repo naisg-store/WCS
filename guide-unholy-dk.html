@@ -6,6 +6,13 @@
     <meta name="description" content="Dominate the endgame with our comprehensive Unholy Death Knight guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
 </head>
 <body>
 
@@ -41,6 +48,7 @@
                                     <ul class="class-menu">
                                         <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
                                         <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Ranged DPS)</a></li>
                                     </ul>
                                 </li>
                                 <!-- Druid -->
@@ -163,6 +171,10 @@
     </div>
 </header>
     
+<!-- Class Guide Feature Image as parallax background-->
+<div class="hero-parallax-banner" style="background-image: url('images/death-knight-unholy.png');"></div>
+<!-- AI Art Prompt Suggestion: A dramatic, high-fidelity game-engine style screenshot of a Unholy Death Knight in World of Warcraft, casting iconic abilities, cinematic lighting, dark fantasy aesthetic, 4k resolution -->
+	
 <div class="container">
     <div class="header">
         <span class="role-badge">Melee DPS</span>
@@ -170,67 +182,48 @@
     </div>
 
     <div class="content-box">
-        <h2>The Meta Context: Spreading the Plague</h2>
-        <p>In <i>World of Warcraft: Midnight</i>, Unholy Death Knights remain the absolute kings of explosive AoE burst and relentless damage-over-time (DoT) pressure. Utilizing a combination of Festering Wounds, virulent plagues, and a literal army of summoned ghouls, Unholy delivers incredibly high-impact playstyles. In Patch 12.0.7, Hero Talent builds like <strong>Rider of the Apocalypse</strong> (summoning the legendary Horsemen) and <strong>San'layn</strong> (vampiric strike enhancement) dictate the high-end PvE meta, offering distinct options for monstrous single-target setups or massive Mythic+ cleave.</p>
+        <div class="guide-content">
+            <h2>The Meta Context</h2>
+            <p>Unholy Death Knight in Patch 12.0.7 (Midnight) is a powerhouse Melee DPS, excelling in both single-target and burst AoE scenarios. The current meta heavily favors the <strong>Rider of the Apocalypse</strong> Hero Talent tree. This tree summons the legendary Four Horsemen to assist you in combat, providing massive burst windows, incredible utility, and sustained pressure. Paired with Apex Talents like Forbidden Knowledge, Unholy dominates Mythic+ and Raid progression by turning Death Coil into the devastating Necrotic Coil and unleashing an endless army of undead.</p>
+            
+            <h2>Stat Priority</h2>
+            <p>The optimal stat breakdown for an Unholy Death Knight is: <strong>Strength > Mastery &ge; Critical Strike > Haste > Versatility</strong></p>
+            <ul>
+                <li><strong>Strength:</strong> Your primary stat. It is a straightforward throughput increase to every aspect of your damage, scaling both your abilities and your minions.</li>
+                <li><strong>Mastery:</strong> Increases your Shadow damage and the damage of your Minions. Because the vast majority of Unholy's damage profile is shadow or pet-based, this stat scales exceptionally well in both single-target and AoE situations.</li>
+                <li><strong>Critical Strike:</strong> Synergizes directly with Mastery and various class talents (such as Brittle) that increase critical strike damage, making it your highest priority secondary stat after Mastery.</li>
+                <li><strong>Haste:</strong> Lowers the global cooldown and increases attack speed, but does not affect your disease tick rate, placing its value significantly lower than Mastery and Crit.</li>
+                <li><strong>Versatility:</strong> Provides a flat damage increase and damage reduction. It gains value later in the expansion due to diminishing returns on other stats, but remains the lowest priority early on.</li>
+            </ul>
 
-        <div style="background: #020617; padding: 20px; text-align: center; border-radius: 8px; margin: 20px 0; border: 1px dashed var(--primary-color);">
-            <p style="color: var(--text-muted); font-style: italic;">[Suggested Image: An Unholy Death Knight channeling Apocalypse, summoning a legion of ghouls and unleashing a virulent green cloud of plague across nearby targets]</p>
-        </div>
+            <h2>Core Rotation</h2>
+            <h3>Single-Target Priority</h3>
+            <ol>
+                <li>Cast <strong>Army of the Dead</strong> alongside <strong>Dark Transformation</strong> (ideally macroed together) to trigger Commander of the Dead and summon your Rider of the Apocalypse.</li>
+                <li>Apply and maintain <strong>Virulent Plague</strong> on your primary target.</li>
+                <li>Cast <strong>Scourge Strike</strong> (or <em>Vampiric Strike</em> during Dark Transformation) to build Lesser Ghoul stacks and spend Runes.</li>
+                <li>Consume Sudden Doom procs and excess Runic Power with <strong>Death Coil</strong> (or <em>Necrotic Coil</em>).</li>
+                <li>Cast <strong>Festering Strike</strong> to apply Festering Wounds if the target is entirely missing them.</li>
+            </ol>
+            
+            <h3>AoE Priority</h3>
+            <ol>
+                <li>Cast <strong>Army of the Dead</strong> and <strong>Dark Transformation</strong> to unleash your empowered minions and enable sweeping claws for massive cleave.</li>
+                <li>Maintain <strong>Virulent Plague</strong> across all targets.</li>
+                <li>Cast <strong>Death and Decay</strong> to enable Scourge Strike to cleave up to 5 additional targets.</li>
+                <li>Spam <strong>Scourge Strike</strong> while inside Death and Decay to burst AoE damage and apply/burst wounds.</li>
+                <li>Consume Sudden Doom procs and excess Runic Power with <strong>Epidemic</strong> (or <em>Graveyard</em>) instead of Death Coil.</li>
+            </ol>
 
-        <h2>Stat Analysis: Power in Numbers</h2>
-        <p>Your stats directly affect your Rune regeneration speed and the damage output of your summoned minions. For general PvE progression in Patch 12.0.7, prioritize your stats as follows:</p>
-        <p style="text-align: center; font-size: 1.2rem;"><strong>Strength > Mastery > Haste > Critical Strike > Versatility</strong></p>
-        <ul>
-            <li><strong>Strength</strong> is your primary stat, boosting all attack power and direct ability damage.</li>
-            <li><strong>Mastery (Dreadblade)</strong> increases all shadow damage dealt and drastically amplifies the damage of your massive legion of minions. This stat scales phenomenally well for both AoE and burst.</li>
-            <li><strong>Haste</strong> increases your attack speed and speeds up Rune regeneration, allowing for a smoother, faster rotational flow.</li>
-            <li><strong>Critical Strike</strong> provides your abilities and pets a chance to deal double damage.</li>
-            <li><strong>Versatility</strong> offers a minor flat damage increase and damage reduction.</li>
-        </ul>
-
-        <h2>Core Rotation Nuance & Wound Management</h2>
-        <p>The core gameplay loop of Unholy centers on applying <strong>Festering Wounds</strong> to targets using physical attacks, and then popping those wounds with Shadow-infused strikes to unleash explosive shadow damage.</p>
-        
-        <h3>Single-Target Burst Opener (Riders Path)</h3>
-        <ul>
-            <li>Ensure your baseline <strong>Raise Dead</strong> ghoul is active before starting the encounter.</li>
-            <li>Apply <strong>Virulent Plague</strong> to your target.</li>
-            <li>Cast <strong>Festering Strike</strong> to apply 2-4 Festering Wounds to the enemy.</li>
-            <li>Activate <strong>Dark Transformation</strong> to empower your primary ghoul.</li>
-            <li>Use <strong>Apocalypse</strong> to burst up to 4 Festering Wounds, instantly summoning an army of additional ghouls to fight for you.</li>
-            <li>Spend your generated Runic Power on <strong>Death Coil</strong> to extend Dark Transformation and prevent capping resources.</li>
-        </ul>
-
-        <h3>AoE and Cleave Priority</h3>
-        <ul>
-            <li>Ensure <strong>Virulent Plague</strong> is active and spread across all targets.</li>
-            <li>Apply Festering Wounds to your primary target using Festering Strike.</li>
-            <li>Drop <strong>Death and Decay</strong> on the ground. Standing inside your Death and Decay causes your Scourge Strike to cleave, popping Festering Wounds on multiple targets simultaneously.</li>
-            <li>Cast <strong>Epidemic</strong> to consume Runic Power, dealing explosive shadow damage to all diseased enemies in the area.</li>
-        </ul>
-
-        <h2>Defensives & Group Utility</h2>
-        <p>Unholy is famous for having some of the most robust defensive utility in the game, allowing you to bypass lethal mechanics easily:</p>
-        <ul>
-            <li><strong>Anti-Magic Shell (AMS):</strong> Absorbs magical damage and generates free Runic Power when active.</li>
-            <li><strong>Anti-Magic Zone (AMZ):</strong> Places a protective dome reducing magical damage taken by all raid/party members inside by 20%.</li>
-            <li><strong>Icebound Fortitude:</strong> Grants complete immunity to stun effects and reduces all incoming damage by 30%.</li>
-            <li><strong>Death Grip:</strong> The premier utility spell to pull out-of-position enemies directly into your team's AoE cleave pile.</li>
-        </ul>
-
-        <h2>Consumables & Enhancements</h2>
-        <p>Max out your character's potential for high-level progression content:</p>
-        <ul>
-            <li><strong>Flask:</strong> Flask of Alchemical Chaos or Flask of Tempered Mastery.</li>
-            <li><strong>Potions:</strong> Tempered Potion and Algari Healing Potion.</li>
-            <li><strong>Food:</strong> Feast of Divine Appetites or Hearty Chippy Tea.</li>
-            <li><strong>Weapon Buff:</strong> Apply Rune of the Fallen Crusader for self-healing and massive passive Strength procs.</li>
-            <li><strong>Ring Enchants:</strong> Enchant Ring - Radiant Mastery.</li>
-        </ul>
-
-        <div class="cta-box">
-            <p>Need the exact talent codes for the current meta? Our live tool has the top-simming builds for every encounter.</p>
-            <a href="index.html">Open the Midnight Cheat Sheet</a>
+            <h2>Consumables & Enhancements</h2>
+            <ul>
+                <li><strong>Flasks:</strong> Flask of the Shattered Sun</li>
+                <li><strong>Potions:</strong> Potion of Recklessness (Combat) and Silvermoon Health Potion (Healing)</li>
+                <li><strong>Food:</strong> Harandar Celebration (Feast) or Royal Roast</li>
+                <li><strong>Weapon Enchant:</strong> Rune of the Apocalypse</li>
+                <li><strong>Weapon Oil:</strong> Thalassian Phoenix Oil</li>
+                <li><strong>Gems:</strong> Dual-stat Amethyst gems (e.g., Flawless Deadly Amethyst) to heavily prioritize Mastery and Crit.</li>
+            </ul>
         </div>
     </div>
 
