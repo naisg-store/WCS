@@ -6,13 +6,13 @@
     <meta name="description" content="Dominate the endgame with our comprehensive Frost Death Knight guide for Patch 12.0.7. Optimal stats, rotations, and Midnight meta analysis.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>    
-    img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Prevents weird baseline spacing issues */
-    }
-</style>  
+	<style>    
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block; /* Prevents weird baseline spacing issues */
+		}
+	</style>  
 </head>
 <body>
 
@@ -48,6 +48,7 @@
                                     <ul class="class-menu">
                                         <li><a href="guide-havoc-dh.html">Havoc (Melee DPS)</a></li>
                                         <li><a href="guide-vengeance-dh.html">Vengeance (Tank)</a></li>
+                                        <li><a href="guide-devourer-dh.html">Devourer (Ranged DPS)</a></li>
                                     </ul>
                                 </li>
                                 <!-- Druid -->
@@ -169,9 +170,11 @@
         </nav>
     </div>
 </header>
-<div class="hero-parallax-banner" style="background-image: url('images/guide-frost-dk.jpg');"></div>
-
     
+<!-- Class Guide Feature Image as parallax background-->
+<div class="hero-parallax-banner" style="background-image: url('images/death-knight-frost.png');"></div>
+<!-- AI Art Prompt Suggestion: A dramatic, high-fidelity game-engine style screenshot of a Frost Death Knight in World of Warcraft, casting iconic abilities, cinematic lighting, dark fantasy aesthetic, 4k resolution -->
+	
 <div class="container">
     <div class="header">
         <span class="role-badge">Melee DPS</span>
@@ -179,42 +182,47 @@
     </div>
 
     <div class="content-box">
-        <h2>The Meta Context: Relentless Ice</h2>
-        <p>In <i>World of Warcraft: Midnight</i>, Frost Death Knights deliver simple, high-impact shattering burst options. Built around tracking Killing Machine procs and crushing priority targets beneath heavy frost damage, the spec thrives in rapid-fire engagements. Patch 12.0.7 favors two core build routes: the iconic **Breath of Sindragosa** window for extended burst windows, or the heavily favored **Obliteration** build utilizing dual-wielding speed to pop massive Obliterates back-to-back.</p>
+        <div class="guide-content">
+            <h2>The Meta Context</h2>
+            <p>Frost Death Knight in Patch 12.0.7 (Midnight) is a burst-heavy Melee DPS defined by short, explosive burst windows synchronized with Pillar of Frost, a 45-second cooldown that amplifies your Strength by 30%. The current meta sees Frost performing exceptionally well in both Mythic+ and Raids when utilizing the 2H Breath of Sindragosa build paired with the Deathbringer Hero Talent tree. The addition of Midnight's Apex Talent system, specifically "Chosen of the Frostbrood," further escalates your burst potential by extending your power capabilities within these crucial windows.</p>
+            
+            <h2>Stat Priority</h2>
+            <p>The optimal stat priority heavily depends on your specific build, but the general breakdown for the popular Deathbringer Breath of Sindragosa build is: <strong>Critical Strike > Mastery > Haste > Versatility</strong>.</p>
+            <ul>
+                <li><strong>Critical Strike:</strong> Buffs your overall damage output and increases the chance of generating Killing Machine procs, which are vital for your rotation.</li>
+                <li><strong>Mastery:</strong> Directly boosts your overall Frost damage output, scaling extremely well for AoE and cleave scenarios.</li>
+                <li><strong>Haste:</strong> Speeds up your Global Cooldowns (GCD) and increases your rune recharge rate.</li>
+                <li><strong>Versatility:</strong> Provides a flat damage increase and damage reduction, though it is typically the lowest priority.</li>
+            </ul>
 
-        <h2>Stat Analysis: Piercing Cold</h2>
-        <p>For Patch 12.0.7, scaling your baseline Obliterate crits and spellpower throughput means adjusting your stats cleanly:</p>
-        <p style="text-align: center; font-size: 1.2rem;"><strong>Strength > Mastery > Critical Strike > Haste > Versatility</strong></p>
-        <ul>
-            <li>Strength scales all weapon swings, baseline abilities, and general attack power.</li>
-            <li>Mastery (Frozen Heart) increases your total Frost damage output, which scales every key damage dealer in your rotation.</li>
-            <li>Critical Strike is vital for generating Killing Machine procs naturally during window down-times.</li>
-            <li>Haste speeds up resource flows and Rune generation to avoid dead spots in the rotation.</li>
-        </ul>
+            <h2>Core Rotation</h2>
+            <h3>Single-Target Priority</h3>
+            <ol>
+                <li>Use <strong>Pillar of Frost</strong>, <strong>Reaper's Mark</strong>, and <strong>Frostwyrm's Fury</strong> together as your core 45-second burst window.</li>
+                <li>Maintain <strong>Frost Fever</strong> on the target by using <strong>Howling Blast</strong>.</li>
+                <li>Cast <strong>Obliterate</strong> when you have a <strong>Killing Machine</strong> proc. Never let Killing Machine overcap to two stacks.</li>
+                <li>Cast <strong>Howling Blast</strong> when you have a <strong>Rime</strong> proc.</li>
+                <li>Use <strong>Frost Strike</strong> to spend excess Runic Power and prevent capping.</li>
+            </ol>
+            
+            <h3>AoE Priority</h3>
+            <ol>
+                <li>Use <strong>Remorseless Winter</strong> on cooldown to establish your AoE presence.</li>
+                <li>Maintain 5 stacks of <strong>Razorice</strong> on your primary target.</li>
+                <li>At 3 or more targets, replace Obliterate with <strong>Frostscythe</strong> as your main rune spender.</li>
+                <li>At 3 or more targets, replace Frost Strike with <strong>Glacial Advance</strong> as your main Runic Power spender.</li>
+                <li>Cast <strong>Howling Blast</strong> with a <strong>Rime</strong> proc to spread cleave damage.</li>
+            </ol>
 
-        <h2>Core Rotation Nuance</h2>
-        <p>The gameplay loop centers entirely on keeping your diseases rolling, building runic resources, and expending procs efficiently.</p>
-        
-        <h3>Single-Target Priority (Obliteration Build)</h3>
-        <ul>
-            <li>Apply and maintain Remorseless Winter on cooldown to keep passive cleave active.</li>
-            <li>Cast Pillar of Frost immediately on cooldown to initiate your primary execution window.</li>
-            <li>Consume Killing Machine procs instantly on Obliterate.</li>
-            <li>Spend Runic Power on Frost Strike whenever you lack procs to activate dynamic runic returns.</li>
-            <li>Use Howling Blast exclusively when Rime procs are active to deal free ranged frost damage.</li>
-        </ul>
-
-        <h2>Consumables & Enhancements</h2>
-        <ul>
-            <li>Flask: Flask of Alchemical Chaos or Flask of Tempered Mastery.</li>
-            <li>Weapon Buff: Rune of the Fallen Crusader (Main Hand) / Rune of Hysteria or Razorice (Off-Hand).</li>
-            <li>Ring Enchants: Devotion of Mastery.</li>
-            <li>Food: Feast of Divine Appetites.</li>
-        </ul>
-
-        <div class="cta-box">
-            <p>Need the exact talent codes for the current meta? Our live tool has the top-simming builds for every encounter.</p>
-            <a href="index.html">Open the Midnight Cheat Sheet</a>
+            <h2>Consumables & Enhancements</h2>
+            <ul>
+                <li><strong>Flask:</strong> Flask of the Shattered Sun</li>
+                <li><strong>Potion:</strong> Potential of Light (Combat) and Silvermoon Healing Potion (Healing)</li>
+                <li><strong>Food:</strong> Royal Roast</li>
+                <li><strong>Weapon Enchants:</strong> Rune of the Fallen Crusader (Main-hand) and Rune of Razorice (Off-hand if dual-wielding)</li>
+                <li><strong>Weapon Oil:</strong> Thalassian Phoenix Oil</li>
+                <li><strong>Augment Rune:</strong> Void-Marked Augment Rune</li>
+            </ul>
         </div>
     </div>
 
