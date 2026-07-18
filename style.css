@@ -497,5 +497,15 @@ img {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
-   
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -100; /* Pushes the video behind all your cheat sheet containers */
+    object-fit: cover; /* Ensures the video scales proportionally without distorting */
+    pointer-events: none; /* Prevents users from accidentally right-clicking or interacting with the video */
+}
 
