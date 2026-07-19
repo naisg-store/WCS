@@ -463,7 +463,7 @@ footer {
     }
 }
    
-   /* ==========================================================================
+/* ==========================================================================
    9. RESPONSIVE IMAGES
    ========================================================================== */
 .guide-image-container {
@@ -474,57 +474,44 @@ footer {
     align-items: center;
     margin: 20px 0;
     overflow: hidden;
-    border-radius: 12px; /* Softens the corners of the image container */
-   object-fit: contain;
+    border-radius: 12px; 
+    object-fit: contain;
 }
 
 .guide-feature-image {
-    max-width: 100%; /* Prevents the image from growing larger than its container */
-    height: auto;     /* Maintains the correct, un-stretched aspect ratio */
+    max-width: 100%; 
+    height: auto;     
     display: block;
-    object-fit: contain; /* Ensures the image scales down cleanly if needed */
+    object-fit: contain; 
 }
 
 img {
   max-width: 100%;
   height: auto;
-  display: block; /* Prevents weird baseline spacing issues */
+  display: block; 
 }
 
-
 /* ==========================================================================
-   PARALLAX HERO BANNER
+   BACKGROUND VIDEO PARALLAX
    ========================================================================== */
-.hero-parallax-banner {
+.video-parallax-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed; 
-    opacity: 0.25; 
-    z-index: -1; 
-    
+    height: 60vh; 
+    overflow: hidden;
+    z-index: -1;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
-   
-}
+
 .video-bg {
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
-    
-    /* Matches your guide pages' exact dimness */
     opacity: 0.25; 
-    
-    /* Adds the same bottom fade-out effect */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
 }
