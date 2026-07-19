@@ -295,7 +295,7 @@
                 <div class="rotation-sequence">
                     ${spellArray.map((spell, idx) => `
                         <div class="spell-item">
-                            <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" alt="${spell.name}" class="spell-icon" onerror="handleImageError(this)">
+                            <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon.toLowerCase()}.jpg" alt="${spell.name}" class="spell-icon" onerror="handleImageError(this)">
                             ${spell.name}
                         </div>
                         ${idx < spellArray.length - 1 ? '<span class="sequence-arrow">></span>' : ''}
@@ -324,7 +324,7 @@
                             ${utilData.map(spell => `
                                 <div class="utility-item">
                                     <div class="utility-name-row">
-                                        <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon}.jpg" class="spell-icon" onerror="handleImageError(this)">
+                                        <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon.toLowerCase()}.jpg" class="spell-icon" onerror="handleImageError(this)">
                                         ${spell.name}
                                     </div>
                                     <div class="utility-note">${spell.note}</div>
