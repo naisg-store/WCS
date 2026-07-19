@@ -464,14 +464,14 @@ footer {
         min-width: 200px;
     }
     
-    /* Ensures the 3rd level class menus pop below their parent on mobile */
+/* Ensures the 3rd level class menus pop below their parent on mobile */
     .nested-dropdown-class .class-menu {
         left: 50%;
+        right: auto; /* Resets the new desktop positioning */
         top: 100%;
         transform: translateX(-50%);
         background: rgba(15, 23, 42, 0.98);
     }
-}
    
 /* ==========================================================================
    9. RESPONSIVE IMAGES
