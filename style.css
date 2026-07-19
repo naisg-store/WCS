@@ -425,30 +425,43 @@ footer {
     .nav-list {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap; 
+        gap: 15px;
     }
 
+    /* Revert to floating dropdowns instead of a massive static wall of text */
     .dropdown-menu {
-        position: static;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-        box-shadow: none;
-        border: none;
-        background: rgba(0, 0, 0, 0.15);
-        margin-top: 5px;
-        min-width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        background: rgba(15, 23, 42, 0.95);
+        min-width: 220px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border);
     }
 
     .nested-menu {
-        position: static;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-        border: none;
-        background: rgba(0,0,0,0.25);
-        margin: 5px 10px;
-        min-width: calc(100% - 20px);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        background: rgba(15, 23, 42, 0.95);
+        min-width: 200px;
     }
+    
+    /* Ensures the 3rd level class menus pop below their parent on mobile */
+    .nested-dropdown-class .class-menu {
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        background: rgba(15, 23, 42, 0.98);
+    }
+}
    
    /* ==========================================================================
    9. RESPONSIVE IMAGES
