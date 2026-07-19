@@ -192,6 +192,7 @@ p {
     visibility: hidden;
     transform: translateY(10px);
     transition: all 0.25s ease;
+    z-index: 100;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -238,6 +239,7 @@ p {
     visibility: hidden;
     transform: translateX(-10px);
     transition: all 0.25s ease;
+    z-index: 101;
 }
 
 .nested-dropdown:hover .nested-menu {
@@ -264,6 +266,7 @@ p {
     margin: 0 5px 0 0;
     min-width: 220px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 102;
 }
 
 .nested-dropdown-class:hover .class-menu {
@@ -451,6 +454,7 @@ footer {
         min-width: 220px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         border: 1px solid var(--border);
+        z-index: 1000;
     }
 
     .nested-menu {
@@ -462,6 +466,7 @@ footer {
         visibility: hidden;
         background: rgba(15, 23, 42, 0.95);
         min-width: 200px;
+        z-index: 1001;
     }
     
 /* Ensures the 3rd level class menus pop below their parent on mobile */
@@ -470,7 +475,8 @@ footer {
         right: auto; /* Resets the new desktop positioning */
         top: 100%;
         transform: translateX(-50%);
-        background: rgba(15, 23, 42, 0.98);
+        background: #0f172a;
+        z-index: 1002;
     }
 }
    
