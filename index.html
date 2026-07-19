@@ -343,7 +343,7 @@
             
             return `
                 <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
-                    <img src="https://wow.zamimg.com/images/wow/icons/small/${item.icon}.jpg" class="spell-icon" style="width: 28px; height: 28px;" onerror="handleImageError(this)">
+                    <img src="https://wow.zamimg.com/images/wow/icons/small/${item.icon.toLowerCase()}.jpg" class="spell-icon" style="width: 28px; height: 28px;" onerror="handleImageError(this)">
                     <div style="display: flex; flex-direction: column;">
                         <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">${item.name}</span>
                         <span class="buff-stat">${item.stat}</span>
