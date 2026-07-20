@@ -232,187 +232,133 @@
             &copy; <span id="dynamicYear"></span> Midnight Cheat Sheet. Built for the community.
         </div>
     </footer>
+
+<script>
+    let wowData = [];
+    const container = document.getElementById('specsContainer');
+    const modalOverlay = document.getElementById('detailModal');
+    const modalBody = document.getElementById('modalBody');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // --- NEW CLEANUP FUNCTION ---
+    function cleanWowTags(text) {
+        if (!text) return "";
+        return text
+            .replace(/\[spell=[0-9]+\](.*?)\[\/spell\]/g, '$1')
+            .replace(/\[item=[0-9]+\](.*?)\[\/item\]/g, '$1')
+            .replace(/\[\/?b\]/g, '')
+            .trim();
+    }
+
+    fetch('wow-database.json')
+        .then(response => {
+            if (!response.ok) throw new Error("Network response was not ok");
+            return response.json();
+        })
+        .then(data => {
+            wowData = data;
+            container.innerHTML = ''; 
+            renderCards('all'); 
+        })
+        .catch(error => {
+            console.error('Error loading database:', error);
+            const staticCards = container.querySelectorAll('.seo-static');
+            if (staticCards.length === 0) {
+                container.innerHTML = '<div class="loading-text" style="color: var(--role-dps);">Error loading database.</div>';
+            }
+        });
+
+    function handleImageError(img) {
+        img.onerror = null; 
+        img.src = 'https://wow.zamimg.com/images/wow/icons/small/inv_misc_questionmark.jpg';
+    }
+
+    function renderCards(filter) {
+        container.innerHTML = '';
+        wowData.forEach((item, index) => {
+            if (filter === 'all' || item.role === filter) {
+                const card = document.createElement('div');
+                card.className = 'spec-card';
+                card.onclick = () => openModal(index);
+                card.innerHTML = `
+                    <div class="class-title">
+                        ${item.class}: ${item.spec}
+                        <span class="role-badge role-${item.role}">${item.role.toUpperCase()}</span>
+                    </div>
+                    <div class="stat-priority">
+                        Priority: <span class="stat-highlight">${cleanWowTags(item.stats)}</span>
+                    </div>
+                    <p class="spec-notes" style="margin-top: 10px;"><em>Click for full rotation...</em></p>
+                `;
+                container.appendChild(card);
+            }
+        });
+    }
+
+    function buildRotationHTML(title, spellArray) {
+        if (!spellArray || spellArray.length === 0) return '';
+        return `
+            <div class="modal-section-title">${title}</div>
+            <div class="rotation-sequence">
+                ${spellArray.map((spell, idx) => `
+                    <div class="spell-item">
+                        <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon.toLowerCase()}.jpg" class="spell-icon" onerror="handleImageError(this)">
+                        ${cleanWowTags(spell.name)}
+                    </div>
+                    ${idx < spellArray.length - 1 ? '<span class="sequence-arrow">></span>' : ''}
+                `).join('')}
+            </div>
+        `;
+    }
+
+    function renderConsume(item) {
+        if (!item || item.name === "Standard Consumable") return '<span style="font-size: 0.95rem; color: var(--text-muted);">Recommended</span>';
+        return `
+            <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
+                <img src="https://wow.zamimg.com/images/wow/icons/small/${item.icon.toLowerCase()}.jpg" class="spell-icon" style="width: 28px; height: 28px;" onerror="handleImageError(this)">
+                <div style="display: flex; flex-direction: column;">
+                    <span style="font-size: 0.95rem; font-weight: 600;">${cleanWowTags(item.name)}</span>
+                    <span class="buff-stat">${item.stat || ''}</span>
+                </div>
+            </div>
+        `;
+    }
+
+    function openModal(index) {
+        const item = wowData[index];
+        let html = `
+            <div class="class-title" style="font-size: 1.8rem;">
+                ${item.class}: ${item.spec}
+                <span class="role-badge role-${item.role}">${item.role.toUpperCase()}</span>
+            </div>
+            <div class="stat-priority" style="font-size: 1.1rem; margin-top: 15px;">
+                Stat Priority: <span class="stat-highlight">${cleanWowTags(item.stats)}</span>
+            </div>
+            <p class="spec-notes">${cleanWowTags(item.notes)}</p>
+            <div class="modal-section">
+                ${buildRotationHTML("Single Target", item.rotationST)}
+                ${buildRotationHTML("AoE / Cleave", item.rotationAoE)}
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-title">Consumables</div>
+                <div class="consumes-grid">
+                    <div class="consume-item"><div class="consume-label">Food</div>${renderConsume(item.consumes.food)}</div>
+                    <div class="consume-item"><div class="consume-label">Flask</div>${renderConsume(item.consumes.flask)}</div>
+                    <div class="consume-item"><div class="consume-label">Potion</div>${renderConsume(item.consumes.potion)}</div>
+                </div>
+            </div>
+        `;
+        modalBody.innerHTML = html;
+        modalOverlay.classList.add('open');
+    }
+
+    // Keep your existing close and filter functions below
+    window.filterSpecs = function(role) {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        renderCards(role);
+    }
+</script>
     
-    <script>
-        let wowData = [];
-        const container = document.getElementById('specsContainer');
-        const modalOverlay = document.getElementById('detailModal');
-        const modalBody = document.getElementById('modalBody');
-        const buttons = document.querySelectorAll('.filter-btn');
-
-        fetch('wow-database.json')
-            .then(response => {
-                if (!response.ok) throw new Error("Network response was not ok");
-                return response.json();
-            })
-            .then(data => {
-                wowData = data;
-                container.innerHTML = ''; // Wipes the static SEO anchors so we don't duplicate cards
-                renderCards('all'); 
-            })
-            .catch(error => {
-                console.error('Error loading database:', error);
-                // We leave the HTML alone on failure so the SEO cards act as a fallback
-                const staticCards = container.querySelectorAll('.seo-static');
-                if (staticCards.length === 0) {
-                    container.innerHTML = '<div class="loading-text" style="color: var(--role-dps);">Error loading database. Make sure wow-database.json is in the same folder.</div>';
-                }
-            });
-
-        function handleImageError(img) {
-            img.onerror = null; 
-            img.src = 'https://wow.zamimg.com/images/wow/icons/small/inv_misc_questionmark.jpg';
-        }
-
-        function renderCards(filter) {
-            container.innerHTML = '';
-            wowData.forEach((item, index) => {
-                if (filter === 'all' || item.role === filter) {
-                    const card = document.createElement('div');
-                    card.className = 'spec-card';
-                    card.onclick = () => openModal(index);
-                    const roleLabel = item.role.toUpperCase();
-                    
-                    card.innerHTML = `
-                        <div class="class-title">
-                            ${item.class}: ${item.spec}
-                            <span class="role-badge role-${item.role}">${roleLabel}</span>
-                        </div>
-                        <div class="stat-priority">
-                            Priority: <span class="stat-highlight">${item.stats}</span>
-                        </div>
-                        <p class="spec-notes" style="margin-top: 10px;"><em>Click for full rotation & consumes...</em></p>
-                    `;
-                    container.appendChild(card);
-                }
-            });
-        }
-
-        function buildRotationHTML(title, spellArray) {
-            if (!spellArray || spellArray.length === 0) return '';
-            return `
-                <div class="modal-section-title">${title}</div>
-                <div class="rotation-sequence">
-                    ${spellArray.map((spell, idx) => `
-                        <div class="spell-item">
-                            <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon.toLowerCase()}.jpg" alt="${spell.name}" class="spell-icon" onerror="handleImageError(this)">
-                            ${spell.name}
-                        </div>
-                        ${idx < spellArray.length - 1 ? '<span class="sequence-arrow">></span>' : ''}
-                    `).join('')}
-                </div>
-            `;
-        }
-
-        function buildUtilityHTML(title, utilData) {
-            if (!utilData) return '';
-            
-            if (typeof utilData === 'string') {
-                return `
-                    <div class="modal-section">
-                        <div class="modal-section-title">${title}</div>
-                        <div class="utility-text">${utilData}</div>
-                    </div>
-                `;
-            }
-            
-            if (Array.isArray(utilData) && utilData.length > 0) {
-                return `
-                    <div class="modal-section">
-                        <div class="modal-section-title">${title}</div>
-                        <div class="utility-grid">
-                            ${utilData.map(spell => `
-                                <div class="utility-item">
-                                    <div class="utility-name-row">
-                                        <img src="https://wow.zamimg.com/images/wow/icons/small/${spell.icon.toLowerCase()}.jpg" class="spell-icon" onerror="handleImageError(this)">
-                                        ${spell.name}
-                                    </div>
-                                    <div class="utility-note">${spell.note}</div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-            return '';
-        }
-
-        function renderConsume(item) {
-            if (!item) return '<span style="font-size: 0.95rem; color: var(--text-muted);">N/A</span>';
-            if (typeof item === 'string') return `<span style="font-size: 0.95rem; font-weight: 600;">${item}</span>`;
-            
-            return `
-                <div style="display: flex; align-items: center; gap: 10px; margin-top: 5px;">
-                    <img src="https://wow.zamimg.com/images/wow/icons/small/${item.icon.toLowerCase()}.jpg" class="spell-icon" style="width: 28px; height: 28px;" onerror="handleImageError(this)">
-                    <div style="display: flex; flex-direction: column;">
-                        <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main);">${item.name}</span>
-                        <span class="buff-stat">${item.stat}</span>
-                    </div>
-                </div>
-            `;
-        }
-
-        function openModal(index) {
-            const item = wowData[index];
-            const roleLabel = item.role.toUpperCase();
-            
-            let html = `
-                <div class="class-title" style="font-size: 1.8rem;">
-                    ${item.class}: ${item.spec}
-                    <span class="role-badge role-${item.role}" style="font-size: 0.9rem;">${roleLabel}</span>
-                </div>
-                <div class="stat-priority" style="font-size: 1.1rem; margin-top: 15px;">
-                    Stat Priority: <span class="stat-highlight">${item.stats}</span>
-                </div>
-                <p class="spec-notes" style="font-size: 1rem;">${item.notes}</p>
-                
-                <div class="modal-section">
-                    ${buildRotationHTML("Single Target Rotation / Opener", item.rotationST)}
-                    <br>
-                    ${buildRotationHTML("AoE / Cleave Rotation", item.rotationAoE)}
-                </div>
-            `;
-
-            if (item.defensives) {
-                html += buildUtilityHTML("Defensives & Mitigation", item.defensives);
-            }
-            if (item.cooldowns) {
-                html += buildUtilityHTML("Major Cooldowns", item.cooldowns);
-            }
-
-            if (item.consumes) {
-                html += `
-                    <div class="modal-section">
-                        <div class="modal-section-title">Standard Consumables</div>
-                        <div class="consumes-grid">
-                            <div class="consume-item"><div class="consume-label">Food</div>${renderConsume(item.consumes.food)}</div>
-                            <div class="consume-item"><div class="consume-label">Flask</div>${renderConsume(item.consumes.flask)}</div>
-                            <div class="consume-item"><div class="consume-label">Potion</div>${renderConsume(item.consumes.potion)}</div>
-                            <div class="consume-item"><div class="consume-label">Weapon Buff</div>${renderConsume(item.consumes.weapon)}</div>
-                            <div class="consume-item"><div class="consume-label">Other Buffs</div>${renderConsume(item.consumes.buffs)}</div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            modalBody.innerHTML = html;
-            modalOverlay.classList.add('open');
-            document.body.style.overflow = 'hidden'; 
-        }
-
-        function forceCloseModal() {
-            modalOverlay.classList.remove('open');
-            document.body.style.overflow = 'auto';
-        }
-        function closeModal(event) {
-            if (event.target === modalOverlay) forceCloseModal();
-        }
-
-        window.filterSpecs = function(role) {
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            renderCards(role);
-        }
-    </script>
 </body>
 </html>
