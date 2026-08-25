@@ -4,7 +4,7 @@
         "spec": "Arcane",
         "role": "dps",
         "stats": "Intellect > Haste > Critical Strike",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
             "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
             "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
@@ -18,7 +18,7 @@
         "spec": "Fire",
         "role": "dps",
         "stats": "Intellect > Haste > Versatility",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
             "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
             "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
@@ -32,7 +32,7 @@
         "spec": "Frost",
         "role": "dps",
         "stats": "Intellect > Mastery > Critical Strike",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
             "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
             "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
@@ -46,11 +46,11 @@
         "spec": "Arms",
         "role": "dps",
         "stats": "Strength > Critical Strike > Haste",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Blood Knights", "icon": "inv_alchemy_80_flask02", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
             "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
@@ -60,11 +60,11 @@
         "spec": "Fury",
         "role": "dps",
         "stats": "Strength > Mastery > Haste",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Blood Knights", "icon": "inv_alchemy_80_flask02", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
             "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
@@ -74,11 +74,11 @@
         "spec": "Protection",
         "role": "tank",
         "stats": "Strength > Haste > Versatility",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Blood Knights", "icon": "inv_alchemy_80_flask02", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
             "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
@@ -88,12 +88,12 @@
         "spec": "Beast Mastery",
         "role": "dps",
         "stats": "Agility > Haste > Critical Strike",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
-            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon upgrade"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Shattered Sun", "icon": "inv_alchemy_80_flask03", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
     },
@@ -102,12 +102,12 @@
         "spec": "Marksmanship",
         "role": "dps",
         "stats": "Agility > Critical Strike > Mastery",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
-            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon upgrade"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Shattered Sun", "icon": "inv_alchemy_80_flask03", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
     },
@@ -116,11 +116,11 @@
         "spec": "Survival",
         "role": "dps",
         "stats": "Agility > Haste > Critical Strike",
-        "notes": "AH Shopping List: Stock up on these before raid.",
+        "notes": "AH Shopping List: Stock up before raid.",
         "consumes": {
-            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
-            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
-            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "food": {"name": "Blooming Feast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of the Shattered Sun", "icon": "inv_alchemy_80_flask03", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Potion of Recklessness", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
             "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
             "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
         }
