@@ -1,0 +1,777 @@
+[
+    {
+        "class": "Mage",
+        "spec": "Arcane",
+        "role": "dps",
+        "filename": "guide-arcane-mage.html",
+        "stats": "Intellect > Haste > Mastery > Critical Strike > Versatility",
+        "notes": "Manage Arcane Charges and line up Touch of the Magi with Arcane Surge.",
+        "rotationST": [
+            {
+                "name": "Evocation",
+                "icon": "spell_nature_purge"
+            },
+            {
+                "name": "Arcane Surge",
+                "icon": "spell_arcane_arcanetorrent"
+            },
+            {
+                "name": "Touch of the Magi",
+                "icon": "spell_mage_touchofthemagi"
+            },
+            {
+                "name": "Arcane Blast",
+                "icon": "spell_arcane_blast"
+            },
+            {
+                "name": "Arcane Missiles",
+                "icon": "spell_nature_magicimmunity"
+            },
+            {
+                "name": "Arcane Barrage",
+                "icon": "ability_mage_arcanebarrage"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Arcane Surge",
+                "icon": "spell_arcane_arcanetorrent"
+            },
+            {
+                "name": "Touch of the Magi",
+                "icon": "spell_mage_touchofthemagi"
+            },
+            {
+                "name": "Arcane Orb",
+                "icon": "spell_mage_arcaneorb"
+            },
+            {
+                "name": "Arcane Explosion",
+                "icon": "spell_nature_wispsplode"
+            },
+            {
+                "name": "Arcane Barrage",
+                "icon": "ability_mage_arcanebarrage"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Alchemical Chaos",
+                "icon": "inv_alchemy_80_flask01",
+                "stat": "Secondary Stats"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Authority of Radiant Power",
+                "icon": "inv_enchant_weapon",
+                "stat": "Primary Stat Proc"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Mage",
+        "spec": "Fire",
+        "role": "dps",
+        "filename": "guide-fire-mage.html",
+        "stats": "Intellect > Haste > Versatility > Mastery > Critical Strike",
+        "notes": "Always cast Combustion on cooldown and chain your guaranteed crits with Fire Blast and Phoenix Flames.",
+        "rotationST": [
+            {
+                "name": "Combustion",
+                "icon": "spell_fire_volcano"
+            },
+            {
+                "name": "Fire Blast",
+                "icon": "spell_fire_fireball"
+            },
+            {
+                "name": "Pyroblast",
+                "icon": "spell_fire_fireball02"
+            },
+            {
+                "name": "Phoenix Flames",
+                "icon": "ability_mage_phoenixflames"
+            },
+            {
+                "name": "Scorch",
+                "icon": "spell_fire_soulburn"
+            },
+            {
+                "name": "Fireball",
+                "icon": "spell_fire_flamebolt"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Combustion",
+                "icon": "spell_fire_volcano"
+            },
+            {
+                "name": "Flamestrike",
+                "icon": "spell_fire_selfdestruct"
+            },
+            {
+                "name": "Fire Blast",
+                "icon": "spell_fire_fireball"
+            },
+            {
+                "name": "Phoenix Flames",
+                "icon": "ability_mage_phoenixflames"
+            },
+            {
+                "name": "Dragon's Breath",
+                "icon": "inv_misc_head_dragon_01"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Alchemical Chaos",
+                "icon": "inv_alchemy_80_flask01",
+                "stat": "Secondary Stats"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Authority of Radiant Power",
+                "icon": "inv_enchant_weapon",
+                "stat": "Primary Stat Proc"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Mage",
+        "spec": "Frost",
+        "role": "dps",
+        "filename": "guide-frost-mage.html",
+        "stats": "Intellect > Mastery > Critical Strike (to 33%) > Haste > Versatility",
+        "notes": "Avoid capping Icicles, always shatter Glacial Spike with a Flurry proc, and keep Blizzard active in AoE.",
+        "rotationST": [
+            {
+                "name": "Icy Veins",
+                "icon": "spell_frost_coldhearted"
+            },
+            {
+                "name": "Glacial Spike",
+                "icon": "ability_mage_glacialspike"
+            },
+            {
+                "name": "Flurry",
+                "icon": "spell_frost_flurry"
+            },
+            {
+                "name": "Ice Lance",
+                "icon": "spell_frost_frostblast"
+            },
+            {
+                "name": "Frozen Orb",
+                "icon": "spell_frost_frozenorb"
+            },
+            {
+                "name": "Frostbolt",
+                "icon": "spell_frost_frostbolt02"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Frozen Orb",
+                "icon": "spell_frost_frozenorb"
+            },
+            {
+                "name": "Blizzard",
+                "icon": "spell_frost_icestorm"
+            },
+            {
+                "name": "Glacial Spike",
+                "icon": "ability_mage_glacialspike"
+            },
+            {
+                "name": "Flurry",
+                "icon": "spell_frost_flurry"
+            },
+            {
+                "name": "Ice Lance",
+                "icon": "spell_frost_frostblast"
+            },
+            {
+                "name": "Cone of Cold",
+                "icon": "spell_frost_glacier"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Alchemical Chaos",
+                "icon": "inv_alchemy_80_flask01",
+                "stat": "Secondary Stats"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Authority of Radiant Power",
+                "icon": "inv_enchant_weapon",
+                "stat": "Primary Stat Proc"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Warrior",
+        "spec": "Arms",
+        "role": "dps",
+        "filename": "guide-arms-warrior.html",
+        "stats": "Strength > Critical Strike > Haste > Mastery > Versatility",
+        "notes": "Keep Rend active, use Overpower to buff Mortal Strike, and align burst inside Colossus Smash windows.",
+        "rotationST": [
+            {
+                "name": "Colossus Smash",
+                "icon": "ability_warrior_colossussmash"
+            },
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Mortal Strike",
+                "icon": "ability_warrior_punishingblow"
+            },
+            {
+                "name": "Overpower",
+                "icon": "ability_meleedamage"
+            },
+            {
+                "name": "Execute",
+                "icon": "inv_sword_48"
+            },
+            {
+                "name": "Slam",
+                "icon": "ability_warrior_decisivestrike"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Warbreaker",
+                "icon": "ability_warrior_warbreaker"
+            },
+            {
+                "name": "Bladestorm",
+                "icon": "ability_warrior_bladestorm"
+            },
+            {
+                "name": "Cleave",
+                "icon": "ability_warrior_cleave"
+            },
+            {
+                "name": "Thunder Clap",
+                "icon": "spell_nature_thunderclap"
+            },
+            {
+                "name": "Whirlwind",
+                "icon": "ability_whirlwind"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Feast of the Blossoming",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_alchemy_80_flask02",
+                "stat": "Critical Strike"
+            },
+            "potion": {
+                "name": "Potion of Recklessness",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stat": "Damage Proc"
+            },
+            "buffs": {
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Warrior",
+        "spec": "Fury",
+        "role": "dps",
+        "filename": "guide-fury-warrior.html",
+        "stats": "Strength > Mastery > Haste > Versatility > Critical Strike",
+        "notes": "Generate Rage constantly to cast Rampage, maintaining the Enrage buff as much as possible.",
+        "rotationST": [
+            {
+                "name": "Recklessness",
+                "icon": "ability_warrior_innerrage"
+            },
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Rampage",
+                "icon": "ability_warrior_rampage"
+            },
+            {
+                "name": "Execute",
+                "icon": "inv_sword_48"
+            },
+            {
+                "name": "Bloodthirst",
+                "icon": "ability_warrior_bloodthirst"
+            },
+            {
+                "name": "Raging Blow",
+                "icon": "warrior_wild_strike"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Whirlwind",
+                "icon": "ability_whirlwind"
+            },
+            {
+                "name": "Recklessness",
+                "icon": "ability_warrior_innerrage"
+            },
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Rampage",
+                "icon": "ability_warrior_rampage"
+            },
+            {
+                "name": "Bloodthirst",
+                "icon": "ability_warrior_bloodthirst"
+            },
+            {
+                "name": "Bladestorm",
+                "icon": "ability_warrior_bladestorm"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Feast of the Blossoming",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_alchemy_80_flask02",
+                "stat": "Critical Strike"
+            },
+            "potion": {
+                "name": "Potion of Recklessness",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stat": "Damage Proc"
+            },
+            "buffs": {
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Warrior",
+        "spec": "Protection",
+        "role": "tank",
+        "filename": "guide-protection-warrior.html",
+        "stats": "Strength > Haste > Versatility > Critical Strike > Mastery",
+        "notes": "Maintain Shield Block uptime, spend excess Rage on Ignore Pain, and use Avatar on cooldown.",
+        "rotationST": [
+            {
+                "name": "Shield Block",
+                "icon": "ability_defend"
+            },
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Shield Slam",
+                "icon": "inv_shield_05"
+            },
+            {
+                "name": "Thunder Clap",
+                "icon": "spell_nature_thunderclap"
+            },
+            {
+                "name": "Execute",
+                "icon": "inv_sword_48"
+            },
+            {
+                "name": "Ignore Pain",
+                "icon": "ability_warrior_ignorepain"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Shield Block",
+                "icon": "ability_defend"
+            },
+            {
+                "name": "Avatar",
+                "icon": "warrior_talent_icon_avatar"
+            },
+            {
+                "name": "Thunder Clap",
+                "icon": "spell_nature_thunderclap"
+            },
+            {
+                "name": "Revenge",
+                "icon": "ability_warrior_revenge"
+            },
+            {
+                "name": "Shield Slam",
+                "icon": "inv_shield_05"
+            },
+            {
+                "name": "Ignore Pain",
+                "icon": "ability_warrior_ignorepain"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Feast of the Blossoming",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of the Blood Knights",
+                "icon": "inv_alchemy_80_flask02",
+                "stat": "Versatility / Defense"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "Authority of the Depths",
+                "icon": "inv_enchant_weapon",
+                "stat": "Damage Proc"
+            },
+            "buffs": {
+                "name": "Void-Touched Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Hunter",
+        "spec": "Beast Mastery",
+        "role": "dps",
+        "filename": "guide-bm-hunter.html",
+        "stats": "Agility > Haste > Critical Strike > Mastery > Versatility",
+        "notes": "Maintain 3 stacks of Frenzy with Barbed Shot and keep Beast Cleave active in AoE.",
+        "rotationST": [
+            {
+                "name": "Call of the Wild",
+                "icon": "ability_hunter_beastcall"
+            },
+            {
+                "name": "Bestial Wrath",
+                "icon": "ability_hunter_bestialwrath"
+            },
+            {
+                "name": "Barbed Shot",
+                "icon": "ability_hunter_barbedshot"
+            },
+            {
+                "name": "Kill Command",
+                "icon": "ability_hunter_killcommand"
+            },
+            {
+                "name": "Bloodshed",
+                "icon": "ability_hunter_bloodshed"
+            },
+            {
+                "name": "Cobra Shot",
+                "icon": "ability_hunter_cobrashot"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Bestial Wrath",
+                "icon": "ability_hunter_bestialwrath"
+            },
+            {
+                "name": "Multi-Shot",
+                "icon": "ability_upgrademoonglaive"
+            },
+            {
+                "name": "Barbed Shot",
+                "icon": "ability_hunter_barbedshot"
+            },
+            {
+                "name": "Kill Command",
+                "icon": "ability_hunter_killcommand"
+            },
+            {
+                "name": "Explosive Shot",
+                "icon": "ability_hunter_explosiveshot"
+            },
+            {
+                "name": "Cobra Shot",
+                "icon": "ability_hunter_cobrashot"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Tempered Swiftness",
+                "icon": "inv_alchemy_80_flask03",
+                "stat": "Haste"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "High-Yield Scope",
+                "icon": "inv_misc_scope_03",
+                "stat": "Crit Buff"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Hunter",
+        "spec": "Marksmanship",
+        "role": "dps",
+        "filename": "guide-mm-hunter.html",
+        "stats": "Agility > Critical Strike > Mastery > Haste > Versatility",
+        "notes": "Spend Precise Shots procs on Arcane Shot/Multi-Shot and avoid capping Aimed Shot charges.",
+        "rotationST": [
+            {
+                "name": "Trueshot",
+                "icon": "ability_hunter_trueshot"
+            },
+            {
+                "name": "Rapid Fire",
+                "icon": "ability_hunter_rapidfire"
+            },
+            {
+                "name": "Aimed Shot",
+                "icon": "inv_spear_07"
+            },
+            {
+                "name": "Kill Shot",
+                "icon": "ability_hunter_assassinate"
+            },
+            {
+                "name": "Arcane Shot",
+                "icon": "ability_impalingarrow"
+            },
+            {
+                "name": "Steady Shot",
+                "icon": "ability_hunter_steadyshot"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Volley",
+                "icon": "ability_hunter_volley"
+            },
+            {
+                "name": "Trueshot",
+                "icon": "ability_hunter_trueshot"
+            },
+            {
+                "name": "Rapid Fire",
+                "icon": "ability_hunter_rapidfire"
+            },
+            {
+                "name": "Multi-Shot",
+                "icon": "ability_upgrademoonglaive"
+            },
+            {
+                "name": "Aimed Shot",
+                "icon": "inv_spear_07"
+            },
+            {
+                "name": "Explosive Shot",
+                "icon": "ability_hunter_explosiveshot"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Tempered Aggression",
+                "icon": "inv_alchemy_80_flask02",
+                "stat": "Critical Strike"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "High-Yield Scope",
+                "icon": "inv_misc_scope_03",
+                "stat": "Crit Buff"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    },
+    {
+        "class": "Hunter",
+        "spec": "Survival",
+        "role": "dps",
+        "filename": "guide-survival-hunter.html",
+        "stats": "Agility > Haste > Critical Strike > Versatility > Mastery",
+        "notes": "Stay in melee range, maximize Wildfire Bomb charges, and dump Focus with Mongoose Bite.",
+        "rotationST": [
+            {
+                "name": "Harpoon",
+                "icon": "ability_hunter_harpoon"
+            },
+            {
+                "name": "Coordinated Assault",
+                "icon": "spell_nature_spiritwolf"
+            },
+            {
+                "name": "Wildfire Bomb",
+                "icon": "inv_engineering_90_blackrockgrenade"
+            },
+            {
+                "name": "Kill Command",
+                "icon": "ability_hunter_killcommand"
+            },
+            {
+                "name": "Mongoose Bite",
+                "icon": "ability_hunter_swiftstrike"
+            },
+            {
+                "name": "Flanking Strike",
+                "icon": "ability_hunter_flankingstrike"
+            }
+        ],
+        "rotationAoE": [
+            {
+                "name": "Wildfire Bomb",
+                "icon": "inv_engineering_90_blackrockgrenade"
+            },
+            {
+                "name": "Coordinated Assault",
+                "icon": "spell_nature_spiritwolf"
+            },
+            {
+                "name": "Butchery",
+                "icon": "ability_hunter_butchery"
+            },
+            {
+                "name": "Kill Command",
+                "icon": "ability_hunter_killcommand"
+            },
+            {
+                "name": "Mongoose Bite",
+                "icon": "ability_hunter_swiftstrike"
+            },
+            {
+                "name": "Flanking Strike",
+                "icon": "ability_hunter_flankingstrike"
+            }
+        ],
+        "consumes": {
+            "food": {
+                "name": "Royal Roast",
+                "icon": "inv_misc_food_legion_feast",
+                "stat": "Primary Stat"
+            },
+            "flask": {
+                "name": "Flask of Tempered Swiftness",
+                "icon": "inv_alchemy_80_flask03",
+                "stat": "Haste"
+            },
+            "potion": {
+                "name": "Tempered Potion",
+                "icon": "inv_alchemy_80_potion01",
+                "stat": "Primary Stat Burst"
+            },
+            "weapon": {
+                "name": "High-Yield Scope",
+                "icon": "inv_misc_scope_03",
+                "stat": "Crit Buff"
+            },
+            "buffs": {
+                "name": "Crystallized Augment Rune",
+                "icon": "inv_misc_rune_01",
+                "stat": "+Primary Stat"
+            }
+        }
+    }
+]
