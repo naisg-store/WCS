@@ -3,288 +3,126 @@
         "class": "Mage",
         "spec": "Arcane",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Intellect > Haste > Critical Strike",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Mage",
         "spec": "Fire",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Intellect > Haste > Versatility",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Mage",
         "spec": "Frost",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Intellect > Mastery > Critical Strike",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Warrior",
         "spec": "Arms",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Strength > Critical Strike > Haste",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Warrior",
         "spec": "Fury",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Strength > Mastery > Haste",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Warrior",
         "spec": "Protection",
         "role": "tank",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Strength > Haste > Versatility",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Hunter",
         "spec": "Beast Mastery",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "High-Yield Scope",
-                "icon": "inv_misc_scope_03",
-                "stock": "1 per weapon upgrade"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Agility > Haste > Critical Strike",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon upgrade"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Hunter",
         "spec": "Marksmanship",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "High-Yield Scope",
-                "icon": "inv_misc_scope_03",
-                "stock": "1 per weapon upgrade"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Agility > Critical Strike > Mastery",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "High-Yield Scope", "icon": "inv_misc_scope_03", "stat": "Stock: 1 per weapon upgrade"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     },
     {
         "class": "Hunter",
         "spec": "Survival",
         "role": "dps",
-        "shopping_list": [
-            {
-                "name": "Flask of Eternal Light",
-                "icon": "inv_alchemy_80_flask01",
-                "stock": "3-5 per raid"
-            },
-            {
-                "name": "Light's Potential (Potion)",
-                "icon": "inv_alchemy_80_potion01",
-                "stock": "20-40 per raid"
-            },
-            {
-                "name": "Royal Roast (Food)",
-                "icon": "inv_misc_food_legion_feast",
-                "stock": "20+ per raid"
-            },
-            {
-                "name": "Thalassian Phoenix Oil",
-                "icon": "inv_alchemy_70_potion01",
-                "stock": "10+ per raid"
-            },
-            {
-                "name": "Void-Touched Augment Rune",
-                "icon": "inv_misc_rune_01",
-                "stock": "10+ per raid"
-            }
-        ]
+        "stats": "Agility > Haste > Critical Strike",
+        "notes": "AH Shopping List: Stock up on these before raid.",
+        "consumes": {
+            "food": {"name": "Royal Roast", "icon": "inv_misc_food_legion_feast", "stat": "Stock: 20+ per raid"},
+            "flask": {"name": "Flask of Eternal Light", "icon": "inv_alchemy_80_flask01", "stat": "Stock: 3-5 per raid"},
+            "potion": {"name": "Light's Potential", "icon": "inv_alchemy_80_potion01", "stat": "Stock: 20-40 per raid"},
+            "weapon": {"name": "Thalassian Phoenix Oil", "icon": "inv_alchemy_70_potion01", "stat": "Stock: 10+ per raid"},
+            "buffs": {"name": "Void-Touched Augment Rune", "icon": "inv_misc_rune_01", "stat": "Stock: 10+ per raid"}
+        }
     }
 ]
