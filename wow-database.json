@@ -3,60 +3,11 @@
         "class": "Mage",
         "spec": "Arcane",
         "role": "dps",
-        "filename": "guide-arcane-mage.html",
         "stats": "Intellect > Haste > Mastery > Critical Strike > Versatility",
-        "notes": "Manage Arcane Charges and line up Touch of the Magi with Arcane Surge.",
-        "rotationST": [
-            {
-                "name": "Evocation",
-                "icon": "spell_nature_purge"
-            },
-            {
-                "name": "Arcane Surge",
-                "icon": "spell_arcane_arcanetorrent"
-            },
-            {
-                "name": "Touch of the Magi",
-                "icon": "spell_mage_touchofthemagi"
-            },
-            {
-                "name": "Arcane Blast",
-                "icon": "spell_arcane_blast"
-            },
-            {
-                "name": "Arcane Missiles",
-                "icon": "spell_nature_magicimmunity"
-            },
-            {
-                "name": "Arcane Barrage",
-                "icon": "ability_mage_arcanebarrage"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Arcane Surge",
-                "icon": "spell_arcane_arcanetorrent"
-            },
-            {
-                "name": "Touch of the Magi",
-                "icon": "spell_mage_touchofthemagi"
-            },
-            {
-                "name": "Arcane Orb",
-                "icon": "spell_mage_arcaneorb"
-            },
-            {
-                "name": "Arcane Explosion",
-                "icon": "spell_nature_wispsplode"
-            },
-            {
-                "name": "Arcane Barrage",
-                "icon": "ability_mage_arcanebarrage"
-            }
-        ],
+        "notes": "Method.gg Opener: Evocation \u2794 Arcane Orb \u2794 Arcane Surge \u2794 Touch of the Magi \u2794 Arcane Barrage.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Beledar's Bounty",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
@@ -86,60 +37,11 @@
         "class": "Mage",
         "spec": "Fire",
         "role": "dps",
-        "filename": "guide-fire-mage.html",
         "stats": "Intellect > Haste > Versatility > Mastery > Critical Strike",
-        "notes": "Always cast Combustion on cooldown and chain your guaranteed crits with Fire Blast and Phoenix Flames.",
-        "rotationST": [
-            {
-                "name": "Combustion",
-                "icon": "spell_fire_volcano"
-            },
-            {
-                "name": "Fire Blast",
-                "icon": "spell_fire_fireball"
-            },
-            {
-                "name": "Pyroblast",
-                "icon": "spell_fire_fireball02"
-            },
-            {
-                "name": "Phoenix Flames",
-                "icon": "ability_mage_phoenixflames"
-            },
-            {
-                "name": "Scorch",
-                "icon": "spell_fire_soulburn"
-            },
-            {
-                "name": "Fireball",
-                "icon": "spell_fire_flamebolt"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Combustion",
-                "icon": "spell_fire_volcano"
-            },
-            {
-                "name": "Flamestrike",
-                "icon": "spell_fire_selfdestruct"
-            },
-            {
-                "name": "Fire Blast",
-                "icon": "spell_fire_fireball"
-            },
-            {
-                "name": "Phoenix Flames",
-                "icon": "ability_mage_phoenixflames"
-            },
-            {
-                "name": "Dragon's Breath",
-                "icon": "inv_misc_head_dragon_01"
-            }
-        ],
+        "notes": "Method.gg Opener: Pre-cast Pyroblast \u2794 Combustion \u2794 Fire Blast \u2794 Pyroblast \u2794 Phoenix Flames.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Beledar's Bounty",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
@@ -169,64 +71,11 @@
         "class": "Mage",
         "spec": "Frost",
         "role": "dps",
-        "filename": "guide-frost-mage.html",
         "stats": "Intellect > Mastery > Critical Strike (to 33%) > Haste > Versatility",
-        "notes": "Avoid capping Icicles, always shatter Glacial Spike with a Flurry proc, and keep Blizzard active in AoE.",
-        "rotationST": [
-            {
-                "name": "Icy Veins",
-                "icon": "spell_frost_coldhearted"
-            },
-            {
-                "name": "Glacial Spike",
-                "icon": "ability_mage_glacialspike"
-            },
-            {
-                "name": "Flurry",
-                "icon": "spell_frost_flurry"
-            },
-            {
-                "name": "Ice Lance",
-                "icon": "spell_frost_frostblast"
-            },
-            {
-                "name": "Frozen Orb",
-                "icon": "spell_frost_frozenorb"
-            },
-            {
-                "name": "Frostbolt",
-                "icon": "spell_frost_frostbolt02"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Frozen Orb",
-                "icon": "spell_frost_frozenorb"
-            },
-            {
-                "name": "Blizzard",
-                "icon": "spell_frost_icestorm"
-            },
-            {
-                "name": "Glacial Spike",
-                "icon": "ability_mage_glacialspike"
-            },
-            {
-                "name": "Flurry",
-                "icon": "spell_frost_flurry"
-            },
-            {
-                "name": "Ice Lance",
-                "icon": "spell_frost_frostblast"
-            },
-            {
-                "name": "Cone of Cold",
-                "icon": "spell_frost_glacier"
-            }
-        ],
+        "notes": "Method.gg Opener: Flurry \u2794 Icy Veins \u2794 Frostbolt \u2794 Glacial Spike \u2794 Flurry.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Beledar's Bounty",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
@@ -256,61 +105,8 @@
         "class": "Warrior",
         "spec": "Arms",
         "role": "dps",
-        "filename": "guide-arms-warrior.html",
         "stats": "Strength > Critical Strike > Haste > Mastery > Versatility",
-        "notes": "Keep Rend active, use Overpower to buff Mortal Strike, and align burst inside Colossus Smash windows.",
-        "rotationST": [
-            {
-                "name": "Colossus Smash",
-                "icon": "ability_warrior_colossussmash"
-            },
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Mortal Strike",
-                "icon": "ability_warrior_punishingblow"
-            },
-            {
-                "name": "Overpower",
-                "icon": "ability_meleedamage"
-            },
-            {
-                "name": "Execute",
-                "icon": "inv_sword_48"
-            },
-            {
-                "name": "Slam",
-                "icon": "ability_warrior_decisivestrike"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Warbreaker",
-                "icon": "ability_warrior_warbreaker"
-            },
-            {
-                "name": "Bladestorm",
-                "icon": "ability_warrior_bladestorm"
-            },
-            {
-                "name": "Cleave",
-                "icon": "ability_warrior_cleave"
-            },
-            {
-                "name": "Thunder Clap",
-                "icon": "spell_nature_thunderclap"
-            },
-            {
-                "name": "Whirlwind",
-                "icon": "ability_whirlwind"
-            }
-        ],
+        "notes": "Method.gg Opener: Charge \u2794 Colossus Smash \u2794 Avatar \u2794 Mortal Strike \u2794 Overpower.",
         "consumes": {
             "food": {
                 "name": "Feast of the Blossoming",
@@ -343,61 +139,8 @@
         "class": "Warrior",
         "spec": "Fury",
         "role": "dps",
-        "filename": "guide-fury-warrior.html",
         "stats": "Strength > Mastery > Haste > Versatility > Critical Strike",
-        "notes": "Generate Rage constantly to cast Rampage, maintaining the Enrage buff as much as possible.",
-        "rotationST": [
-            {
-                "name": "Recklessness",
-                "icon": "ability_warrior_innerrage"
-            },
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Rampage",
-                "icon": "ability_warrior_rampage"
-            },
-            {
-                "name": "Execute",
-                "icon": "inv_sword_48"
-            },
-            {
-                "name": "Bloodthirst",
-                "icon": "ability_warrior_bloodthirst"
-            },
-            {
-                "name": "Raging Blow",
-                "icon": "warrior_wild_strike"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Whirlwind",
-                "icon": "ability_whirlwind"
-            },
-            {
-                "name": "Recklessness",
-                "icon": "ability_warrior_innerrage"
-            },
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Rampage",
-                "icon": "ability_warrior_rampage"
-            },
-            {
-                "name": "Bloodthirst",
-                "icon": "ability_warrior_bloodthirst"
-            },
-            {
-                "name": "Bladestorm",
-                "icon": "ability_warrior_bladestorm"
-            }
-        ],
+        "notes": "Method.gg Opener: Charge \u2794 Recklessness \u2794 Avatar \u2794 Rampage \u2794 Bloodthirst.",
         "consumes": {
             "food": {
                 "name": "Feast of the Blossoming",
@@ -430,61 +173,8 @@
         "class": "Warrior",
         "spec": "Protection",
         "role": "tank",
-        "filename": "guide-protection-warrior.html",
         "stats": "Strength > Haste > Versatility > Critical Strike > Mastery",
-        "notes": "Maintain Shield Block uptime, spend excess Rage on Ignore Pain, and use Avatar on cooldown.",
-        "rotationST": [
-            {
-                "name": "Shield Block",
-                "icon": "ability_defend"
-            },
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Shield Slam",
-                "icon": "inv_shield_05"
-            },
-            {
-                "name": "Thunder Clap",
-                "icon": "spell_nature_thunderclap"
-            },
-            {
-                "name": "Execute",
-                "icon": "inv_sword_48"
-            },
-            {
-                "name": "Ignore Pain",
-                "icon": "ability_warrior_ignorepain"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Shield Block",
-                "icon": "ability_defend"
-            },
-            {
-                "name": "Avatar",
-                "icon": "warrior_talent_icon_avatar"
-            },
-            {
-                "name": "Thunder Clap",
-                "icon": "spell_nature_thunderclap"
-            },
-            {
-                "name": "Revenge",
-                "icon": "ability_warrior_revenge"
-            },
-            {
-                "name": "Shield Slam",
-                "icon": "inv_shield_05"
-            },
-            {
-                "name": "Ignore Pain",
-                "icon": "ability_warrior_ignorepain"
-            }
-        ],
+        "notes": "Method.gg Opener: Charge \u2794 Shield Block \u2794 Avatar \u2794 Shield Slam \u2794 Thunder Clap.",
         "consumes": {
             "food": {
                 "name": "Feast of the Blossoming",
@@ -517,64 +207,11 @@
         "class": "Hunter",
         "spec": "Beast Mastery",
         "role": "dps",
-        "filename": "guide-bm-hunter.html",
         "stats": "Agility > Haste > Critical Strike > Mastery > Versatility",
-        "notes": "Maintain 3 stacks of Frenzy with Barbed Shot and keep Beast Cleave active in AoE.",
-        "rotationST": [
-            {
-                "name": "Call of the Wild",
-                "icon": "ability_hunter_beastcall"
-            },
-            {
-                "name": "Bestial Wrath",
-                "icon": "ability_hunter_bestialwrath"
-            },
-            {
-                "name": "Barbed Shot",
-                "icon": "ability_hunter_barbedshot"
-            },
-            {
-                "name": "Kill Command",
-                "icon": "ability_hunter_killcommand"
-            },
-            {
-                "name": "Bloodshed",
-                "icon": "ability_hunter_bloodshed"
-            },
-            {
-                "name": "Cobra Shot",
-                "icon": "ability_hunter_cobrashot"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Bestial Wrath",
-                "icon": "ability_hunter_bestialwrath"
-            },
-            {
-                "name": "Multi-Shot",
-                "icon": "ability_upgrademoonglaive"
-            },
-            {
-                "name": "Barbed Shot",
-                "icon": "ability_hunter_barbedshot"
-            },
-            {
-                "name": "Kill Command",
-                "icon": "ability_hunter_killcommand"
-            },
-            {
-                "name": "Explosive Shot",
-                "icon": "ability_hunter_explosiveshot"
-            },
-            {
-                "name": "Cobra Shot",
-                "icon": "ability_hunter_cobrashot"
-            }
-        ],
+        "notes": "Method.gg Opener: Call of the Wild \u2794 Bestial Wrath \u2794 Barbed Shot \u2794 Kill Command.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Feast of the Blossoming",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
@@ -604,64 +241,11 @@
         "class": "Hunter",
         "spec": "Marksmanship",
         "role": "dps",
-        "filename": "guide-mm-hunter.html",
         "stats": "Agility > Critical Strike > Mastery > Haste > Versatility",
-        "notes": "Spend Precise Shots procs on Arcane Shot/Multi-Shot and avoid capping Aimed Shot charges.",
-        "rotationST": [
-            {
-                "name": "Trueshot",
-                "icon": "ability_hunter_trueshot"
-            },
-            {
-                "name": "Rapid Fire",
-                "icon": "ability_hunter_rapidfire"
-            },
-            {
-                "name": "Aimed Shot",
-                "icon": "inv_spear_07"
-            },
-            {
-                "name": "Kill Shot",
-                "icon": "ability_hunter_assassinate"
-            },
-            {
-                "name": "Arcane Shot",
-                "icon": "ability_impalingarrow"
-            },
-            {
-                "name": "Steady Shot",
-                "icon": "ability_hunter_steadyshot"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Volley",
-                "icon": "ability_hunter_volley"
-            },
-            {
-                "name": "Trueshot",
-                "icon": "ability_hunter_trueshot"
-            },
-            {
-                "name": "Rapid Fire",
-                "icon": "ability_hunter_rapidfire"
-            },
-            {
-                "name": "Multi-Shot",
-                "icon": "ability_upgrademoonglaive"
-            },
-            {
-                "name": "Aimed Shot",
-                "icon": "inv_spear_07"
-            },
-            {
-                "name": "Explosive Shot",
-                "icon": "ability_hunter_explosiveshot"
-            }
-        ],
+        "notes": "Method.gg Opener: Trueshot \u2794 Rapid Fire \u2794 Aimed Shot \u2794 Arcane Shot.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Feast of the Blossoming",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
@@ -691,64 +275,11 @@
         "class": "Hunter",
         "spec": "Survival",
         "role": "dps",
-        "filename": "guide-survival-hunter.html",
         "stats": "Agility > Haste > Critical Strike > Versatility > Mastery",
-        "notes": "Stay in melee range, maximize Wildfire Bomb charges, and dump Focus with Mongoose Bite.",
-        "rotationST": [
-            {
-                "name": "Harpoon",
-                "icon": "ability_hunter_harpoon"
-            },
-            {
-                "name": "Coordinated Assault",
-                "icon": "spell_nature_spiritwolf"
-            },
-            {
-                "name": "Wildfire Bomb",
-                "icon": "inv_engineering_90_blackrockgrenade"
-            },
-            {
-                "name": "Kill Command",
-                "icon": "ability_hunter_killcommand"
-            },
-            {
-                "name": "Mongoose Bite",
-                "icon": "ability_hunter_swiftstrike"
-            },
-            {
-                "name": "Flanking Strike",
-                "icon": "ability_hunter_flankingstrike"
-            }
-        ],
-        "rotationAoE": [
-            {
-                "name": "Wildfire Bomb",
-                "icon": "inv_engineering_90_blackrockgrenade"
-            },
-            {
-                "name": "Coordinated Assault",
-                "icon": "spell_nature_spiritwolf"
-            },
-            {
-                "name": "Butchery",
-                "icon": "ability_hunter_butchery"
-            },
-            {
-                "name": "Kill Command",
-                "icon": "ability_hunter_killcommand"
-            },
-            {
-                "name": "Mongoose Bite",
-                "icon": "ability_hunter_swiftstrike"
-            },
-            {
-                "name": "Flanking Strike",
-                "icon": "ability_hunter_flankingstrike"
-            }
-        ],
+        "notes": "Method.gg Opener: Harpoon \u2794 Coordinated Assault \u2794 Wildfire Bomb \u2794 Kill Command.",
         "consumes": {
             "food": {
-                "name": "Royal Roast",
+                "name": "Feast of the Blossoming",
                 "icon": "inv_misc_food_legion_feast",
                 "stat": "Primary Stat"
             },
