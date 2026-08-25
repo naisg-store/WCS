@@ -3,306 +3,288 @@
         "class": "Mage",
         "spec": "Arcane",
         "role": "dps",
-        "stats": "Intellect > Haste > Mastery > Critical Strike > Versatility",
-        "notes": "Method.gg Opener: Evocation \u2794 Arcane Orb \u2794 Arcane Surge \u2794 Touch of the Magi \u2794 Arcane Barrage.",
-        "consumes": {
-            "food": {
-                "name": "Beledar's Bounty",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
-            },
-            "flask": {
-                "name": "Flask of Alchemical Chaos",
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
                 "icon": "inv_alchemy_80_flask01",
-                "stat": "Secondary Stats"
+                "stock": "3-5 per raid"
             },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
-                "name": "Authority of Radiant Power",
-                "icon": "inv_enchant_weapon",
-                "stat": "Primary Stat Proc"
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stock": "10+ per raid"
+            },
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Mage",
         "spec": "Fire",
         "role": "dps",
-        "stats": "Intellect > Haste > Versatility > Mastery > Critical Strike",
-        "notes": "Method.gg Opener: Pre-cast Pyroblast \u2794 Combustion \u2794 Fire Blast \u2794 Pyroblast \u2794 Phoenix Flames.",
-        "consumes": {
-            "food": {
-                "name": "Beledar's Bounty",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
-            },
-            "flask": {
-                "name": "Flask of Alchemical Chaos",
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
                 "icon": "inv_alchemy_80_flask01",
-                "stat": "Secondary Stats"
+                "stock": "3-5 per raid"
             },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
-                "name": "Authority of Radiant Power",
-                "icon": "inv_enchant_weapon",
-                "stat": "Primary Stat Proc"
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stock": "10+ per raid"
+            },
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Mage",
         "spec": "Frost",
         "role": "dps",
-        "stats": "Intellect > Mastery > Critical Strike (to 33%) > Haste > Versatility",
-        "notes": "Method.gg Opener: Flurry \u2794 Icy Veins \u2794 Frostbolt \u2794 Glacial Spike \u2794 Flurry.",
-        "consumes": {
-            "food": {
-                "name": "Beledar's Bounty",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
-            },
-            "flask": {
-                "name": "Flask of Alchemical Chaos",
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
                 "icon": "inv_alchemy_80_flask01",
-                "stat": "Secondary Stats"
+                "stock": "3-5 per raid"
             },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
-                "name": "Authority of Radiant Power",
-                "icon": "inv_enchant_weapon",
-                "stat": "Primary Stat Proc"
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stock": "10+ per raid"
+            },
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Warrior",
         "spec": "Arms",
         "role": "dps",
-        "stats": "Strength > Critical Strike > Haste > Mastery > Versatility",
-        "notes": "Method.gg Opener: Charge \u2794 Colossus Smash \u2794 Avatar \u2794 Mortal Strike \u2794 Overpower.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of the Blood Knights",
-                "icon": "inv_alchemy_80_flask02",
-                "stat": "Critical Strike"
-            },
-            "potion": {
-                "name": "Potion of Recklessness",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
+            },
+            {
                 "name": "Thalassian Phoenix Oil",
                 "icon": "inv_alchemy_70_potion01",
-                "stat": "Damage Proc"
+                "stock": "10+ per raid"
             },
-            "buffs": {
+            {
                 "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Warrior",
         "spec": "Fury",
         "role": "dps",
-        "stats": "Strength > Mastery > Haste > Versatility > Critical Strike",
-        "notes": "Method.gg Opener: Charge \u2794 Recklessness \u2794 Avatar \u2794 Rampage \u2794 Bloodthirst.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of the Blood Knights",
-                "icon": "inv_alchemy_80_flask02",
-                "stat": "Critical Strike"
-            },
-            "potion": {
-                "name": "Potion of Recklessness",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
+            },
+            {
                 "name": "Thalassian Phoenix Oil",
                 "icon": "inv_alchemy_70_potion01",
-                "stat": "Damage Proc"
+                "stock": "10+ per raid"
             },
-            "buffs": {
+            {
                 "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Warrior",
         "spec": "Protection",
         "role": "tank",
-        "stats": "Strength > Haste > Versatility > Critical Strike > Mastery",
-        "notes": "Method.gg Opener: Charge \u2794 Shield Block \u2794 Avatar \u2794 Shield Slam \u2794 Thunder Clap.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of the Blood Knights",
-                "icon": "inv_alchemy_80_flask02",
-                "stat": "Versatility / Defense"
-            },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
-                "name": "Authority of the Depths",
-                "icon": "inv_enchant_weapon",
-                "stat": "Damage Proc"
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
             },
-            "buffs": {
+            {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stock": "10+ per raid"
+            },
+            {
                 "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Hunter",
         "spec": "Beast Mastery",
         "role": "dps",
-        "stats": "Agility > Haste > Critical Strike > Mastery > Versatility",
-        "notes": "Method.gg Opener: Call of the Wild \u2794 Bestial Wrath \u2794 Barbed Shot \u2794 Kill Command.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of Tempered Swiftness",
-                "icon": "inv_alchemy_80_flask03",
-                "stat": "Haste"
-            },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
+            },
+            {
                 "name": "High-Yield Scope",
                 "icon": "inv_misc_scope_03",
-                "stat": "Crit Buff"
+                "stock": "1 per weapon upgrade"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Hunter",
         "spec": "Marksmanship",
         "role": "dps",
-        "stats": "Agility > Critical Strike > Mastery > Haste > Versatility",
-        "notes": "Method.gg Opener: Trueshot \u2794 Rapid Fire \u2794 Aimed Shot \u2794 Arcane Shot.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of Tempered Aggression",
-                "icon": "inv_alchemy_80_flask02",
-                "stat": "Critical Strike"
-            },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
+            },
+            {
                 "name": "High-Yield Scope",
                 "icon": "inv_misc_scope_03",
-                "stat": "Crit Buff"
+                "stock": "1 per weapon upgrade"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     },
     {
         "class": "Hunter",
         "spec": "Survival",
         "role": "dps",
-        "stats": "Agility > Haste > Critical Strike > Versatility > Mastery",
-        "notes": "Method.gg Opener: Harpoon \u2794 Coordinated Assault \u2794 Wildfire Bomb \u2794 Kill Command.",
-        "consumes": {
-            "food": {
-                "name": "Feast of the Blossoming",
-                "icon": "inv_misc_food_legion_feast",
-                "stat": "Primary Stat"
+        "shopping_list": [
+            {
+                "name": "Flask of Eternal Light",
+                "icon": "inv_alchemy_80_flask01",
+                "stock": "3-5 per raid"
             },
-            "flask": {
-                "name": "Flask of Tempered Swiftness",
-                "icon": "inv_alchemy_80_flask03",
-                "stat": "Haste"
-            },
-            "potion": {
-                "name": "Tempered Potion",
+            {
+                "name": "Light's Potential (Potion)",
                 "icon": "inv_alchemy_80_potion01",
-                "stat": "Primary Stat Burst"
+                "stock": "20-40 per raid"
             },
-            "weapon": {
-                "name": "High-Yield Scope",
-                "icon": "inv_misc_scope_03",
-                "stat": "Crit Buff"
+            {
+                "name": "Royal Roast (Food)",
+                "icon": "inv_misc_food_legion_feast",
+                "stock": "20+ per raid"
             },
-            "buffs": {
-                "name": "Crystallized Augment Rune",
+            {
+                "name": "Thalassian Phoenix Oil",
+                "icon": "inv_alchemy_70_potion01",
+                "stock": "10+ per raid"
+            },
+            {
+                "name": "Void-Touched Augment Rune",
                 "icon": "inv_misc_rune_01",
-                "stat": "+Primary Stat"
+                "stock": "10+ per raid"
             }
-        }
+        ]
     }
 ]
